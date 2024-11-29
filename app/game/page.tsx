@@ -22,7 +22,6 @@ export default function GamePage() {
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
   const [currentQuestion, setCurrentQuestion] = useState<Question | null>(null);
   const [usedQuestions, setUsedQuestions] = useState<Set<string>>(new Set());
-
   const [shuffledQuestions, setShuffledQuestions] = useState<Question[]>([]);
   const [players] = useState<Player[]>([
     {
@@ -50,8 +49,8 @@ export default function GamePage() {
   const setNextQuestion = () => {
     const currentPlayer = players[currentPlayerIndex];
     const availableQuestions = shuffledQuestions.filter(
-      (q) => 
-        !currentPlayer.answeredQuestions.has(q.question) && 
+      (q) =>
+        !currentPlayer.answeredQuestions.has(q.question) &&
         !usedQuestions.has(q.question)
     );
   
@@ -63,45 +62,55 @@ export default function GamePage() {
     const nextQuestion = availableQuestions[0];
     setCurrentQuestion(nextQuestion);
   
-    // Ajout de la question aux listes de questions utilisées
-    currentPlayer.answeredQuestions.add(nextQuestion.question);
+    // Ajouter la question aux questions utilisées
     setUsedQuestions((prev) => new Set(prev).add(nextQuestion.question));
+  
+    // Spécifique au joueur
+    currentPlayer.answeredQuestions.add(nextQuestion.question);
   };
   
+
   const handleAnswer = (isCorrect: boolean) => {
     const currentPlayer = players[currentPlayerIndex];
-
+  
     if (isCorrect) {
-      currentPlayer.points += 1;
-
-      // Si on atteint la question spéciale pour le camembert
-      if (currentPlayer.points === 3) {
-        setIsCamembertRound(true);
-      } else if (isCamembertRound && currentPlayer.points === 4) {
-        // Gagne un camembert si réponse correcte
+      if (isCamembertRound) {
+        // Si en mode camembert, attribuer le camembert
         if (!currentPlayer.camemberts.includes(currentCategory)) {
           currentPlayer.camemberts.push(currentCategory);
           alert(`${currentPlayer.name} gagne un camembert pour ${currentCategory} !`);
         }
-        resetRound();
+        resetRound(); // Réinitialiser et passer au joueur suivant
       } else {
-        setNextQuestion();
+        // Ajouter un point si ce n'est pas un tour camembert
+        currentPlayer.points += 1;
+  
+        // Activer le mode camembert après 3 bonnes réponses
+        if (currentPlayer.points === 3) {
+          setIsCamembertRound(true);
+          alert("Tu peux choisir une catégorie pour tenter un camembert !");
+        } else {
+          // Passer à la question suivante
+          setNextQuestion();
+        }
       }
     } else {
-      // Mauvaise réponse : réinitialisation
+      // Réinitialiser les points et passer au joueur suivant
       resetRound();
     }
   };
-
+  
+  
+  
   const resetRound = () => {
     const currentPlayer = players[currentPlayerIndex];
-    currentPlayer.points = 0;
-    setIsCamembertRound(false);
-    nextPlayer();
+    currentPlayer.points = 0; // Réinitialiser les points
+    setIsCamembertRound(false); // Désactiver le mode camembert
+    nextPlayer(); // Passer au joueur suivant
   };
 
   const nextPlayer = () => {
-    setCurrentPlayerIndex((prev) => (prev + 1) % players.length);
+    setCurrentPlayerIndex((prevIndex) => (prevIndex + 1) % players.length);
     setNextQuestion();
   };
 
@@ -115,23 +124,40 @@ export default function GamePage() {
       <h2 className="text-lg mb-6">Catégorie actuelle : {currentCategory}</h2>
 
       <div className="mt-4">
-        {categories.map((cat) => (
-          <button
-            key={cat}
-            onClick={() => !isCamembertRound && setCurrentCategory(cat)}
-            className={`px-4 py-2 ${
-              cat === currentCategory
-                ? "bg-blue-700"
-                : players[currentPlayerIndex].camemberts.includes(cat)
-                ? "bg-gray-400 cursor-not-allowed"
-                : "bg-gray-500"
-            } text-white rounded`}
-            disabled={isCamembertRound && players[currentPlayerIndex].camemberts.includes(cat)}
-          >
-            {cat}
-          </button>
-        ))}
-      </div>
+  {categories.map((cat) => {
+    const currentPlayer = players[currentPlayerIndex];
+    const isCategoryWon = currentPlayer.camemberts.includes(cat);
+    const isDisabled = isCamembertRound
+      ? isCategoryWon // Désactiver les catégories où le camembert est déjà gagné
+      : false;
+
+    return (
+      <button
+        key={cat}
+        onClick={() => {
+          if (isCamembertRound) {
+            setCurrentCategory(cat); // Choisir la catégorie pour la question camembert
+            setNextQuestion(); // Charger une question de cette catégorie
+          } else {
+            setCurrentCategory(cat); // Changer la catégorie normalement
+          }
+        }}
+        className={`px-4 py-2 ${
+          cat === currentCategory
+            ? "bg-blue-700"
+            : isDisabled
+            ? "bg-gray-400 cursor-not-allowed"
+            : "bg-gray-500"
+        } text-white rounded`}
+        disabled={isDisabled}
+      >
+        {cat}
+      </button>
+    );
+  })}
+</div>
+
+
 
       <div className="mb-6">
         <p className="text-xl">{currentQuestion?.question}</p>
