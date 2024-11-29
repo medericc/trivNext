@@ -23,43 +23,25 @@ export default function GamePage() {
   const [currentQuestion, setCurrentQuestion] = useState<Question | null>(null);
   const [usedQuestions, setUsedQuestions] = useState<Set<string>>(new Set());
   const [shuffledQuestions, setShuffledQuestions] = useState<Question[]>([]);
-  const [players, setPlayers] = useState<Player[]>([
-    {
-      name: localStorage.getItem("player1") || "Player 1",
-      camemberts: [],
-      points: 0,
-      answeredQuestions: new Set<string>(),
-    },
-    {
-      name: localStorage.getItem("player2") || "Player 2",
-      camemberts: [],
-      points: 0,
-      answeredQuestions: new Set<string>(),
-    },
-  ]);
+  const [players, setPlayers] = useState<Player[]>([]);
   const [currentPlayerIndex, setCurrentPlayerIndex] = useState(0);
   const [isCamembertRound, setIsCamembertRound] = useState(false);
 
+  // Initialiser les joueurs côté client uniquement
   useEffect(() => {
+    const player1 = localStorage.getItem("player1") || "Player 1";
+    const player2 = localStorage.getItem("player2") || "Player 2";
+
+    setPlayers([
+      { name: player1, camemberts: [], points: 0, answeredQuestions: new Set() },
+      { name: player2, camemberts: [], points: 0, answeredQuestions: new Set() },
+    ]);
+
     startNewGame();
   }, []);
 
   const startNewGame = () => {
     setUsedQuestions(new Set());
-    setPlayers([
-      {
-        name: localStorage.getItem("player1") || "Player 1",
-        camemberts: [],
-        points: 0,
-        answeredQuestions: new Set<string>(),
-      },
-      {
-        name: localStorage.getItem("player2") || "Player 2",
-        camemberts: [],
-        points: 0,
-        answeredQuestions: new Set<string>(),
-      },
-    ]);
     setCurrentPlayerIndex(0);
     setIsCamembertRound(false);
     setCurrentCategory(categories[0]);
@@ -76,54 +58,49 @@ export default function GamePage() {
     const availableQuestions = shuffledQuestions.filter(
       (q) => !usedQuestions.has(q.question)
     );
-  
+
     if (availableQuestions.length === 0) {
       alert("Plus de questions disponibles dans cette catégorie !");
       return;
     }
-  
+
     const nextQuestion = availableQuestions[0];
     setCurrentQuestion(nextQuestion);
-  
+
     // Ajouter la question aux questions utilisées
     setUsedQuestions((prev) => new Set(prev).add(nextQuestion.question));
   };
-  
+
   const handleAnswer = (isCorrect: boolean) => {
     const currentPlayer = players[currentPlayerIndex];
 
     if (isCorrect) {
       if (isCamembertRound) {
-        // Si en mode camembert, attribuer le camembert
         if (!currentPlayer.camemberts.includes(currentCategory)) {
           currentPlayer.camemberts.push(currentCategory);
           alert(`${currentPlayer.name} gagne un camembert pour ${currentCategory} !`);
         }
-        resetRound(); // Réinitialiser et passer au joueur suivant
+        resetRound();
       } else {
-        // Ajouter un point si ce n'est pas un tour camembert
         currentPlayer.points += 1;
 
-        // Activer le mode camembert après 3 bonnes réponses
         if (currentPlayer.points === 3) {
           setIsCamembertRound(true);
           alert("Tu peux choisir une catégorie pour tenter un camembert !");
         } else {
-          // Passer à la question suivante
           setNextQuestion();
         }
       }
     } else {
-      // Réinitialiser les points et passer au joueur suivant
       resetRound();
     }
   };
 
   const resetRound = () => {
     const currentPlayer = players[currentPlayerIndex];
-    currentPlayer.points = 0; // Réinitialiser les points
-    setIsCamembertRound(false); // Désactiver le mode camembert
-    nextPlayer(); // Passer au joueur suivant
+    currentPlayer.points = 0;
+    setIsCamembertRound(false);
+    nextPlayer();
   };
 
   const nextPlayer = () => {
@@ -137,7 +114,7 @@ export default function GamePage() {
 
   return (
     <div className="p-8 text-center">
-      <h1 className="text-2xl mb-6">Tour de {players[currentPlayerIndex].name}</h1>
+      <h1 className="text-2xl mb-6">Tour de {players[currentPlayerIndex]?.name || "..."}</h1>
       <button
         onClick={startNewGame}
         className="mb-4 px-4 py-2 bg-blue-500 text-white rounded"
@@ -150,7 +127,7 @@ export default function GamePage() {
         <div className="mt-4">
           {categories.map((cat) => {
             const currentPlayer = players[currentPlayerIndex];
-            const isCategoryWon = currentPlayer.camemberts.includes(cat);
+            const isCategoryWon = currentPlayer?.camemberts.includes(cat);
             const isDisabled = isCategoryWon;
 
             return (
@@ -162,7 +139,13 @@ export default function GamePage() {
                     loadQuestionsForCategory(cat);
                   }
                 }}
-                className={`px-4 py-2 ${cat === currentCategory ? "bg-blue-700" : isDisabled ? "bg-gray-400 cursor-not-allowed" : "bg-gray-500"} text-white rounded`}
+                className={`px-4 py-2 ${
+                  cat === currentCategory
+                    ? "bg-blue-700"
+                    : isDisabled
+                    ? "bg-gray-400 cursor-not-allowed"
+                    : "bg-gray-500"
+                } text-white rounded`}
                 disabled={isDisabled}
               >
                 {cat}
@@ -196,7 +179,8 @@ export default function GamePage() {
         {players.map((player) => (
           <div key={player.name}>
             <p>
-              {player.name} : {player.camemberts.join(", ") || "Aucun"} (Points : {player.points})
+              {player.name} : {player.camemberts.join(", ") || "Aucun"} (Points :{" "}
+              {player.points})
             </p>
             <p className="text-sm text-gray-500">
               Camemberts restants : {remainingCamemberts(player)}
@@ -205,11 +189,14 @@ export default function GamePage() {
         ))}
       </div>
 
-      {players.map((player) => hasWon(player) && (
-        <div key={player.name} className="mt-6 text-xl font-bold">
-          Félicitations {player.name}, tu as gagné !
-        </div>
-      ))}
+      {players.map(
+        (player) =>
+          hasWon(player) && (
+            <div key={player.name} className="mt-6 text-xl font-bold">
+              Félicitations {player.name}, tu as gagné !
+            </div>
+          )
+      )}
     </div>
   );
 }
