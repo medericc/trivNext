@@ -179,9 +179,6 @@ export default function GamePage() {
   {showNextPlayerModal && (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
           <div className="bg-white rounded-lg p-6 shadow-2xl text-black max-w-md w-full">
-            <h2 className="text-2xl font-extrabold mb-4 text-center text-gradient bg-gradient-to-r from-gray-500 to-blue-500 text-transparent bg-clip-text">
-              Changement de tour
-            </h2>
             <p className="text-center">À TON TOUR !</p>
             <div className="flex justify-center mt-6">
               <button
