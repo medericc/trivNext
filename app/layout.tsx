@@ -1,14 +1,20 @@
-"use client"
+"use client";
+
 import { ReactNode } from "react";
 import { Provider } from "react-redux";
-import store from "./store"; // Ajustez le chemin si nécessaire
-import './globals.css'
+import { PersistGate } from "redux-persist/integration/react"; // Nécessaire pour redux-persist
+import store, { persistor } from "./store"; // Assurez-vous que le chemin est correct
+import "./globals.css";
+
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <body>
         <Provider store={store}>
-          {children}
+          {/* PersistGate s'assure que le store est rehydraté avant d'afficher les enfants */}
+          <PersistGate loading={null} persistor={persistor}>
+            {children}
+          </PersistGate>
         </Provider>
       </body>
     </html>
