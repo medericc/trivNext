@@ -19,7 +19,7 @@ export default function HomePage() {
   };
 
   return (
-    <div className="min-h-screen bg-blue-800 flex flex-col items-center justify-center p-8">
+    <div className="min-h-screen bg-gradient-to-r from-blue-800 to-blue-600 flex flex-col items-center justify-center p-8">
       <div className="bg-white shadow-lg rounded-lg p-8 w-full max-w-md text-center">
         <h1 className="text-4xl font-bold text-blue-900 mb-4">
           Bienvenue sur Trivial Pursuit !
