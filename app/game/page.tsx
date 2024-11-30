@@ -32,7 +32,7 @@ export default function GamePage() {
 
   const [showAnswer, setShowAnswer] = useState(false);
   const [modalMessage, setModalMessage] = useState<string | null>(null);
-
+  const [showNextPlayerModal, setShowNextPlayerModal] = useState(false);
   const categories = Object.keys(questionsData);
 
   // Initialisation des joueurs depuis localStorage
@@ -130,14 +130,13 @@ export default function GamePage() {
 
         dispatch(toggleCamembertRound(false));
         dispatch(resetPoints());
+        setShowNextPlayerModal(true); // Afficher la modale pour le prochain joueur
         dispatch(nextPlayer());
       } else {
         dispatch(incrementPoints());
         if (player.points + 1 === 3) {
           dispatch(toggleCamembertRound(true));
-          setModalMessage(
-            `QUESTION CAMEMBERT !`
-          );
+          setModalMessage(`QUESTION CAMEMBERT !`);
         }
       }
     } else {
@@ -146,12 +145,12 @@ export default function GamePage() {
         dispatch(toggleCamembertRound(false));
       }
       dispatch(resetPoints());
+      setShowNextPlayerModal(true); // Afficher la modale pour le prochain joueur
       dispatch(nextPlayer());
     }
 
     setNextQuestion();
   };
-
   if (!players.length) {
     return <p>Chargement...</p>;
   }
@@ -177,6 +176,24 @@ export default function GamePage() {
         </div>
       )}
   
+  {showNextPlayerModal && (
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
+          <div className="bg-white rounded-lg p-6 shadow-2xl text-black max-w-md w-full">
+            <h2 className="text-2xl font-extrabold mb-4 text-center text-gradient bg-gradient-to-r from-gray-500 to-blue-500 text-transparent bg-clip-text">
+              Changement de tour
+            </h2>
+            <p className="text-center">À TON TOUR !</p>
+            <div className="flex justify-center mt-6">
+              <button
+                onClick={() => setShowNextPlayerModal(false)}
+                className="bg-gradient-to-r from-gray-500 to-blue-600 text-white py-2 px-4 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition duration-300"
+              >
+                Continuer
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
       <h1 className="text-3xl font-extrabold mb-8 text-gradient bg-gradient-to-r from-gray-300 to-blue-400 text-transparent bg-clip-text">
         Tour de {players[currentPlayerIndex]?.name}
       </h1>
