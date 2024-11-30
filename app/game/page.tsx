@@ -23,13 +23,15 @@ export default function GamePage() {
   const { players, currentPlayerIndex, isCamembertRound, usedQuestions } = useSelector(
     (state: RootState) => state.game
   );
-  
 
   const [currentQuestion, setCurrentQuestion] = useState<{
     question: string;
     answer: string;
     category: string;
   } | null>(null);
+
+  const [showAnswer, setShowAnswer] = useState(false);
+  const [modalMessage, setModalMessage] = useState<string | null>(null);
 
   const categories = Object.keys(questionsData);
 
@@ -39,187 +41,179 @@ export default function GamePage() {
     const player2 = localStorage.getItem("player2");
 
     if (!player1 || !player2) {
-      alert("Les joueurs ne sont pas définis, retour à l'accueil.");
-      router.push("/");
+      setModalMessage("Les joueurs ne sont pas définis, retour à l'accueil.");
+      setTimeout(() => router.push("/"), 2000);
     } else {
-      dispatch(initializePlayers([{ name: player1, points: 0, camemberts: [] }, { name: player2, points: 0, camemberts: [] }]));
-      setNextQuestion(); // Préparer la première question
+      dispatch(
+        initializePlayers([
+          { name: player1, points: 0, camemberts: [] },
+          { name: player2, points: 0, camemberts: [] },
+        ])
+      );
+      setNextQuestion();
     }
   }, [dispatch, router]);
-useEffect(() => {
-  if (players.length > 0) {
-    setNextQuestion();
-  }
-}, [players, currentPlayerIndex, isCamembertRound]);
+
+  useEffect(() => {
+    if (players.length > 0) {
+      setNextQuestion();
+    }
+  }, [players, currentPlayerIndex, isCamembertRound]);
 
   // Fonction pour sélectionner la prochaine question
-// Fonction pour passer à la question suivante
-const setNextQuestion = () => {
-  
-const setNextQuestion = () => {
-  console.log("État Redux des joueurs :", players);
-  const player = players[currentPlayerIndex]; // Joueur actuel
-  console.log("Joueur actuel :", player);
-  console.log("Camemberts actuels :", player.camemberts);
+  const setNextQuestion = () => {
+    const player = players[currentPlayerIndex];
 
-  const availableCategories = isCamembertRound
-    ? categories.filter(
-        (cat) =>
-          !player.camemberts.map((c) => c.toLowerCase().trim()).includes(cat.toLowerCase().trim())
-      )
-    : categories;
+    const availableCategories = isCamembertRound
+      ? categories.filter(
+          (cat) =>
+            !player.camemberts.map((c) => c.toLowerCase().trim()).includes(cat.toLowerCase().trim())
+        )
+      : categories;
 
-  console.log("Catégories disponibles après filtrage :", availableCategories);
-
-  if (availableCategories.length === 0) {
-    if (isCamembertRound) {
-      alert(`${player.name} a déjà tous les camemberts disponibles !`);
-      dispatch(toggleCamembertRound(false));
-      setNextQuestion(); // Revenir à une question normale
-    } else {
-      alert("Toutes les catégories ont été complétées !");
+    if (availableCategories.length === 0) {
+      if (isCamembertRound) {
+        setModalMessage(`${player.name} a déjà tous les camemberts disponibles !`);
+        dispatch(toggleCamembertRound(false));
+        setNextQuestion();
+      } else {
+        setModalMessage("Toutes les catégories ont été complétées !");
+      }
+      return;
     }
-    return;
-  }
 
-  const selectedCategory = shuffleArray(availableCategories)[0];
-  const shuffledQuestions = shuffleArray(questionsData[selectedCategory]);
+    const selectedCategory = shuffleArray(availableCategories)[0];
+    const shuffledQuestions = shuffleArray(questionsData[selectedCategory]);
 
-  const availableQuestions = shuffledQuestions.filter(
-    (q) => !usedQuestions.includes(q.question)
-  );
+    const availableQuestions = shuffledQuestions.filter(
+      (q) => !usedQuestions.includes(q.question)
+    );
 
-  if (availableQuestions.length === 0) {
-    alert(`Plus de questions disponibles dans la catégorie ${selectedCategory} !`);
-    return;
-  }
-
-  const question = availableQuestions[0];
-  setCurrentQuestion({
-    question: question.question,
-    answer: question.answer,
-    category: selectedCategory,
-  });
-
-  dispatch(addUsedQuestion(question.question)); // Ajouter à la liste des questions utilisées
-};
-
-  const player = players[currentPlayerIndex]; // Récupérer le joueur actuel
-  const availableCategories = isCamembertRound
-  
-    ? categories.filter((cat) => !player.camemberts.includes(cat)) // Exclure les catégories déjà gagnées
-    : categories;
-    console.log("Catégories disponibles :", availableCategories);
-
-  if (availableCategories.length === 0) {
-    if (isCamembertRound) {
-      alert(`${player.name} a déjà tous les camemberts disponibles !`);
-      dispatch(toggleCamembertRound(false)); // Revenir à la phase normale
-      setNextQuestion(); // Relancer une question dans la phase normale
-    } else {
-      alert("Toutes les catégories ont été complétées !");
+    if (availableQuestions.length === 0) {
+      setModalMessage(`Plus de questions disponibles dans la catégorie ${selectedCategory} !`);
+      return;
     }
-    return;
-  }
 
-  const selectedCategory = shuffleArray(availableCategories)[0];
-  const shuffledQuestions = shuffleArray(questionsData[selectedCategory]);
+    const question = availableQuestions[0];
+    setCurrentQuestion({
+      question: question.question,
+      answer: question.answer,
+      category: selectedCategory,
+    });
 
-  const availableQuestions = shuffledQuestions.filter(
-    (q) => !usedQuestions.includes(q.question)
-  );
-
-  if (availableQuestions.length === 0) {
-    alert(`Plus de questions disponibles dans la catégorie ${selectedCategory} !`);
-    return;
-  }
-
-  const question = availableQuestions[0];
-  setCurrentQuestion({
-    question: question.question,
-    answer: question.answer,
-    category: selectedCategory,
-  });
-  dispatch(addUsedQuestion(question.question)); // Ajouter la question utilisée
-};
-
-
+    dispatch(addUsedQuestion(question.question));
+  };
 
   // Fonction pour gérer les réponses
   const handleAnswer = (isCorrect: boolean) => {
-    const player = players[currentPlayerIndex]; // Joueur actuel
-  
+    const player = players[currentPlayerIndex];
+
     if (isCorrect) {
       if (isCamembertRound) {
-        // Ajouter un camembert et sortir de la phase camembert
         dispatch(addCamembert(currentQuestion?.category || ""));
-        alert(
-          `${player.name} gagne un camembert pour ${currentQuestion?.category} !`
+        setModalMessage(
+          `${player.name} gagne un camembert ${currentQuestion?.category} !`
         );
-  
-        // Vérifie si le joueur a tous les camemberts
+
         const hasAllCamemberts = categories.every((cat) =>
           player.camemberts.includes(cat)
         );
-  
+
         if (hasAllCamemberts) {
-          alert(`${player.name} a gagné la partie !`);
-          dispatch(resetGame()); // Réinitialise le jeu
-          router.push("/"); // Retour à l'accueil
+          setModalMessage(`${player.name} a gagné la partie !`);
+          setTimeout(() => {
+            dispatch(resetGame());
+            router.push("/");
+          }, 2000);
           return;
         }
-  
-        // Revenir à la phase normale et passer au joueur suivant
+
         dispatch(toggleCamembertRound(false));
         dispatch(resetPoints());
         dispatch(nextPlayer());
       } else {
-        // Phase normale : Incrémenter les points
         dispatch(incrementPoints());
         if (player.points + 1 === 3) {
-          // Passer en phase camembert
           dispatch(toggleCamembertRound(true));
-          alert(
-            `${player.name} est en phase camembert pour ${currentQuestion?.category} !`
+          setModalMessage(
+            `QUESTION CAMEMBERT !`
           );
         }
       }
     } else {
-      // Mauvaise réponse
       if (isCamembertRound) {
-        alert(`${player.name} rate la question camembert !`);
-        dispatch(toggleCamembertRound(false)); // Revenir à la phase normale
+        setModalMessage(`${player.name} rate la question camembert !`);
+        dispatch(toggleCamembertRound(false));
       }
       dispatch(resetPoints());
       dispatch(nextPlayer());
     }
-  
-    setNextQuestion(); // Charger la prochaine question
+
+    setNextQuestion();
   };
-  
-  
+
   if (!players.length) {
-    return <p>Chargement...</p>; // Afficher un état de chargement si les joueurs ne sont pas encore initialisés
+    return <p>Chargement...</p>;
   }
 
   return (
-    <div>
-      <h1>Tour de {players[currentPlayerIndex]?.name}</h1>
-      <div>
-        <h2>Catégorie : {currentQuestion?.category}</h2>
-        <p>Question : {currentQuestion?.question}</p>
-        <p>Question : {currentQuestion?.answer}</p>
-      </div>
-      <button onClick={() => handleAnswer(true)}>Répondre Correctement</button>
-      <button onClick={() => handleAnswer(false)}>Répondre Incorrectement</button>
+    <div className="min-h-screen bg-gradient-to-r from-blue-500 to-purple-600 flex flex-col items-center justify-center text-white">
+      {modalMessage && (
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
+          <div className="bg-white rounded-lg p-6 shadow-xl text-black max-w-md w-full">
+            <h2 className="text-xl font-bold mb-4">Information</h2>
+            <p>{modalMessage}</p>
+            <button
+              onClick={() => setModalMessage(null)}
+              className="mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition"
+            >
+              OK
+            </button>
+          </div>
+        </div>
+      )}
 
-      <h3>Scores</h3>
-      {players.map((player, index) => (
-        <p key={index}>
-          {player.name}: {player.points} points, Camemberts:{" "}
-          {player.camemberts.join(", ") || "Aucun"}
-        </p>
-      ))}
+      <h1 className="text-4xl font-bold mb-6">
+        Tour de {players[currentPlayerIndex]?.name}
+      </h1>
+      <div className="bg-white text-black p-6 rounded-lg shadow-lg max-w-md w-full text-center">
+        <h2 className="text-xl font-semibold">
+          Catégorie : {currentQuestion?.category}
+        </h2>
+        <p className="text-lg mt-4">{currentQuestion?.question}</p>
+        <button
+          className="mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition"
+          onClick={() => setShowAnswer(!showAnswer)}
+        >
+          {showAnswer ? "Cacher" : "Révéler"} la réponse
+        </button>
+        {showAnswer && (
+          <p className="text-sm text-gray-700 mt-4">Réponse : {currentQuestion?.answer}</p>
+        )}
+      </div>
+      <div className="flex space-x-4 mt-6">
+        <button
+          onClick={() => handleAnswer(true)}
+          className="bg-green-500 text-white py-2 px-6 rounded-lg hover:bg-green-600 transition"
+        >
+          Répondre Correctement
+        </button>
+        <button
+          onClick={() => handleAnswer(false)}
+          className="bg-red-500 text-white py-2 px-6 rounded-lg hover:bg-red-600 transition"
+        >
+          Répondre Incorrectement
+        </button>
+      </div>
+      <div className="bg-white text-black p-4 rounded-lg shadow-lg max-w-md w-full mt-6">
+        <h3 className="text-xl font-semibold mb-4">Scores</h3>
+        {players.map((player, index) => (
+          <p key={index} className="mb-2">
+            {player.name}: {player.points} points, Camemberts:{" "}
+            {player.camemberts.join(", ") || "Aucun"}
+          </p>
+        ))}
+      </div>
     </div>
   );
 }
