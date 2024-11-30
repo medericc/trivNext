@@ -159,19 +159,21 @@ export default function GamePage() {
   return (
     <div className="min-h-screen bg-gradient-to-r from-blue-500 to-purple-600 flex flex-col items-center justify-center text-white">
       {modalMessage && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-          <div className="bg-white rounded-lg p-6 shadow-xl text-black max-w-md w-full">
-            <h2 className="text-xl font-bold mb-4">Information</h2>
-            <p>{modalMessage}</p>
-            <button
-              onClick={() => setModalMessage(null)}
-              className="mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition"
-            >
-              OK
-            </button>
-          </div>
-        </div>
-      )}
+  <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
+    <div className="bg-white rounded-lg p-6 shadow-xl text-black max-w-md w-full">
+      <h2 className="text-xl font-bold mb-4 text-center">Information</h2>
+      <p className="text-center">{modalMessage}</p>
+      <div className="flex justify-center mt-4">
+        <button
+          onClick={() => setModalMessage(null)}
+          className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition"
+        >
+          OK
+        </button>
+      </div>
+    </div>
+  </div>
+)}
 
       <h1 className="text-4xl font-bold mb-6">
         Tour de {players[currentPlayerIndex]?.name}
