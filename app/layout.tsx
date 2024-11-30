@@ -1,33 +1,15 @@
 "use client"
-
-import localFont from "next/font/local";
-import "./globals.css";
-import { GameProvider } from "./context/GameContext";
-
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
-
-
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+import { ReactNode } from "react";
+import { Provider } from "react-redux";
+import store from "./store"; // Ajustez le chemin si nécessaire
+import './globals.css'
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <GameProvider>
-        {children}</GameProvider>
+      <body>
+        <Provider store={store}>
+          {children}
+        </Provider>
       </body>
     </html>
   );
