@@ -157,65 +157,82 @@ export default function GamePage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-r from-blue-500 to-purple-600 flex flex-col items-center justify-center text-white">
-      {modalMessage && (
-  <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-    <div className="bg-white rounded-lg p-6 shadow-xl text-black max-w-md w-full">
-      <h2 className="text-xl font-bold mb-4 text-center">Information</h2>
-      <p className="text-center">{modalMessage}</p>
-      <div className="flex justify-center mt-4">
-        <button
-          onClick={() => setModalMessage(null)}
-          className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition"
-        >
-          OK
-        </button>
-      </div>
-    </div>
-  </div>
-)}
-
-      <h1 className="text-4xl font-bold mb-6">
+    <div className="min-h-screen bg-gradient-to-r from-gray-900 to-blue-800 flex flex-col items-center justify-center text-white">
+  {modalMessage && (
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
+          <div className="bg-white rounded-lg p-6 shadow-2xl text-black max-w-md w-full">
+            <h2 className="text-2xl font-extrabold mb-4 text-center text-gradient bg-gradient-to-r from-gray-500 to-blue-500 text-transparent bg-clip-text">
+              Information
+            </h2>
+            <p className="text-center">{modalMessage}</p>
+            <div className="flex justify-center mt-6">
+              <button
+                onClick={() => setModalMessage(null)}
+                className="bg-gradient-to-r from-gray-500 to-blue-600 text-white py-2 px-4 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition duration-300"
+              >
+                OK
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+  
+      <h1 className="text-3xl font-extrabold mb-8 text-gradient bg-gradient-to-r from-gray-300 to-blue-400 text-transparent bg-clip-text">
         Tour de {players[currentPlayerIndex]?.name}
       </h1>
-      <div className="bg-white text-black p-6 rounded-lg shadow-lg max-w-md w-full text-center">
-        <h2 className="text-xl font-semibold">
-          Catégorie : {currentQuestion?.category}
+  
+      <div className="bg-white text-black p-8  shadow-xl max-w-lg w-full text-center">
+        <h2 className="text-2xl font-semibold text-gradient bg-gradient-to-r from-gray-500 to-blue-500 text-transparent bg-clip-text">
+          {currentQuestion?.category}
         </h2>
         <p className="text-lg mt-4">{currentQuestion?.question}</p>
         <button
-          className="mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition"
+          className="mt-6 bg-gradient-to-r from-blue-500 to-gray-500 text-white py-2 px-6 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition duration-300"
           onClick={() => setShowAnswer(!showAnswer)}
         >
           {showAnswer ? "Cacher" : "Révéler"} la réponse
         </button>
         {showAnswer && (
-          <p className="text-sm text-gray-700 mt-4">Réponse : {currentQuestion?.answer}</p>
+          <p className="text-md text-gray-700 mt-4">
+            Réponse : {currentQuestion?.answer}
+          </p>
         )}
       </div>
+  
       <div className="flex space-x-4 mt-6">
-        <button
-          onClick={() => handleAnswer(true)}
-          className="bg-green-500 text-white py-2 px-6 rounded-lg hover:bg-green-600 transition"
-        >
-          Répondre Correctement
-        </button>
-        <button
-          onClick={() => handleAnswer(false)}
-          className="bg-red-500 text-white py-2 px-6 rounded-lg hover:bg-red-600 transition"
-        >
-          Répondre Incorrectement
-        </button>
-      </div>
-      <div className="bg-white text-black p-4 rounded-lg shadow-lg max-w-md w-full mt-6">
-        <h3 className="text-xl font-semibold mb-4">Scores</h3>
+  <button
+    onClick={() => handleAnswer(true)}
+    className="bg-gradient-to-r from-blue-400 to-blue-600 text-white py-2.5 px-8 rounded-md shadow-sm hover:shadow-md transform hover:scale-105 transition duration-300 text-sm"
+  >
+   VRAI
+  </button>
+  <button
+    onClick={() => handleAnswer(false)}
+    className="bg-gradient-to-r from-red-500 to-red-700 text-white py-2.5 px-8 rounded-md shadow-sm hover:shadow-md transform hover:scale-105 transition duration-300 text-sm"
+  >
+    FAUX
+  </button>
+</div>
+
+  
+      <div className="bg-white text-black p-6 shadow-xl max-w-lg w-full mt-8">
+        <h3 className="text-2xl text-center font-bold text-gradient bg-gradient-to-r from-blue-500 to-gray-600 text-transparent bg-clip-text mb-6">
+          Scores
+        </h3>
         {players.map((player, index) => (
-          <p key={index} className="mb-2">
-            {player.name}: {player.points} points, Camemberts:{" "}
-            {player.camemberts.join(", ") || "Aucun"}
-          </p>
+          <div
+            key={index}
+            className="flex justify-between items-center mb-4 border-b pb-2 last:border-none last:pb-0"
+          >
+            <span className="font-medium">{player.name}</span>
+            <span className="text-sm text-gray-600">
+              {player.points}/3, Camemberts :{" "}
+              {player.camemberts.length > 0 ? player.camemberts.length : "Aucun"}
+            </span>
+          </div>
         ))}
       </div>
     </div>
   );
+  
 }
