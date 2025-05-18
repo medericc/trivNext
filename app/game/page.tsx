@@ -196,8 +196,8 @@ export default function GamePage() {
       </h1>
   
       <div className="bg-white text-black p-8  shadow-xl max-w-lg w-full text-center">
-        <h2 className="text-2xl font-semibold text-gradient bg-gradient-to-r from-gray-500 to-blue-500 text-transparent bg-clip-text">
-          {currentQuestion?.category}
+       <h2 className="text-2xl font-semibold bg-gradient-to-r from-gray-500 to-blue-500 text-transparent bg-clip-text">
+   {currentQuestion?.category}
         </h2>
         <p className="text-lg mt-4">{currentQuestion?.question}</p>
         <button
