@@ -331,7 +331,126 @@ interface Question {
           {
             question: "Joueur qui a loupé le plus de pénaltys?",
             answer: "Cristiano Ronaldo (13)",
-          },
+          }, {
+    question: "Quel club a remporté le plus de Ligues des Champions?",
+    answer: "Real Madrid (15)",
+  },
+  {
+    question: "Quel joueur a remporté le plus de Ligues des Champions?",
+    answer: "Paco Gento (6)",
+  },
+  {
+    question: "Quel est le club le plus titré de l'histoire?",
+    answer: "Al Ahly SC (121)",
+  },
+  {
+    question: "Quel joueur a marqué le plus de buts en Coupe du Monde?",
+    answer: "Miroslav Klose (16)",
+  },
+  {
+    question: "Quel joueur a marqué le plus de buts en une Coupe du Monde?",
+    answer: "Just Fontaine (13)",
+  },
+  {
+    question: "Quel joueur a disputé le plus de matchs en Coupe du Monde?",
+    answer: "Lionel Messi (26)",
+  },
+  {
+    question: "Quelle nation a remporté le plus de Coupes du Monde?",
+    answer: "Brésil (5)",
+  },
+  {
+    question: "Quel pays a organisé la première Coupe du Monde?",
+    answer: "Uruguay",
+  },
+
+  {
+    question: "Quel pays a gagné la Coupe du Monde 1990?",
+    answer: "Allemagne",
+  },
+  {
+    question: "Qui a marqué le but en finale de la Coupe du Monde 2014?",
+    answer: "Mario Götze",
+  },
+  {
+    question: "Combien de fois la France a-t-elle gagné la Coupe du Monde?",
+    answer: "2",
+  },
+  {
+    question: "Quel club a gagné la Premier League en 2022?",
+    answer: "Manchester City",
+  },
+  {
+    question: "Quel joueur détient le record de buts en Premier League?",
+    answer: "Alan Shearer (260)",
+  },
+  {
+    question: "Quel joueur a remporté le plus de Ballons d'Or avant Messi?",
+    answer: "Pelé (7)",
+  },
+  {
+    question: "Quel pays a remporté l'Euro 2004?",
+    answer: "Grèce",
+  },
+  {
+    question: "Quel joueur a été surnommé 'Il Fenomeno'?",
+    answer: "Ronaldo",
+  },
+ 
+  {
+    question: "Quel club a remporté la Ligue des Champions 2012?",
+    answer: "Chelsea",
+  },
+  {
+    question: "Quel club a remporté la Ligue des Champions 2013?",
+    answer: "Bayern Munich",
+  },
+  {
+    question: "Qui a marqué un triplé en finale de la Ligue des Champions 2022?",
+    answer: "Aucun, victoire 1-0 du Real",
+  },
+
+
+  {
+    question: "Quel est le plus grand stade d'Europe en capacité?",
+    answer: "Camp Nou (99 354)",
+  },
+  {
+    question: "Quel club possède le plus de titres de champion d'Angleterre?",
+    answer: "Manchester United",
+  },
+  {
+    question: "Qui a remporté la Copa América 2007?",
+    answer: "Brésil",
+  },
+  {
+    question: "Qui a remporté la Copa América 2004?",
+    answer: "Brésil",
+  },
+  {
+    question: "Quel club a remporté la Ligue des Champions 2005?",
+    answer: "Liverpool",
+  },
+  {
+    question: "Quel joueur a raté un penalty en finale de la Coupe du Monde 1994?",
+    answer: "Roberto Baggio",
+  },
+  {
+    question: "Quel joueur a été exclu en finale de Coupe du Monde 2006?",
+    answer: "Zinedine Zidane",
+  },
+
+ 
+  {
+    question: "Quel joueur a marqué le but décisif en finale de la Coupe du Monde 2010?",
+    answer: "Andres Iniesta",
+  },
+ 
+  {
+    question: "Quel joueur a marqué le but décisif en finale de l'Euro 2000?",
+    answer: "David Trezeguet",
+  },  
+
       ],
     Sport: [
         {
@@ -533,7 +652,318 @@ interface Question {
           {
             question: "Quel sport consiste à nager dans une piscine sur une distance définie?",
             answer: "Natation",
-          },
+          },{
+    "question": "Quel est le sport de Léna Monasse?",
+    "answer": "Basketball"
+  },
+  {
+    "question": "Dans quel sport utilise-t-on un kimono blanc et une ceinture de couleur?",
+    "answer": "Judo"
+  },
+  {
+    "question": "Quel protection est obligatoire dans le MMA masculin mais pas féminin?",
+    "answer": "Coquille"
+  },
+  {
+    "question": "Quel est le sport le plus vieux?",
+    "answer": "Lutte"
+  },
+  {
+    "question": "Dans quel sport pratique-t-on des katas?",
+    "answer": "Karaté"
+  },
+  {
+    "question": "Quel sport se joue avec un palet et des crosses sur la glace?",
+    "answer": "Hockey sur glace"
+  },
+  {
+    "question": "Quel sport est pratiqué lors du Tour d’Italie?",
+    "answer": "Cyclisme"
+  },
+  {
+    "question": "De quel nationalité est Jade Célérier?",
+    "answer": "Française (Béarn)"
+  },
+  {
+    "question": "Dans quel sport peut-on faire un ace?",
+    "answer": "Tennis"
+  },
+  {
+    "question": "Quel sport se pratique en salle avec une balle collante et des buts?",
+    "answer": "Handball"
+  },
+  {
+    "question": "Quel sport est associé à Tony Yoka?",
+    "answer": "Boxe"
+  },
+  {
+    "question": "Critiano Ronaldo est un?",
+    "answer": "Instagrameur"
+  },
+  {
+    "question": "Quel sport est pratiqué avec un cheval et des obstacles?",
+    "answer": "Équitation"
+  },
+  {
+    "question": "Quel sport utilise une cible colorée et des fléchettes?",
+    "answer": "Fléchettes"
+  },
+  {
+    "question": "Dans quel sport trouve-t-on le lancer de javelot?",
+    "answer": "Athlétisme"
+  },
+  {
+    "question": "Quel est le sport de Max Verstappen?",
+    "answer": "Formule 1"
+  },
+  {
+    "question": "Quel sport combine ski de fond et tir à la carabine?",
+    "answer": "Biathlon"
+  },
+  {
+    "question": "Quel sport se pratique sur une planche dans les vagues?",
+    "answer": "Surf"
+  },
+  {
+    "question": "Quel est le poste de Lionel Messi?",
+    "answer": "Meneur de Jeu"
+  },
+  {
+    "question": "Quel sport utilise des engins comme le ruban et le cerceau?",
+    "answer": "Gymnastique rythmique"
+  },
+  {
+    "question": "Quel sport est pratiqué sur des pistes glacées avec une luge?",
+    "answer": "Luge"
+  },
+  {
+    "question": "Quel sport se pratique en frappant une balle sur un mur?",
+    "answer": "Squash"
+  },
+  {
+    "question": "Quel sport est associé à Conor McGregor?",
+    "answer": "MMA"
+  },
+  {
+    "question": "Quel sport se pratique avec deux bateaux tirés par des rameurs?",
+    "answer": "Aviron"
+  },
+  {
+    "question": "Quel est le sport de Biles Simone?",
+    "answer": "Gymnastique artistique"
+  },
+  {
+    "question": "Quel sport se pratique avec un disque lancé à distance?",
+    "answer": "Lancer du disque"
+  },
+  {
+    "question": "Quel sport se déroule dans un octogone?",
+    "answer": "MMA"
+  },
+  {
+    "question": "Quel sport utilise des lames sur les chaussures?",
+    "answer": "Patinage artistique"
+  },
+  {
+    "question": "Quel sport consiste à faire des figures dans les airs à vélo?",
+    "answer": "BMX freestyle"
+  },
+  {
+    "question": "Quel sport se joue en double ou en simple avec un volant?",
+    "answer": "Badminton"
+  },
+  {
+    "question": "Quel est le sport de Teddy Riner?",
+    "answer": "Judo"
+  },
+  {
+    "question": "Quel sport demande de tirer avec précision sur une cible en papier?",
+    "answer": "Tir sportif"
+  },
+  {
+    "question": "Quel sport est pratiqué sur une piste ovale en patinant?",
+    "answer": "Short track"
+  },
+  {
+    "question": "Quel sport consiste à gravir des parois rocheuses?",
+    "answer": "Escalade"
+  },
+  {
+    "question": "Quel sport se pratique avec des sauts à ski?",
+    "answer": "Saut à ski"
+  },
+  {
+    "question": "Quel sport consiste à effectuer des pirouettes sur la glace?",
+    "answer": "Patinage artistique"
+  },
+  {
+    "question": "Quel sport est jugé sur la technique et la grâce au sol ou sur agrès?",
+    "answer": "Gymnastique artistique"
+  },
+  {
+    "question": "Quel est le sport de Alain Bernard?",
+    "answer": "Natation"
+  },
+  {
+    "question": "Quel sport se joue avec deux équipes et un ballon en salle sans dribble?",
+    "answer": "Volley-ball"
+  },
+  {
+    "question": "Quel sport consiste à courir, sauter et lancer?",
+    "answer": "Athlétisme"
+  },
+  {
+    "question": "Quel sport se pratique avec des skis sur des bosses et sauts acrobatiques?",
+    "answer": "Ski de bosses"
+  },
+  {
+    "question": "Quel sport se pratique avec un cerf-volant de traction sur l’eau?",
+    "answer": "Kitesurf"
+  },
+  {
+    "question": "Quel sport utilise un pistolet laser et la course à pied?",
+    "answer": "Pentathlon moderne"
+  },
+  {
+    "question": "Quel sport mélange course, vélo et natation?",
+    "answer": "Triathlon"
+  },
+  {
+    "question": "Quel sport se joue avec une raquette plus courte et une balle creuse?",
+    "answer": "Squash"
+  },
+  {
+    "question": "Quel métier est associé à Cristiano Ronaldo?",
+    "answer": "Youtubeur"
+  },
+  {
+    "question": "Quel sport consiste à glisser sur une rampe en demi-lune?",
+    "answer": "Skateboard"
+  },
+  {
+    "question": "Quel sport se pratique avec une voile tirée par le vent sur la mer?",
+    "answer": "Planche à voile"
+  },
+  {
+    "question": "Quel sport utilise un ballon et des lancers en panier suspendu?",
+    "answer": "Basketball"
+  },
+  {
+    "question": "Quel sport se joue sur terre battue ou gazon avec une balle jaune?",
+    "answer": "Tennis"
+  },
+  {
+    "question": "Quel sport consiste à maintenir son équilibre sur un fil tendu?",
+    "answer": "Slackline"
+  },
+  {
+    "question": "Quel sport utilise des piolets et des crampons pour grimper la glace?",
+    "answer": "Alpinisme"
+  },
+  {
+    "question": "Quel sport se pratique en combinant ski et parapente?",
+    "answer": "Speed riding"
+  },
+  {
+    "question": "Quel sport de glisse se pratique dans un halfpipe enneigé?",
+    "answer": "Snowboard"
+  },
+  {
+    "question": "Quel sport se pratique en équipe avec des balles et des balais sur la glace?",
+    "answer": "Curling"
+  },
+  {
+    "question": "Quel sport olympique implique de courir en franchissant des haies?",
+    "answer": "110 mètres haies"
+  },
+  {
+    "question": "Quel sport consiste à faire des pompes et des tractions en compétition?",
+    "answer": "Street workout"
+  },
+  {
+    "question": "Quel sport est jugé sur la forme et la masse musculaire?",
+    "answer": "Bodybuilding"
+  },
+  {
+    "question": "Quel sport utilise une corde pour effectuer des sauts acrobatiques?",
+    "answer": "Double dutch"
+  },
+  {
+    "question": "Quel sport se pratique en descendant une rivière avec un kayak?",
+    "answer": "Canoë-kayak"
+  },
+  {
+    "question": "Quel sport est connu pour ses compétitions de sumos géants?",
+    "answer": "Sumo"
+  },
+  {
+    "question": "Quel sport d’hiver consiste à descendre une piste glacée sur un petit traîneau?",
+    "answer": "Skeleton"
+  },
+  {
+    "question": "Quel sport implique un lancer de marteau au bout d’une chaîne?",
+    "answer": "Lancer du marteau"
+  },
+  {
+    "question": "Quel sport se pratique sur une poutre étroite avec des figures artistiques?",
+    "answer": "Gymnastique artistique"
+  },
+  {
+    "question": "Quel sport se pratique à cheval avec une balle et un maillet?",
+    "answer": "Polo"
+  },
+  {
+    "question": "Quel sport se pratique sur un mur d'escalade artificiel en vitesse?",
+    "answer": "Escalade de vitesse"
+  },
+  {
+    "question": "Quel sport se déroule dans une piscine avec musique et chorégraphie?",
+    "answer": "Natation artistique"
+  },
+  {
+    "question": "Quel sport se pratique en montagne avec un piolet et des crampons?",
+    "answer": "Alpinisme"
+  },
+  {
+    "question": "Quel sport demande de l’endurance à vélo sur route pendant des heures?",
+    "answer": "Cyclisme sur route"
+  },
+  {
+    "question": "Quel sport de combat autorise les coups de pied, poing, genou et coude?",
+    "answer": "Muay Thaï"
+  },
+  {
+    "question": "Quel sport est jugé en plongeant depuis une grande hauteur?",
+    "answer": "Plongeon"
+  },
+  {
+    "question": "Quel sport est appelé le 'noble art'?",
+    "answer": "Boxe"
+  },
+  {
+    "question": "Quel sport consiste à faire le tour d’une piste ovale à vélo?",
+    "answer": "Cyclisme sur piste"
+  },
+  {
+    "question": "Quel sport utilise des haubans, une coque et une voile?",
+    "answer": "Voile"
+  },
+  {
+    "question": "Quel sport est pratiqué avec un long couloir, des starting-blocks et un sprint?",
+    "answer": "Course de 100 mètres"
+  },
+  {
+    "question": "Quel sport est pratiqué avec des haltères en compétition?",
+    "answer": "Haltérophilie"
+  },
+  {
+    "question": "Quel sport se pratique sur glace avec des figures et de la musique?",
+    "answer": "Patinage artistique"
+  },
+  {
+    "question": "Quel sport d’équipe oppose six joueurs par camp sur un terrain en salle?",
+    "answer": "Volley-ball"
+  }
     ],
     Bible: [
       {
@@ -916,8 +1346,20 @@ interface Question {
         "question": "Quel est le nom du souverain sacrificateur qui a béni Abraham?",
         "answer": "Melchisédek"
       },
+       {
+        "question": "Lors de l'annonciation, quel ange parle à Marie?",
+        "answer": "Gabriel"
+      },
+       {
+        "question": "Lors de la visitation, qui Marie va-t-elle voir?",
+        "answer": "Elisabeth"
+      },
+       {
+        "question": "Qui est le père de Jean le Baptiste?",
+        "answer": "Zacharie"
+      },
       {
-        "question": "Quel livre commence par 'Au commencement, Dieu créa le ciel et la terre'?",
+        "question": "Quel livre commence par 'Au commencement,'?",
         "answer": "Genèse"
       },
       {
@@ -928,7 +1370,7 @@ interface Question {
     France: [
       {
         question: "En quelle année Clovis a-t-il été baptisé ?",
-        answer: "496",
+        answer: "498",
       },
       {
         question: "Qui était le roi des Francs avant Clovis ?",
@@ -980,7 +1422,7 @@ interface Question {
       },
       {
         question: "Quel roi a créé la Sainte-Chapelle à Paris ?",
-        answer: "Louis IX (Saint Louis)",
+        answer: "Louis IX",
       },
       {
         question: "Quel roi de France est connu pour sa construction du château de Versailles ?",
@@ -1046,10 +1488,7 @@ interface Question {
         question: "Quel traité a mis fin à la guerre de Cent Ans en 1453 ?",
         answer: "Le traité de Picquigny",
       },
-      {
-        question: "Qui était la reine de France pendant la guerre de Cent Ans ?",
-        answer: "Isabelle de France",
-      },
+    
       {
         question: "Quel est le nom du roi qui a signé l'ordonnance de Villers-Cotterêts en 1539 ?",
         answer: "François Ier",
@@ -1122,30 +1561,15 @@ interface Question {
         question: "Quel roi de France a créé l'Académie française ?",
         answer: "Louis XIII",
       },
-      {
-        question: "Quel est le nom du roi qui a mis en place le Code civil ?",
-        answer: "Napoléon Bonaparte",
-      },
-      {
-        question: "Qui a écrit les 'Mémoires d'Outre-Tombe' ?",
-        answer: "François-René de Chateaubriand",
-      },
-      {
-        question: "Quel roi a fait détruire le Temple de Jérusalem en 70 ?",
-        answer: "Vespasien",
-      },
+      
+   
+     
       {
         question: "Quel roi est connu pour avoir pris part à la croisade contre les Albigeois ?",
         answer: "Louis VIII",
       },
-      {
-        question: "En quelle année les chevaliers du Temple ont-ils été accusés d'hérésie ?",
-        answer: "1307",
-      },
-      {
-        question: "Quel est le nom de l'empereur romain qui a réformé l'Empire en 286 ?",
-        answer: "Dioclétien",
-      },
+     
+     
       {
         question: "Quel est le nom du roi qui a perdu la bataille de Poitiers en 1356 ?",
         answer: "Jean II le Bon",
@@ -1163,7 +1587,7 @@ interface Question {
         answer: "Henri IV",
       },
       {
-        question: "Quel est le nom du roi qui a régné pendant la guerre de Cent Ans ?",
+        question: "Quel est le nom du roi qui a régné pendant la 2de guerre de Cent Ans ?",
         answer: "Charles VI",
       },
       {
@@ -1178,14 +1602,7 @@ interface Question {
         question: "Quel est le nom du roi qui a fondé la ville de Paris ?",
         answer: "Clovis",
       },
-      {
-        question: "Quel est le nom du roi qui a été couronné roi des Francs à Reims en 496 ?",
-        answer: "Clovis",
-      },
-      {
-        question: "Qui a réformé l'Église française au XVIe siècle ?",
-        answer: "François Ier",
-      },
+   
       {
         question: "Quel est le nom du roi de France qui a instauré l'ordonnance de Villers-Cotterêts en 1539 ?",
         answer: "François Ier",
@@ -1193,6 +1610,391 @@ interface Question {
     ]
     ,
     Géographie: [
+      
+  {
+    question: "Qui a peint 'La Nuit étoilée' ?",
+    answer: "Vincent van Gogh"
+  },
+  {
+    question: "En quelle année a eu lieu le premier alunissage ?",
+    answer: "1969"
+  },
+  {
+    question: "Qui a écrit '1984' ?",
+    answer: "George Orwell"
+  },
+  {
+    question: "Quel élément chimique a pour symbole 'Fe' ?",
+    answer: "Le fer"
+  },
+  {
+    question: "Combien de notes dans une gamme majeure ?",
+    answer: "Sept"
+  },
+  {
+    question: "Quel est l’organe principal de la respiration ?",
+    answer: "Les poumons"
+  },
+  {
+    question: "Qui a formulé la théorie de la relativité ?",
+    answer: "Albert Einstein"
+  },
+  {
+    question: "Quel est l’animal terrestre le plus rapide ?",
+    answer: "Le guépard"
+  },
+  {
+    question: "Combien y a-t-il de planètes dans le système solaire ?",
+    answer: "Huit"
+  },
+  {
+    question: "Quelle est la plus grande planète du système solaire ?",
+    answer: "Jupiter"
+  },
+  {
+    question: "Qui a peint la Joconde ?",
+    answer: "Léonard de Vinci"
+  },
+  {
+    question: "Quel métal liquide est utilisé dans les thermomètres ?",
+    answer: "Le mercure"
+  },
+  {
+    question: "Quelle est la formule chimique de l’eau ?",
+    answer: "H₂O"
+  },
+  {
+    question: "Dans quel pays a été inventé le papier ?",
+    answer: "La Chine"
+  },
+  {
+    question: "Quel est le plus petit os du corps humain ?",
+    answer: "L’étrier"
+  },
+  {
+    question: "Quel est le symbole chimique de l’or ?",
+    answer: "Au"
+  },
+  {
+    question: "Quelle invention est associée à Alexander Graham Bell ?",
+    answer: "Le téléphone"
+  },
+  {
+    question: "Quelle est la vitesse de la lumière dans le vide ?",
+    answer: "Environ 300 000 km/s"
+  },
+  {
+    question: "Que mesure un baromètre ?",
+    answer: "La pression atmosphérique"
+  },
+  {
+    question: "Combien de dents a un adulte normalement ?",
+    answer: "32"
+  },
+  {
+    question: "Quel est le plus grand organe du corps humain ?",
+    answer: "La peau"
+  },
+  {
+    question: "Qui a écrit 'Le Meilleur des Mondes' ?",
+    answer: "Aldous Huxley"
+  },
+  {
+    question: "Quel gaz les plantes absorbent-elles ?",
+    answer: "Le dioxyde de carbone"
+  },
+  {
+    question: "Quel est l’organe qui pompe le sang ?",
+    answer: "Le cœur"
+  },
+  {
+    question: "Quel est le plus grand mammifère marin ?",
+    answer: "La baleine bleue"
+  },
+  {
+    question: "Que signifie 'www' dans une adresse web ?",
+    answer: "World Wide Web"
+  },
+  {
+    question: "En informatique, que signifie HTML ?",
+    answer: "HyperText Markup Language"
+  },
+  {
+    question: "Qui est l’inventeur de l’ampoule électrique ?",
+    answer: "Thomas Edison"
+  },
+  {
+    question: "Quelle est l’unité de mesure de la fréquence ?",
+    answer: "Le hertz"
+  },
+  {
+    question: "Quel est le nom du processus par lequel les plantes fabriquent leur nourriture ?",
+    answer: "La photosynthèse"
+  },
+  {
+    question: "Qui est l’auteur de 'Roméo et Juliette' ?",
+    answer: "William Shakespeare"
+  },
+  
+  {
+    question: "Que mesure un thermomètre ?",
+    answer: "La température"
+  },
+  {
+    question: "Quelle est la planète la plus proche du Soleil ?",
+    answer: "Mercure"
+  },
+  {
+    question: "Quel animal pond des œufs et allaite ses petits ?",
+    answer: "L’ornithorynque"
+  },
+  {
+    question: "Quel est le nom scientifique du sucre de table ?",
+    answer: "Le saccharose"
+  },
+  {
+    question: "Quel est l’état de l’eau à 0 °C ?",
+    answer: "Solide (glace)"
+  },
+  {
+    question: "Quel organe filtre le sang ?",
+    answer: "Les reins"
+  },
+  {
+    question: "Que signifie l’acronyme USB ?",
+    answer: "Universal Serial Bus"
+  },
+  {
+    question: "Quel est le nom du satellite naturel de la Terre ?",
+    answer: "La Lune"
+  },
+  {
+    question: "Que signifie ADN ?",
+    answer: "Acide désoxyribonucléique"
+  },
+  {
+    question: "Combien de pattes possède une araignée ?",
+    answer: "Huit"
+  },
+  {
+    question: "Quel est le chiffre romain pour 50 ?",
+    answer: "L"
+  },
+  {
+    question: "Quel est le gaz essentiel à la respiration humaine ?",
+    answer: "L’oxygène"
+  },
+  {
+    question: "Quel est le nom de l’effet qui modifie le son selon la vitesse ?",
+    answer: "L’effet Doppler"
+  },
+  {
+    question: "Quelle est la température normale du corps humain ?",
+    answer: "37 °C"
+  },
+  {
+    question: "Quel est l’organe de la parole ?",
+    answer: "Le larynx"
+  },
+  {
+    question: "Quel est le nom du télescope spatial lancé en 1990 ?",
+    answer: "Hubble"
+  },
+  {
+    question: "Quel est le nom du processus de changement d’état de liquide à gaz ?",
+    answer: "L’évaporation"
+  },
+  {
+    question: "Quelle est la racine carrée de 144 ?",
+    answer: "12"
+  },
+  {
+    question: "Combien de zéros dans un milliard ?",
+    answer: "Neuf"
+  },
+  {
+    question: "Quel est le plus grand désert du monde ?",
+    answer: "L’Antarctique"
+  },
+  {
+    question: "Quel est le rôle des globules rouges ?",
+    answer: "Transporter l’oxygène"
+  },
+  
+  {
+    question: "Quel est l’élément chimique numéro 1 ?",
+    answer: "L’hydrogène"
+  },
+  {
+    question: "Combien de côtés a un octogone ?",
+    answer: "Huit"
+  },
+  {
+    question: "Quelle planète est surnommée 'la planète rouge' ?",
+    answer: "Mars"
+  },
+  {
+    question: "Quelle est la fonction principale des globules blancs ?",
+    answer: "Combattre les infections"
+  },
+  {
+    question: "Quelle est l’unité de mesure de l’énergie ?",
+    answer: "Le joule"
+  },
+  {
+    question: "Quel est l’organe qui permet de goûter ?",
+    answer: "La langue"
+  },
+  {
+    question: "Quel est le nom du phénomène qui fait apparaître un arc dans le ciel ?",
+    answer: "Un arc-en-ciel"
+  },
+  {
+    question: "Combien de vertèbres dans la colonne humaine ?",
+    answer: "33"
+  },
+  {
+    question: "Quel scientifique a découvert la loi de la gravité ?",
+    answer: "Isaac Newton"
+  },
+  {
+    question: "Quel est le nom du gaz utilisé dans les ballons gonflables ?",
+    answer: "L’hélium"
+  },
+  {
+    question: "Quelle est la planète la plus chaude du système solaire ?",
+    answer: "Vénus"
+  },
+  {
+    question: "Quel est le nom de la couche qui protège la Terre des UV ?",
+    answer: "La couche d’ozone"
+  },
+  {
+    question: "Quelle est la molécule qui transporte l’oxygène dans le sang ?",
+    answer: "L’hémoglobine"
+  },
+  {
+    question: "Quel est le plus grand océan de la Terre ?",
+    answer: "L’océan Pacifique"
+  },
+  {
+    question: "Quelle science étudie les comportements humains ?",
+    answer: "La psychologie"
+  },
+  {
+    question: "Comment s’appelle l’étude des champignons ?",
+    answer: "La mycologie"
+  },
+  {
+    question: "Quel instrument mesure les tremblements de terre ?",
+    answer: "Le sismographe"
+  },
+  {
+    question: "Combien de paires de chromosomes chez l’humain ?",
+    answer: "23 paires"
+  },
+ 
+ {
+    question: "Quel pays possède le plus grand nombre d’îles ?",
+    answer: "La Suède",
+  },
+  {
+    question: "Quelle mer borde la côte est de l’Espagne ?",
+    answer: "La mer Méditerranée",
+  },
+  {
+    question: "Quelle est la capitale de l'Écosse ?",
+    answer: "Édimbourg",
+  },
+  {
+    question: "Quel est le plus haut sommet de l’Afrique ?",
+    answer: "Le Kilimandjaro",
+  },
+  {
+    question: "Quel est le plus petit pays du monde ?",
+    answer: "Le Vatican",
+  },
+  {
+    question: "Quel pays partage une frontière avec les États-Unis au sud ?",
+    answer: "Le Mexique",
+  },
+  {
+    question: "Quelle est la capitale de l’Indonésie ?",
+    answer: "Jakarta",
+  },
+  {
+    question: "Quel est le principal fleuve qui traverse l’Égypte ?",
+    answer: "Le Nil",
+  },
+  {
+    question: "Dans quel pays se trouve la ville de Marrakech ?",
+    answer: "Le Maroc",
+  },
+  {
+    question: "Quel est le plus grand lac d’eau douce au monde par superficie ?",
+    answer: "Le lac Supérieur",
+  },
+  {
+    question: "Quelle est la capitale de la Roumanie ?",
+    answer: "Bucarest",
+  },
+  {
+    question: "Quelle est la capitale de la Thaïlande ?",
+    answer: "Bangkok",
+  },
+  {
+    question: "Quel pays a pour capitale Reykjavik ?",
+    answer: "L’Islande",
+  },
+  {
+    question: "Quel fleuve traverse Londres ?",
+    answer: "La Tamise",
+  },
+  {
+    question: "Quel pays a pour capitale Varsovie ?",
+    answer: "La Pologne",
+  },
+  {
+    question: "Quelle mer est située entre l’Italie et les Balkans ?",
+    answer: "La mer Adriatique",
+  },
+  {
+    question: "Quel pays est surnommé le pays du Matin Calme ?",
+    answer: "La Corée du Sud",
+  },
+  {
+    question: "Quel pays est traversé par l’équateur et le méridien de Greenwich ?",
+    answer: "Le Gabon",
+  },
+  {
+    question: "Quelle ville est surnommée la Ville Éternelle ?",
+    answer: "Rome",
+  },
+  {
+    question: "Dans quel pays se trouve le mont Fuji ?",
+    answer: "Le Japon",
+  },
+  {
+    question: "Quel est le nom du désert qui couvre une grande partie de la Chine et de la Mongolie ?",
+    answer: "Le désert de Gobi",
+  },
+  {
+    question: "Quelle est la capitale du Nigeria ?",
+    answer: "Abuja",
+  },
+  {
+    question: "Quelle est la ville la plus peuplée du Canada ?",
+    answer: "Toronto",
+  },
+  {
+    question: "Quel est le plus grand archipel du monde ?",
+    answer: "L’Indonésie",
+  },
+  {
+    question: "Quelle ville est située sur deux continents ?",
+    answer: "Istanbul",
+  },
+
       {
         question: "Quel est le plus grand désert du monde ?",
         answer: "Antarctique",
@@ -1245,10 +2047,7 @@ interface Question {
         question: "Quel est le plus grand pays d'Afrique ?",
         answer: "L'Algérie",
       },
-      {
-        question: "Quel est le plus petit pays du monde ?",
-        answer: "Le Vatican",
-      },
+   
       {
         question: "Quel pays est connu sous le nom de 'Terre de feu' ?",
         answer: "L'Argentine",
@@ -1500,10 +2299,185 @@ interface Question {
       {
         question: "Quel est le pays avec la plus grande superficie de forêts ?",
         answer: "La Russie",
-      }
+      }, {
+    question: "Quelle est la capitale de la Nouvelle-Zélande ?",
+    answer: "Wellington",
+  },
+  {
+    question: "Quel pays est entièrement enclavé dans l'Afrique du Sud ?",
+    answer: "Le Lesotho",
+  },
+  {
+    question: "Quel est le pays le plus montagneux du monde ?",
+    answer: "Le Bhoutan",
+  },
+  {
+    question: "Quelle est la plus grande île de la mer Méditerranée ?",
+    answer: "La Sicile",
+  },
+  {
+    question: "Quel est le plus grand pays sans accès à la mer ?",
+    answer: "Le Kazakhstan",
+  },
+  {
+    question: "Quel est le plus long fleuve d’Europe ?",
+    answer: "La Volga",
+  },
+  {
+    question: "Quel pays a la plus grande densité de population ?",
+    answer: "Monaco",
+  },
+  {
+    question: "Quelle chaîne de montagnes traverse toute l’Amérique du Sud ?",
+    answer: "Les Andes",
+  },
+  {
+    question: "Quel désert est surnommé le désert rouge ?",
+    answer: "Le désert de Simpson",
+  },
+  {
+    question: "Quel est le pays le plus plat du monde ?",
+    answer: "Les Maldives",
+  },
+  {
+    question: "Quel est le point le plus bas sur Terre ?",
+    answer: "La mer Morte",
+  },
+  {
+    question: "Quel est le plus grand delta du monde ?",
+    answer: "Le delta du Gange",
+  },
+  {
+    question: "Quelle est la mer la plus salée au monde ?",
+    answer: "La mer Morte",
+  },
+  {
+    question: "Quelle est la capitale de la Mongolie ?",
+    answer: "Oulan-Bator",
+  },
+  {
+    question: "Quel pays se trouve entre la France, l’Allemagne et la Belgique ?",
+    answer: "Le Luxembourg",
+  },
+  {
+    question: "Dans quel pays peut-on visiter le site antique de Petra ?",
+    answer: "La Jordanie",
+  },
+  {
+    question: "Quelle est la capitale de la Finlande ?",
+    answer: "Helsinki",
+  },
+  {
+    question: "Quel détroit sépare l’Europe de l’Asie en Turquie ?",
+    answer: "Le Bosphore",
+  },
+  {
+    question: "Quelle rivière traverse Paris ?",
+    answer: "La Seine",
+  },
+  {
+    question: "Quel volcan a détruit la ville antique de Pompéi ?",
+    answer: "Le Vésuve",
+  },
+  {
+    question: "Quel pays est célèbre pour ses fjords ?",
+    answer: "La Norvège",
+  },
+   {
+    question: "Quel est le village anciennement nommé le \"pays des loups\" ?",
+    answer: "Laloubère",
+  },
+  {
+    question: "Quelle île française se trouve à l’est de Madagascar ?",
+    answer: "La Réunion",
+  },
+  {
+    question: "Quel pays africain n’a jamais été colonisé ?",
+    answer: "L’Éthiopie",
+  },
+  {
+    question: "Dans quel pays se trouve le Cap Nord ?",
+    answer: "La Norvège",
+  },
+  {
+    question: "Quelle est la capitale de la Corée du Sud ?",
+    answer: "Séoul",
+  }
     ]
     ,
     Général: [
+       {
+        "question": "Qui est le père de la philosophie?",
+        "answer": "Thalès"
+      },
+       {
+        "question": "Qui était le maitre de Platon?",
+        "answer": "Socrate"
+      },
+       {
+        "question": "Quel philosophe a connu Alexandre Le Grand?",
+        "answer": "Aristote"
+      },
+      {
+        "question": "Quel philosophe a théorisé le Dasein?",
+        "answer": "Heidegger"
+      },
+      {
+        "question": "Quel philosophe a utilisé le doute hyperbolique?",
+        "answer": "Descartes"
+      },
+      {
+        "question": "Qui cherché en dehors de lui alors que Dieu étais à l'intérieur?",
+        "answer": "St Augustin d'Hiponne"
+      },
+          {
+        "question": "Qui a écris les Sommes Théologiques?",
+        "answer": "St Thomas d'Aquin"
+      },
+          {
+        "question": "Quel philosophe théorise l'apprentissage par négation?",
+        "answer": "Hegel"
+      },
+       {
+        "question": "Quel philosophe théorise les monades?",
+        "answer": "Leibniz"
+      },
+       {
+        "question": "A quel philosophe doit-on la théorie de la caverne?",
+        "answer": "Platon"
+      },
+      {
+        "question": "Quel est le premier philosophe à s'intéresser au bonheur individuel?",
+        "answer": "Epicure"
+      },
+      {
+        "question": "A qui doit-on, la phrase \"Esse est percipi\"?",
+        "answer": "Berkeley"
+      },
+       {
+        "question": "Pour quel philosophe il n'y a aucune idée sans impression?",
+        "answer": "David Hume"
+      },
+      {
+        "question": "Qui est le fondateur de la psychanalyse?",
+        "answer": "Sigmund Freud"
+      },
+       {
+        "question": "Quel philosophe aurait parlé à la 'dame philosophie'?",
+        "answer": "Boèce"
+      },
+      {
+        "question": "Quelle expérience de pensée célèbre Avicenne a-t-il formulée ?",
+        "answer": "L'homme volant"
+      },
+      {
+        "question": "Où Albert le Grand a enseigné Thomas d'Aquin?",
+        "answer": "Cologne"
+      },
+       {
+        "question": "A qui doit-on le \"to on te on \"?",
+        "answer": "Aristote"
+      },
       {
         "question": "Quel est le symbole chimique de l'eau?",
         "answer": "H2O"
