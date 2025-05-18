@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 export default function HomePage() {
   const router = useRouter();
@@ -51,8 +52,8 @@ export default function HomePage() {
         </div>
       </div>
       <footer className="mt-12 text-gray-500 text-sm">
-        © 2024 Trivial Pursuit. Tous droits réservés.
-      </footer>
+  © 2025 <Link href="/politique" className="underline hover:text-blue-200 transition">Trivial Pursuit</Link>. Tous droits réservés.
+</footer>
     </div>
   );
 }
