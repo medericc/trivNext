@@ -5,6 +5,12 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
+.text-gradient {
+  @apply text-transparent bg-clip-text;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 @layer base {
   :root {
