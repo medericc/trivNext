@@ -660,10 +660,7 @@ interface Question {
     "question": "Dans quel sport utilise-t-on un kimono blanc et une ceinture de couleur?",
     "answer": "Judo"
   },
-  {
-    "question": "Quel protection est obligatoire dans le MMA masculin mais pas féminin?",
-    "answer": "Coquille"
-  },
+
   {
     "question": "Quel est le sport le plus vieux?",
     "answer": "Lutte"
