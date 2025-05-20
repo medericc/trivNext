@@ -2416,6 +2416,14 @@ interface Question {
         "answer": "Aristote"
       },
       {
+        "question": "Quel philosophe sépare la morale de la politique?",
+        "answer": "Machiavel"
+      },
+      {
+        "question": "Quel philosophe voit l'esprit humain comme une \"tabula rasa\"?",
+        "answer": "John Locke"
+      },
+      {
         "question": "Quel philosophe a théorisé le Dasein?",
         "answer": "Heidegger"
       },
@@ -2451,9 +2459,42 @@ interface Question {
         "question": "A qui doit-on, la phrase \"Esse est percipi\"?",
         "answer": "Berkeley"
       },
+        {
+        "question": "A qui doit-on, la phrase \"Homo homini lupus\"?",
+        "answer": "Thomas Hobbes"
+      },
+       {
+        "question": "A qui doit-on, la phrase \"Deus sive natura\"?",
+        "answer": "Baruch Spinoza"
+      },
+       {
+        "question": "A qui doit-on, la phrase \"On se baigne jamais dans le même fleuve\"?",
+        "answer": "Héraclite"
+      },
+       {
+        "question": "Le monisme est une doctrine inventé par?",
+        "answer": "Parménide"
+      },
+   {
+  "question": "Quel philosophe grec est connu pour avoir utilisé la maïeutique ?",
+  "answer": "Socrate"
+}
+,
        {
         "question": "Pour quel philosophe il n'y a aucune idée sans impression?",
         "answer": "David Hume"
+      },
+        {
+        "question": "Zarathoustra représente quelle notion?",
+        "answer": "Le surhomme"
+      },
+       {
+        "question": "Qui différencie le phénomène du noumène et s'inspire du boudhisme?",
+        "answer": "Schopenhauer"
+      },
+      {
+        "question": "Quel philosophe est le premier à néoplatonisé l'islam?",
+        "answer": "Al-Farabi"
       },
       {
         "question": "Qui est le fondateur de la psychanalyse?",
