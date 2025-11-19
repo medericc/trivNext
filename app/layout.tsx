@@ -5,7 +5,7 @@ import { Provider } from "react-redux";
 import { PersistGate } from "redux-persist/integration/react"; // Nécessaire pour redux-persist
 import store, { persistor } from "./store"; // Assurez-vous que le chemin est correct
 import "./globals.css";
-
+import { Analytics } from "@vercel/analytics/next";
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
@@ -16,6 +16,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             {children}
           </PersistGate>
         </Provider>
+         <Analytics />
       </body>
     </html>
   );
