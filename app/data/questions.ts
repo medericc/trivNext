@@ -1,2919 +1,8011 @@
 interface Question {
-    question: string;
-    
-    answer: string;
-  }
-  
-  interface Questions {
-    [category: string]: Question[];
-  }
-  
-  const questions: Questions = {
-    Football: [
-        {
-          question: "Quelle équipe a gagné la Coupe du Monde 2018?",
-          answer: "France",
-        },
-        {
-            question: "Quelle équipe a gagné la Coupe du Monde 2022?",
-            answer: "Argentine",
-          },
-          {
-            question: "Qui a été élu MVP de la Coupe du Monde 2018?",
-            answer: "Luka Modric",
-          },
-        {
-            question: "Qui a été élu MVP de finale de la Coupe du Monde 2018?",
-            answer: "Antoine Griezmann",
-          },
-        {
-            question: "Qui a été élu MVP de la Coupe du Monde 2022?",
-            answer: "Lionel Messi",
-          },
-        {
-            question: "Qui a été élu MVP de finale de la Coupe du Monde 2022?",
-            answer: "Lionel Messi",
-          },
-        {
-            question: "Quelle équipe a gagné la Coupe du Monde 2014?",
-            answer: "Allemagne",
-          },
-          {
-            question: "Qui a été élu MVP de la Coupe du Monde 2014?",
-            answer: "Lionel Messi",
-          },
-        {
-            question: "Qui a été élu MVP de finale de la Coupe du Monde 2014?",
-            answer: "Mario Gotze",
-          },
-          {
-            question: "Quelle équipe a gagné la Coupe du Monde 2010?",
-            answer: "Espagne",
-          },
-          {
-            question: "Qui a été élu MVP de la Coupe du Monde 2010?",
-            answer: "Diego Forlan",
-          },
-        {
-            question: "Qui a été élu MVP de finale de la Coupe du Monde 2010?",
-            answer: "Andres Iniesta",
-          },
-          {
-            question: "Quelle équipe a gagné la Coupe du Monde 2006?",
-            answer: "Italie",
-          },
-          {
-            question: "Qui a été élu MVP de la Coupe du Monde 2006?",
-            answer: "Zinedine Zidane",
-          },
-        {
-            question: "Qui a été élu MVP de finale de la Coupe du Monde 2006?",
-            answer: "Fabio Cannavaro",
-          },
-          {
-            question: "Quelle équipe a gagné la Coupe du Monde 2002?",
-            answer: "Brésil",
-          },
-          {
-            question: "Qui a été élu MVP de la Coupe du Monde 2002?",
-            answer: "Oliver Kahn",
-          },
-        {
-            question: "Qui a été élu MVP de finale de la Coupe du Monde 2002?",
-            answer: "Ronaldo",
-          },
-          {
-            question: "Quelle équipe a gagné la Coupe du Monde 1998?",
-            answer: "France",
-          },
-          {
-            question: "Qui a été élu MVP de la Coupe du Monde 1998?",
-            answer: "Ronaldo",
-          },
-        {
-            question: "Qui a été élu MVP de finale de la Coupe du Monde 1998?",
-            answer: "Zinedine Zidane",
-          },
-          {
-            question: "Quelle équipe a gagné la Coupe du Monde 1994?",
-            answer: "Brésil",
-          },
-    
-          {
-            question: "Quelle équipe a gagné l'Euro 2020?",
-            answer: "Italie",
-          },
-          {
-            question: "Quelle équipe a gagné l'Euro 2016?",
-            answer: "Portugal",
-          },
-          {
-            question: "Qui a été MVP de l'Euro 2016?",
-            answer: "Antoine Griezmann",
-          },
-          {
-            question: "Qui a été MVP de la finale de l'Euro 2016?",
-            answer: "Pepe",
-          },
-          {
-            question: "Quelle équipe a gagné l'Euro 2012?",
-            answer: "Espagne",
-          },
-          {
-            question: "Quelle équipe a gagné l'Euro 2008?",
-            answer: "Espagne",
-          },
-          {
-            question: "Quelle équipe a gagné la Copa América 2024?",
-            answer: "Argentine",
-          },
-          {
-            question: "Quelle équipe a gagné la Copa América 2021?",
-            answer: "Argentine",
-          },
-          {
-            question: "Qui a été MVP de la Copa América 2021?",
-            answer: "Lionel Messi",
-          },
-          {
-            question: "Quelle équipe a gagné la Copa América 2019?",
-            answer: "Brésil",
-          },
-          {
-            question: "Qui a été MVP de la Copa América 2019?",
-            answer: "Dani Alves",
-          },
-          {
-            question: "Quelle équipe a gagné la Copa América 2016?",
-            answer: "Chili",
-          },
-          {
-            question: "Qui a été MVP de la Copa América 2016?",
-            answer: "Lionel Messi",
-          },
-          {
-            question: "Quelle équipe a gagné la Copa América 2015?",
-            answer: "Chili",
-          },
-          {
-            question: "Qui a été MVP de la Copa América 2015?",
-            answer: "Lionel Messi",
-          },
-          {
-            question: "Quelle équipe a gagné la Copa América 2011?",
-            answer: "Uruguay",
-          },
-          {
-            question: "Qui a été MVP de la Copa América 2011?",
-            answer: "Luis Suarez",
-          },
-        {
-          question: "Meilleur buteur de l'histoire en compétitions internationales?",
-          answer: "Lionel Messi (27)",
-        },
-        {
-          question: "Joueur le plus décisif de l'histoire de la Coupe du Monde?",
-          answer: "Lionel Messi (21)",
-        },
-        {
-          question: "Joueur le plus décisif en phase finale de Coupe du Monde?",
-          answer: "Lionel Messi (11)",
-        },
-        {
-          question: "Joueur avec le plus de titres de MOTM en Coupe du Monde?",
-          answer: "Lionel Messi (12)",
-        },
-        {
-            question: "Joueur avec le plus de titres de MOTM en phase finale du mondial?",
-            answer: "Lionel Messi (12)",
-          },
-        {
-          question: "Joueur avec le plus de titres de MVP en Coupe du Monde?",
-          answer: "Lionel Messi (2)",
-        },
-        {
-          question: "Joueur avec le plus de Soulier d'Or?",
-          answer: "Lionel Messi (6)",
-        },
-        {
-          question: "Joueur avec le plus de buts en Europe?",
-          answer: "Lionel Messi (704)",
-        },
-        {
-          question: "Joueur avec le plus de titres de Playmaker d'élite?",
-          answer: "Lionel Messi (5)",
-        },
-        {
-          question: "Joueur le plus souvent désigné meilleur dribbleur de la saison?",
-          answer: "lionel Messi (11)",
-        },
-        {
-          question: "Joueur avec le plus de titres de POTY?",
-          answer: "Lionel Messi (17)",
-        },
-        {
-          question: "Meilleur dribbleur de l'histoire de la Coupe du Monde?",
-          answer: "Lionel Messi (125)",
-        },
-        {
-          question: "Joueur avec le plus de titres de MVP en sélections nationales?",
-          answer: "Lionel Messi (8)",
-        },
-        {
-          question: "Meilleur rating de l'histoire de la Ligue des Champions?",
-          answer: "Lionel Messi (8.1)",
-        },
-       
-        {
-          question: "Joueur qui a créé le plus d'occasions en Ligue des Champions?",
-          answer: "Lionel Messi (82)",
-        },
-        {
-          question: "Joueur qui a le plus de titres The Best?",
-          answer: "Lionel Messi (8)",
-        },
-        {
-          question: "Joueur qui a le plus de Ballons d'Or?",
-          answer: "Lionel Messi (8)",
-        },
-        {
-          question: "Joueur avec le plus de buts en finales?",
-          answer: "Lionel Messi (34)",
-        },
-        {
-          question: "Joueur le plus décisif en finale?",
-          answer: "Lionel Messi (50)",
-        },
-        {
-          question: "Joueur avec le plus de titres MOTM dans l'histoire du football?",
-          answer: "Lionel Messi (580)",
-        },
-        {
-          question: "Joueur le plus titré de l'histoire collectivement?",
-          answer: "Lionel Messi (46)",
-        },
-        {
-          question: "Le ballon d'or le plus unanime de l'histoire?",
-          answer: "Messi (2009)",
-        },
-        {
-            question: "Meilleur buteur de l'histoire du classico?",
-            answer: "Lionel Messi (26)",
-          },
-          {
-            question: "Meilleur buteur de l'histoire en dehors de la surface?",
-            answer: "Lionel Messi (97)",
-          },
-          {
-            question: "Meilleur buteur de l'histoire sur coup-franc?",
-            answer: "Marcelinho (77)",
-          },
-          {
-            question: "Seul footballeur à avoir gagné le Laureus?",
-            answer: "Lionel Messi (2)",
-          },
-          {
-            question: "Joueur avec le plus de nominations dans la FIFPRO?",
-            answer: "Lionel Messi (17)",
-          },
-          {
-            question: "Joueur avec le plus de MOTM en finale du mondial?",
-            answer: "Pelé (2)",
-          },
-          {
-            question: "Meilleurs buteurs de l'histoire sur une saison?",
-            answer: "Lionel Messi (73)",
-          },
-          {
-            question: "Meilleurs buteurs de l'histoire sur une annee?",
-            answer: "Lionel Messi (91)",
-          },
-          {
-            question: "Meilleure note en finale de ligue des champions?",
-            answer: "Lionel Messi (2011)",
-          },
-          {
-            question: "Joueur qui a le plus de MVP en ligue des champions?",
-            answer: "Lionel Messi (6)",
-          },
-          {
-            question: "Joueur qui a le réussi le plus de dribbles en ligue des champions?",
-            answer: "Lionel Messi (687)",
-          },
-          {
-            question: "Joueur qui a le réussi le plus de passes clés en ligue des champions?",
-            answer: "Lionel Messi (350)",
-          },
-          {
-            question: "Joueur qui a eu le plus de 10/10 en ligue des champions?",
-            answer: "Lionel Messi (10)",
-          },
-          {
-            question: "Joueur qui a eu obtenus le plus de pénaltys en ligue des champions?",
-            answer: "Lionel Messi (13)",
-          },
-          {
-            question: "Joueur qui a tiré le plus de pénaltys en ligue des champions?",
-            answer: "Cristiano Ronaldo (19)",
-          },
-          {
-            question: "Joueur qui a mis le plus de pénaltys en ligue des champions?",
-            answer: "Cristiano Ronaldo (19)",
-          },
-          {
-            question: "Joueur qui a eu le plus de pénaltys?",
-            answer: "Cristiano Ronaldo (200)",
-          },
-          {
-            question: "Joueur qui a mis le plus de pénaltys?",
-            answer: "Cristiano Ronaldo (169)",
-          },
-          {
-            question: "Joueur qui a loupé le plus de pénaltys?",
-            answer: "Cristiano Ronaldo (13)",
-          }, {
-    question: "Quel club a remporté le plus de Ligues des Champions?",
-    answer: "Real Madrid (15)",
-  },
-  {
-    question: "Quel joueur a remporté le plus de Ligues des Champions?",
-    answer: "Paco Gento (6)",
-  },
-  {
-    question: "Quel est le club le plus titré de l'histoire?",
-    answer: "Al Ahly SC (121)",
-  },
-  {
-    question: "Quel joueur a marqué le plus de buts en Coupe du Monde?",
-    answer: "Miroslav Klose (16)",
-  },
-  {
-    question: "Quel joueur a marqué le plus de buts en une Coupe du Monde?",
-    answer: "Just Fontaine (13)",
-  },
-  {
-    question: "Quel joueur a disputé le plus de matchs en Coupe du Monde?",
-    answer: "Lionel Messi (26)",
-  },
-  {
-    question: "Quelle nation a remporté le plus de Coupes du Monde?",
-    answer: "Brésil (5)",
-  },
-  {
-    question: "Quel pays a organisé la première Coupe du Monde?",
-    answer: "Uruguay",
-  },
-
-  {
-    question: "Quel pays a gagné la Coupe du Monde 1990?",
-    answer: "Allemagne",
-  },
-  {
-    question: "Qui a marqué le but en finale de la Coupe du Monde 2014?",
-    answer: "Mario Götze",
-  },
-  {
-    question: "Combien de fois la France a-t-elle gagné la Coupe du Monde?",
-    answer: "2",
-  },
-  {
-    question: "Quel club a gagné la Premier League en 2022?",
-    answer: "Manchester City",
-  },
-  {
-    question: "Quel joueur détient le record de buts en Premier League?",
-    answer: "Alan Shearer (260)",
-  },
-  {
-    question: "Quel joueur a remporté le plus de Ballons d'Or avant Messi?",
-    answer: "Pelé (7)",
-  },
-  {
-    question: "Quel pays a remporté l'Euro 2004?",
-    answer: "Grèce",
-  },
-  {
-    question: "Quel joueur a été surnommé 'Il Fenomeno'?",
-    answer: "Ronaldo",
-  },
- 
-  {
-    question: "Quel club a remporté la Ligue des Champions 2012?",
-    answer: "Chelsea",
-  },
-  {
-    question: "Quel club a remporté la Ligue des Champions 2013?",
-    answer: "Bayern Munich",
-  },
-  {
-    question: "Qui a marqué un triplé en finale de la Ligue des Champions 2022?",
-    answer: "Aucun, victoire 1-0 du Real",
-  },
-
-
-  {
-    question: "Quel est le plus grand stade d'Europe en capacité?",
-    answer: "Camp Nou (99 354)",
-  },
-  {
-    question: "Quel club possède le plus de titres de champion d'Angleterre?",
-    answer: "Manchester United",
-  },
-  {
-    question: "Qui a remporté la Copa América 2007?",
-    answer: "Brésil",
-  },
-  {
-    question: "Qui a remporté la Copa América 2004?",
-    answer: "Brésil",
-  },
-  {
-    question: "Quel club a remporté la Ligue des Champions 2005?",
-    answer: "Liverpool",
-  },
-  {
-    question: "Quel joueur a raté un penalty en finale de la Coupe du Monde 1994?",
-    answer: "Roberto Baggio",
-  },
-  {
-    question: "Quel joueur a été exclu en finale de Coupe du Monde 2006?",
-    answer: "Zinedine Zidane",
-  },
-
- 
-  {
-    question: "Quel joueur a marqué le but décisif en finale de la Coupe du Monde 2010?",
-    answer: "Andres Iniesta",
-  },
- 
-  {
-    question: "Quel joueur a marqué le but décisif en finale de l'Euro 2000?",
-    answer: "David Trezeguet",
-  },  
-
-      ],
-    Sport: [
-        {
-            question: "Combien de joueurs composent une équipe de basket sur le terrain?",
-            answer: "5",
-          },
-          {
-            question: "Quel sport est surnommé le 'sport roi' aux États-Unis?",
-            answer: "Baseball",
-          },
-          {
-            question: "Combien de sets faut-il gagner pour remporter un match de tennis en Grand Chelem (chez les hommes)?",
-            answer: "3",
-          },
-          {
-            question: "Quel est le sport national du Japon?",
-            answer: "Sumo",
-          },
-          {
-            question: "Quelle est la distance d’un marathon?",
-            answer: "42,195 km",
-          },
-          {
-            question: "En quelle année le rugby à XV a-t-il été ajouté aux Jeux Olympiques?",
-            answer: "1900",
-          },
-          {
-            question: "Combien de médailles d'or a remporté Michael Phelps aux Jeux Olympiques de 2008?",
-            answer: "8",
-          },
-          {
-            question: "Quel pays a remporté le plus de médailles aux Jeux Olympiques d'hiver?",
-            answer: "Norvège",
-          },
-          {
-            question: "Combien de joueurs composent une équipe de volley-ball sur le terrain?",
-            answer: "6",
-          },
-          {
-            question: "Quel pays a organisé les premiers Jeux Olympiques modernes?",
-            answer: "Grèce",
-          },
-          {
-            question: "Quel est le sport pratiqué avec une crosse et une balle sur la glace?",
-            answer: "Hockey sur glace",
-          },
-          {
-            question: "Quel est le sport de Serena Williams?",
-            answer: "Tennis",
-          },
-          {
-            question: "Combien de trous comporte un parcours de golf standard?",
-            answer: "18",
-          },
-          {
-            question: "Quelle est la course de cyclisme la plus célèbre au monde?",
-            answer: "Tour de France",
-          },
-          {
-            question: "Quelle ceinture est attribuée au plus haut niveau de judo?",
-            answer: "Noire",
-          },
-          {
-            question: "Dans quel sport utilise-t-on une planche et des roulettes?",
-            answer: "Skateboard",
-          },
-          {
-            question: "Quel sport consiste à frapper une balle au-dessus d'un filet à l'aide d'une raquette?",
-            answer: "Tennis",
-          },
-          {
-            question: "Quel sport est aussi appelé ping-pong?",
-            answer: "Tennis de table",
-          },
-          {
-            question: "Quel est le sport de Usain Bolt?",
-            answer: "Athlétisme",
-          },
-          {
-            question: "Dans quel sport utilise-t-on des pierres et une cible circulaire sur la glace?",
-            answer: "Curling",
-          },
-          {
-            question: "Combien de joueurs composent une équipe de baseball sur le terrain?",
-            answer: "9",
-          },
-          {
-            question: "Quel sport se pratique avec un volant et une raquette?",
-            answer: "Badminton",
-          },
-          {
-            question: "Combien de points vaut un panier à trois points en basket?",
-            answer: "3",
-          },
-          {
-            question: "Quel sport utilise un anneau et des cordes?",
-            answer: "Boxe",
-          },
-          {
-            question: "Quelle est la distance d'une course de 100 mètres?",
-            answer: "100 mètres",
-          },
-          {
-            question: "Quel sport est appelé 'le sport des rois'?",
-            answer: "Polo",
-          },
-          {
-            question: "Quel est le sport de Tiger Woods?",
-            answer: "Golf",
-          },
-          {
-            question: "Quel sport se pratique sur un ring?",
-            answer: "Boxe",
-          },
-          {
-            question: "Quel est le sport de Tony Parker?",
-            answer: "Basketball",
-          },
-          {
-            question: "Dans quel sport utilise-t-on des sabres ou des épées?",
-            answer: "Escrime",
-          },
-          {
-            question: "Quel sport se pratique avec une barre et des poids?",
-            answer: "Haltérophilie",
-          },
-          {
-            question: "Quel sport se joue avec un ballon ovale?",
-            answer: "Rugby",
-          },
-          {
-            question: "Quel est le sport de Rafael Nadal?",
-            answer: "Tennis",
-          },
-          {
-            question: "Quel sport se pratique avec un arc et des flèches?",
-            answer: "Tir à l'arc",
-          },
-          {
-            question: "Quel sport se joue avec des quilles et une boule lourde?",
-            answer: "Bowling",
-          },
-          {
-            question: "Quel sport utilise des skis et des bâtons?",
-            answer: "Ski alpin",
-          },
-          {
-            question: "Quel sport se joue avec des raquettes et une petite balle jaune?",
-            answer: "Tennis",
-          },
-          {
-            question: "Dans quel sport utilise-t-on une pagaie et une embarcation?",
-            answer: "Aviron",
-          },
-          {
-            question: "Quel sport se joue avec une balle et un panier suspendu?",
-            answer: "Basketball",
-          },
-          {
-            question: "Quel est le sport de Novak Djokovic?",
-            answer: "Tennis",
-          },
-          {
-            question: "Quel sport utilise des pédales, un guidon et deux roues?",
-            answer: "Cyclisme",
-          },
-          {
-            question: "Quel sport est aussi appelé le 'roi des sports d'hiver'?",
-            answer: "Ski alpin",
-          },
-          {
-            question: "Dans quel sport le vainqueur reçoit un maillot jaune?",
-            answer: "Cyclisme",
-          },
-          {
-            question: "Quel est le sport de Simone Biles?",
-            answer: "Gymnastique artistique",
-          },
-          {
-            question: "Dans quel sport peut-on obtenir un strike?",
-            answer: "Bowling",
-          },
-          {
-            question: "Combien de points vaut un essai au rugby?",
-            answer: "5",
-          },
-          {
-            question: "Quel sport se pratique avec une balle et une raquette sur une table?",
-            answer: "Tennis de table",
-          },
-          {
-            question: "Quel sport utilise une planche et une voile?",
-            answer: "Planche à voile",
-          },
-          {
-            question: "Quel est le sport de Roger Federer?",
-            answer: "Tennis",
-          },
-          {
-            question: "Quel sport consiste à nager dans une piscine sur une distance définie?",
-            answer: "Natation",
-          },{
-    "question": "Quel est le sport de Léna Monasse?",
-    "answer": "Basketball"
-  },
-  {
-    "question": "Dans quel sport utilise-t-on un kimono blanc et une ceinture de couleur?",
-    "answer": "Judo"
-  },
-
-  {
-    "question": "Quel est le sport le plus vieux?",
-    "answer": "Lutte"
-  },
-  {
-    "question": "Dans quel sport pratique-t-on des katas?",
-    "answer": "Karaté"
-  },
-  {
-    "question": "Quel sport se joue avec un palet et des crosses sur la glace?",
-    "answer": "Hockey sur glace"
-  },
-  {
-    "question": "Quel sport est pratiqué lors du Tour d’Italie?",
-    "answer": "Cyclisme"
-  },
-  {
-    "question": "De quel nationalité est Jade Célérier?",
-    "answer": "Française (Béarn)"
-  },
-  {
-    "question": "Dans quel sport peut-on faire un ace?",
-    "answer": "Tennis"
-  },
-  {
-    "question": "Quel sport se pratique en salle avec une balle collante et des buts?",
-    "answer": "Handball"
-  },
-  {
-    "question": "Quel sport est associé à Tony Yoka?",
-    "answer": "Boxe"
-  },
-  {
-    "question": "Critiano Ronaldo est un?",
-    "answer": "Instagrameur"
-  },
-  {
-    "question": "Quel sport est pratiqué avec un cheval et des obstacles?",
-    "answer": "Équitation"
-  },
-  {
-    "question": "Quel sport utilise une cible colorée et des fléchettes?",
-    "answer": "Fléchettes"
-  },
-  {
-    "question": "Dans quel sport trouve-t-on le lancer de javelot?",
-    "answer": "Athlétisme"
-  },
-  {
-    "question": "Quel est le sport de Max Verstappen?",
-    "answer": "Formule 1"
-  },
-  {
-    "question": "Quel sport combine ski de fond et tir à la carabine?",
-    "answer": "Biathlon"
-  },
-  {
-    "question": "Quel sport se pratique sur une planche dans les vagues?",
-    "answer": "Surf"
-  },
-  {
-    "question": "Quel est le poste de Lionel Messi?",
-    "answer": "Meneur de Jeu"
-  },
-  {
-    "question": "Quel sport utilise des engins comme le ruban et le cerceau?",
-    "answer": "Gymnastique rythmique"
-  },
-  {
-    "question": "Quel sport est pratiqué sur des pistes glacées avec une luge?",
-    "answer": "Luge"
-  },
-  {
-    "question": "Quel sport se pratique en frappant une balle sur un mur?",
-    "answer": "Squash"
-  },
-  {
-    "question": "Quel sport est associé à Conor McGregor?",
-    "answer": "MMA"
-  },
-  {
-    "question": "Quel sport se pratique avec deux bateaux tirés par des rameurs?",
-    "answer": "Aviron"
-  },
-  {
-    "question": "Quel est le sport de Biles Simone?",
-    "answer": "Gymnastique artistique"
-  },
-  {
-    "question": "Quel sport se pratique avec un disque lancé à distance?",
-    "answer": "Lancer du disque"
-  },
-  {
-    "question": "Quel sport se déroule dans un octogone?",
-    "answer": "MMA"
-  },
-  {
-    "question": "Quel sport utilise des lames sur les chaussures?",
-    "answer": "Patinage artistique"
-  },
-  {
-    "question": "Quel sport consiste à faire des figures dans les airs à vélo?",
-    "answer": "BMX freestyle"
-  },
-  {
-    "question": "Quel sport se joue en double ou en simple avec un volant?",
-    "answer": "Badminton"
-  },
-  {
-    "question": "Quel est le sport de Teddy Riner?",
-    "answer": "Judo"
-  },
-  {
-    "question": "Quel sport demande de tirer avec précision sur une cible en papier?",
-    "answer": "Tir sportif"
-  },
-  {
-    "question": "Quel sport est pratiqué sur une piste ovale en patinant?",
-    "answer": "Short track"
-  },
-  {
-    "question": "Quel sport consiste à gravir des parois rocheuses?",
-    "answer": "Escalade"
-  },
-  {
-    "question": "Quel sport se pratique avec des sauts à ski?",
-    "answer": "Saut à ski"
-  },
-  {
-    "question": "Quel sport consiste à effectuer des pirouettes sur la glace?",
-    "answer": "Patinage artistique"
-  },
-  {
-    "question": "Quel sport est jugé sur la technique et la grâce au sol ou sur agrès?",
-    "answer": "Gymnastique artistique"
-  },
-  {
-    "question": "Quel est le sport de Alain Bernard?",
-    "answer": "Natation"
-  },
-  {
-    "question": "Quel sport se joue avec deux équipes et un ballon en salle sans dribble?",
-    "answer": "Volley-ball"
-  },
-  {
-    "question": "Quel sport consiste à courir, sauter et lancer?",
-    "answer": "Athlétisme"
-  },
-  {
-    "question": "Quel sport se pratique avec des skis sur des bosses et sauts acrobatiques?",
-    "answer": "Ski de bosses"
-  },
-  {
-    "question": "Quel sport se pratique avec un cerf-volant de traction sur l’eau?",
-    "answer": "Kitesurf"
-  },
-  {
-    "question": "Quel sport utilise un pistolet laser et la course à pied?",
-    "answer": "Pentathlon moderne"
-  },
-  {
-    "question": "Quel sport mélange course, vélo et natation?",
-    "answer": "Triathlon"
-  },
-  {
-    "question": "Quel sport se joue avec une raquette plus courte et une balle creuse?",
-    "answer": "Squash"
-  },
-  {
-    "question": "Quel métier est associé à Cristiano Ronaldo?",
-    "answer": "Youtubeur"
-  },
-  {
-    "question": "Quel sport consiste à glisser sur une rampe en demi-lune?",
-    "answer": "Skateboard"
-  },
-  {
-    "question": "Quel sport se pratique avec une voile tirée par le vent sur la mer?",
-    "answer": "Planche à voile"
-  },
-  {
-    "question": "Quel sport utilise un ballon et des lancers en panier suspendu?",
-    "answer": "Basketball"
-  },
-  {
-    "question": "Quel sport se joue sur terre battue ou gazon avec une balle jaune?",
-    "answer": "Tennis"
-  },
-  {
-    "question": "Quel sport consiste à maintenir son équilibre sur un fil tendu?",
-    "answer": "Slackline"
-  },
-  {
-    "question": "Quel sport utilise des piolets et des crampons pour grimper la glace?",
-    "answer": "Alpinisme"
-  },
-  {
-    "question": "Quel sport se pratique en combinant ski et parapente?",
-    "answer": "Speed riding"
-  },
-  {
-    "question": "Quel sport de glisse se pratique dans un halfpipe enneigé?",
-    "answer": "Snowboard"
-  },
-  {
-    "question": "Quel sport se pratique en équipe avec des balles et des balais sur la glace?",
-    "answer": "Curling"
-  },
-  {
-    "question": "Quel sport olympique implique de courir en franchissant des haies?",
-    "answer": "110 mètres haies"
-  },
-  {
-    "question": "Quel sport consiste à faire des pompes et des tractions en compétition?",
-    "answer": "Street workout"
-  },
-  {
-    "question": "Quel sport est jugé sur la forme et la masse musculaire?",
-    "answer": "Bodybuilding"
-  },
-  {
-    "question": "Quel sport utilise une corde pour effectuer des sauts acrobatiques?",
-    "answer": "Double dutch"
-  },
-  {
-    "question": "Quel sport se pratique en descendant une rivière avec un kayak?",
-    "answer": "Canoë-kayak"
-  },
-  {
-    "question": "Quel sport est connu pour ses compétitions de sumos géants?",
-    "answer": "Sumo"
-  },
-  {
-    "question": "Quel sport d’hiver consiste à descendre une piste glacée sur un petit traîneau?",
-    "answer": "Skeleton"
-  },
-  {
-    "question": "Quel sport implique un lancer de marteau au bout d’une chaîne?",
-    "answer": "Lancer du marteau"
-  },
-  {
-    "question": "Quel sport se pratique sur une poutre étroite avec des figures artistiques?",
-    "answer": "Gymnastique artistique"
-  },
-  {
-    "question": "Quel sport se pratique à cheval avec une balle et un maillet?",
-    "answer": "Polo"
-  },
-  {
-    "question": "Quel sport se pratique sur un mur d'escalade artificiel en vitesse?",
-    "answer": "Escalade de vitesse"
-  },
-  {
-    "question": "Quel sport se déroule dans une piscine avec musique et chorégraphie?",
-    "answer": "Natation artistique"
-  },
-  {
-    "question": "Quel sport se pratique en montagne avec un piolet et des crampons?",
-    "answer": "Alpinisme"
-  },
-  {
-    "question": "Quel sport demande de l’endurance à vélo sur route pendant des heures?",
-    "answer": "Cyclisme sur route"
-  },
-  {
-    "question": "Quel sport de combat autorise les coups de pied, poing, genou et coude?",
-    "answer": "Muay Thaï"
-  },
-  {
-    "question": "Quel sport est jugé en plongeant depuis une grande hauteur?",
-    "answer": "Plongeon"
-  },
-  {
-    "question": "Quel sport est appelé le 'noble art'?",
-    "answer": "Boxe"
-  },
-  {
-    "question": "Quel sport consiste à faire le tour d’une piste ovale à vélo?",
-    "answer": "Cyclisme sur piste"
-  },
-  {
-    "question": "Quel sport utilise des haubans, une coque et une voile?",
-    "answer": "Voile"
-  },
-  {
-    "question": "Quel sport est pratiqué avec un long couloir, des starting-blocks et un sprint?",
-    "answer": "Course de 100 mètres"
-  },
-  {
-    "question": "Quel sport est pratiqué avec des haltères en compétition?",
-    "answer": "Haltérophilie"
-  },
-  {
-    "question": "Quel sport se pratique sur glace avec des figures et de la musique?",
-    "answer": "Patinage artistique"
-  },
-  {
-    "question": "Quel sport d’équipe oppose six joueurs par camp sur un terrain en salle?",
-    "answer": "Volley-ball"
-  }
-    ],
-    Bible: [
-      {
-        "question": "Qui a construit l'arche pour échapper au déluge?",
-        "answer": "Noé"
-      },
-      {
-        "question": "Quel est le premier livre de la Bible?",
-        "answer": "Genèse"
-      },
-      {
-        "question": "Qui a conduit les Israélites hors d'Égypte?",
-        "answer": "Moïse"
-      },
-      {
-        "question": "Quelle mer Moïse a-t-il traversée avec les Israélites?",
-        "answer": "La mer Rouge"
-      },
-      {
-        "question": "Qui est considéré comme le père des croyants?",
-        "answer": "Abraham"
-      },
-      {
-        "question": "Quel signe Dieu a-t-il donné à Noé pour promettre qu'il n'y aurait plus de déluge?",
-        "answer": "Un arc-en-ciel"
-      },
-      {
-        "question": "Quel fruit Ève a-t-elle mangé dans le jardin d'Éden?",
-        "answer": "Le fruit de l'arbre de la connaissance du bien et du mal"
-      },
-      {
-        "question": "Combien de plaies Dieu a-t-il infligées à l'Égypte?",
-        "answer": "Dix"
-      },
-      {
-        "question": "Quel est le nom du frère d'Abel?",
-        "answer": "Caïn"
-      },
-      {
-        "question": "Qui a passé une nuit dans la fosse aux lions?",
-        "answer": "Daniel"
-      },
-      {
-        "question": "Quel est le premier commandement donné par Dieu à Moïse?",
-        "answer": "Tu n'auras pas d'autres dieux devant moi"
-      },
-      {
-        "question": "Qui a été vendu comme esclave par ses frères?",
-        "answer": "Joseph"
-      },
-      {
-        "question": "Combien de jours la création du monde a-t-elle pris?",
-        "answer": "Six jours, plus un jour de repos"
-      },
-      {
-        "question": "Qui a été transformée en statue de sel?",
-        "answer": "La femme de Lot"
-      },
-      {
-        "question": "Quel prophète a été avalé par un grand poisson?",
-        "answer": "Jonas"
-      },
-      {
-        "question": "Quel roi a demandé la construction du Temple à Jérusalem?",
-        "answer": "Salomon"
-      },
-      {
-        "question": "Quelle est la ville détruite par Dieu pour ses péchés, avec Gomorrhe?",
-        "answer": "Sodome"
-      },
-      {
-        "question": "Comment s'appelle le frère aîné de Moïse?",
-        "answer": "Aaron"
-      },
-      {
-        "question": "Qui a reçu les Dix Commandements sur le mont Sinaï?",
-        "answer": "Moïse"
-      },
-      {
-        "question": "Combien d'animaux de chaque espèce Noé a-t-il pris dans l'arche?",
-        "answer": "Deux, un mâle et une femelle"
-      },
-      {
-        "question": "Qui a tué Goliath?",
-        "answer": "David"
-      },
-      {
-        "question": "Quel livre de la Bible raconte la sortie d'Égypte?",
-        "answer": "Exode"
-      },
-      {
-        "question": "Qui a été le premier roi d'Israël?",
-        "answer": "Saül"
-      },
-      {
-        "question": "Quel prophète a vu des ossements reprendre vie dans une vision?",
-        "answer": "Ézéchiel"
-      },
-      {
-        "question": "Quelle femme a sauvé son peuple en devenant reine de Perse?",
-        "answer": "Esther"
-      },
-      {
-        "question": "Qui est la mère de Samuel?",
-        "answer": "Anne"
-      },
-      {
-        "question": "Quel patriarche a vu une échelle reliant la terre et le ciel?",
-        "answer": "Jacob"
-      },
-      {
-        "question": "Quel prophète a confronté les prophètes de Baal sur le mont Carmel?",
-        "answer": "Élie"
-      },
-      {
-        "question": "Quel roi est connu pour sa grande sagesse?",
-        "answer": "Salomon"
-      },
-      {
-        "question": "Dans quel livre trouve-t-on le récit de la création du monde?",
-        "answer": "Genèse"
-      },
-      {
-        "question": "Quelle femme a trahi Samson?",
-        "answer": "Dalila"
-      },
-      {
-        "question": "Quel est le nom du fleuve où Moïse a été caché bébé?",
-        "answer": "Le Nil"
-      },
-      {
-        "question": "Qui a remplacé Moïse pour conduire les Israélites en Terre promise?",
-        "answer": "Josué"
-      },
-      {
-        "question": "Quel fils d'Abraham est né de Sara?",
-        "answer": "Isaac"
-      },
-      {
-        "question": "Quel fils d'Isaac a reçu la bénédiction de son père en se déguisant?",
-        "answer": "Jacob"
-      },
-      {
-        "question": "Quel est le nom du géant vaincu par David?",
-        "answer": "Goliath"
-      },
-      {
-        "question": "Combien de jours Jonas a-t-il passé dans le ventre du poisson?",
-        "answer": "Trois jours et trois nuits"
-      },
-      {
-        "question": "Quel est le nom du jardin où Adam et Ève vivaient?",
-        "answer": "Éden"
-      },
-      {
-        "question": "Qui a écrit les Proverbes?",
-        "answer": "Salomon"
-      },
-      {
-        "question": "Qui a été enlevé au ciel sans mourir?",
-        "answer": "Énoch"
-      },
-      {
-        "question": "Quel homme est resté fidèle à Dieu malgré de grandes épreuves?",
-        "answer": "Job"
-      },
-      {
-        "question": "Combien de jours a duré le déluge?",
-        "answer": "40 jours et 40 nuits"
-      },
-      {
-        "question": "Quel est le nom de la femme d'Abraham?",
-        "answer": "Sara"
-      },
-      {
-        "question": "Quel est le dernier livre de l'Ancien Testament?",
-        "answer": "Malachie"
-      },
-      {
-        "question": "Quel est le nom des premiers enfants nés d'Adam et Ève?",
-        "answer": "Caïn et Abel"
-      },
-      {
-        "question": "Qui a vu le buisson ardent?",
-        "answer": "Moïse"
-      },
-      {
-        "question": "Quelle est la langue originale de l'Ancien Testament?",
-        "answer": "Hébreu"
-      },
-      {
-        "question": "Quel prophète a interprété les rêves du pharaon?",
-        "answer": "Joseph"
-      },
-      {
-        "question": "Quel livre de la Bible est un recueil de chants et de prières?",
-        "answer": "Psaumes"
-      },
-      {
-        "question": "Quel est le premier miracle de Moïse en Égypte?",
-        "answer": "Changer l'eau du Nil en sang"
-      },
-      {
-        "question": "Qui a été englouti par la terre après avoir défié Moïse et Aaron?",
-        "answer": "Korah et ses partisans"
-      },
-      {
-        "question": "Combien de tribus composent Israël?",
-        "answer": "Douze"
-      },
-      {
-        "question": "Qui était la femme de Jacob qui lui a donné Joseph?",
-        "answer": "Rachel"
-      },
-      {
-        "question": "Quel est le nom du premier meurtrier dans la Bible?",
-        "answer": "Caïn"
-      },
-      {
-        "question": "Quel prophète a prédit la naissance de Jésus?",
-        "answer": "Ésaïe"
-      },
-      {
-        "question": "Quel animal a parlé à Balaam?",
-        "answer": "Une ânesse"
-      },
-      {
-        "question": "Quel est le nom du fils d'Abraham et de Hagar?",
-        "answer": "Ismaël"
-      },
-      {
-        "question": "Quel roi a été frappé de lèpre pour son orgueil?",
-        "answer": "Ozias"
-      },
-      {
-        "question": "Quel homme a été connu pour avoir construit un mur autour de Jérusalem?",
-        "answer": "Néhémie"
-      },
-      {
-        "question": "Quel prophète a épousé une femme infidèle pour symboliser l'infidélité d'Israël?",
-        "answer": "Osée"
-      },
-      {
-        "question": "Quelle fête célèbre la sortie d'Égypte?",
-        "answer": "La Pâque"
-      },
-      {
-        "question": "Quel prophète a monté au ciel dans un char de feu?",
-        "answer": "Élie"
-      },
-      {
-        "question": "Quel livre contient les lois données aux Israélites dans le désert?",
-        "answer": "Lévitique"
-      },
-      {
-        "question": "Qui a été nourri par des corbeaux au bord du torrent de Kerith?",
-        "answer": "Élie"
-      },
-      {
-        "question": "Quelle reine a rendu visite à Salomon pour tester sa sagesse?",
-        "answer": "La reine de Saba"
-      },
-      {
-        "question": "Quel prophète a dit : 'Voici l'Agneau de Dieu qui ôte le péché du monde'?",
-        "answer": "Jean-Baptiste"
-      },
-      {
-        "question": "Quel est le livre poétique qui parle de l'amour entre un homme et une femme?",
-        "answer": "Cantique des Cantiques"
-      },
-      {
-        "question": "Quel roi a ordonné le recensement qui a causé la colère de Dieu?",
-        "answer": "David"
-      },
-      {
-        "question": "Quel prophète a survécu dans une fournaise ardente avec trois autres hommes?",
-        "answer": "Daniel (avec Shadrak, Méshak et Abed-Nego)"
-      },
-      {
-        "question": "Quelle femme a sauvé Moïse en le plaçant dans un panier?",
-        "answer": "Sa mère (Yokébed)"
-      },
-      {
-        "question": "Quel juge a été connu pour sa grande force?",
-        "answer": "Samson"
-      },
-      {
-        "question": "Quel livre raconte les exploits des juges d'Israël?",
-        "answer": "Juges"
-      },
-      {
-        "question": "Qui a été choisi par Dieu pour être le dernier juge et premier prophète d'Israël?",
-        "answer": "Samuel"
-      },
-      {
-        "question": "Quel prophète a reconstruit l'autel de Dieu sur le mont Carmel?",
-        "answer": "Élie"
-      },
-      {
-        "question": "Quel roi a écrit la majorité des Psaumes?",
-        "answer": "David"
-      },
-      {
-        "question": "Quel est le nom du fleuve dans lequel Naamân a été guéri de la lèpre?",
-        "answer": "Le Jourdain"
-      },
-      {
-        "question": "Quelle était la profession d'Amos avant de devenir prophète?",
-        "answer": "Berger"
-      },
-      {
-        "question": "Combien de jours les Israélites ont-ils tourné autour de Jéricho avant que les murs ne tombent?",
-        "answer": "Sept jours"
-      },
-      {
-        "question": "Quel prophète a vécu durant la captivité babylonienne et a interprété les rêves du roi Nebucadnetsar?",
-        "answer": "Daniel"
-      },
-      {
-        "question": "Qui était le roi de Babylone quand les trois hommes ont été jetés dans la fournaise?",
-        "answer": "Nebucadnetsar"
-      },
-      {
-        "question": "Quel prophète a vu une roue dans une vision?",
-        "answer": "Ézéchiel"
-      },
-      {
-        "question": "Quelle reine méchante a menacé de tuer Élie?",
-        "answer": "Jézabel"
-      },
-      {
-        "question": "Quel est le livre biblique où figure le récit de la tour de Babel?",
-        "answer": "Genèse"
-      },
-      {
-        "question": "Qui a écrit le livre des Lamentations?",
-        "answer": "Jérémie"
-      },
-      {
-        "question": "Combien de livres composent l'Ancien Testament?",
-        "answer": "39 (selon le canon protestant)"
-      },
-      {
-        "question": "Quel livre raconte l'histoire de Ruth?",
-        "answer": "Ruth"
-      },
-      {
-        "question": "Quel est le nom de l'ange qui a combattu avec Jacob?",
-        "answer": "On ne sait pas; il est identifié comme 'un homme' ou 'Dieu'."
-      },
-      {
-        "question": "Quel est le nom de la montagne où Moïse a vu le buisson ardent?",
-        "answer": "Mont Horeb"
-      },
-      {
-        "question": "Quel livre raconte la destruction de Ninive?",
-        "answer": "Nahum"
-      },
-      {
-        "question": "Qui est la mère de tous les vivants selon la Genèse?",
-        "answer": "Ève"
-      },
-      {
-        "question": "Quel roi a perdu son royaume pour avoir adoré d'autres dieux?",
-        "answer": "Saül"
-      },
-      {
-        "question": "Quel est le nom du père de David?",
-        "answer": "Jessé"
-      },
-      {
-        "question": "Quelle est la durée de la captivité babylonienne d'Israël?",
-        "answer": "70 ans"
-      },
-      {
-        "question": "Quel prophète a prophétisé la venue d'un Messie né à Bethléhem?",
-        "answer": "Michée"
-      },
-      {
-        "question": "Quel est le nom du souverain sacrificateur qui a béni Abraham?",
-        "answer": "Melchisédek"
-      },
-       {
-        "question": "Lors de l'annonciation, quel ange parle à Marie?",
-        "answer": "Gabriel"
-      },
-       {
-        "question": "Lors de la visitation, qui Marie va-t-elle voir?",
-        "answer": "Elisabeth"
-      },
-       {
-        "question": "Qui est le père de Jean le Baptiste?",
-        "answer": "Zacharie"
-      },
-      {
-        "question": "Quel livre commence par 'Au commencement,'?",
-        "answer": "Genèse"
-      },
-      {
-        "question": "Quel prophète a écrit : 'Les cieux racontent la gloire de Dieu'?",
-        "answer": "David (dans les Psaumes)"
-      }
-    ],
-    France: [
-      {
-        question: "En quelle année Clovis a-t-il été baptisé ?",
-        answer: "498",
-      },
-      {
-        question: "Qui était le roi des Francs avant Clovis ?",
-        answer: "Childeric Ier",
-      },
-      {
-        question: "Quel roi a fondé la dynastie des Mérovingiens ?",
-        answer: "Clovis",
-      },
-      {
-        question: "Quel est le nom du fils de Clovis qui lui succéda ?",
-        answer: "Childebert Ier",
-      },
-      {
-        question: "En quelle année Charlemagne a-t-il été couronné empereur ?",
-        answer: "800",
-      },
-      {
-        question: "Quel était le titre de Charlemagne avant de devenir empereur ?",
-        answer: "Roi des Francs",
-      },
-      {
-        question: "Quelle bataille décida de l'unification des royaumes francs sous Clovis ?",
-        answer: "La bataille de Soissons",
-      },
-      {
-        question: "Quel roi a mis fin à l'empire carolingien ?",
-        answer: "Charles le Chauve",
-      },
-      {
-        question: "En quelle année a eu lieu le sacre de Pépin le Bref ?",
-        answer: "752",
-      },
-      {
-        question: "Quel est le nom du premier roi de la dynastie capétienne ?",
-        answer: "Hugues Capet",
-      },
-      {
-        question: "Quel événement a marqué la fin de la dynastie mérovingienne ?",
-        answer: "Le sacre de Pépin le Bref",
-      },
-      {
-        question: "En quelle année le traité de Verdun a-t-il été signé ?",
-        answer: "843",
-      },
-      {
-        question: "Qui était le roi de France lors de la bataille d'Azincourt ?",
-        answer: "Charles VI",
-      },
-      {
-        question: "Quel roi a créé la Sainte-Chapelle à Paris ?",
-        answer: "Louis IX",
-      },
-      {
-        question: "Quel roi de France est connu pour sa construction du château de Versailles ?",
-        answer: "Louis XIV",
-      },
-      {
-        question: "Quel roi est à l'origine de la construction de la cathédrale Notre-Dame de Paris ?",
-        answer: "Louis VII",
-      },
-      {
-        question: "Quel roi a commencé à édifier la cathédrale de Reims ?",
-        answer: "Hugues Capet",
-      },
-      {
-        question: "Quelle bataille a opposé Charles Martel aux Sarrasins en 732 ?",
-        answer: "La bataille de Poitiers",
-      },
-      {
-        question: "Quel est le nom de l'empereur romain qui a pris possession de la Gaule en 58 av. J.-C. ?",
-        answer: "Jules César",
-      },
-      {
-        question: "Quel est le nom de la ville où Clovis fut couronné roi des Francs ?",
-        answer: "Reims",
-      },
-      {
-        question: "Qui a fondé l'abbaye de Cluny en 910 ?",
-        answer: "Guillaume Ier d'Aquitaine",
-      },
-      {
-        question: "Quel est le nom du traité signé en 843 divisant l'Empire carolingien ?",
-        answer: "Le traité de Verdun",
-      },
-      {
-        question: "Quelle dynastie a régné sur la France pendant 800 ans ?",
-        answer: "La dynastie des Capétiens",
-      },
-      {
-        question: "Qui a régné sur la France après la mort de Charlemagne ?",
-        answer: "Louis le Pieux",
-      },
-      {
-        question: "En quelle année a eu lieu la bataille de Bouvines ?",
-        answer: "1214",
-      },
-      {
-        question: "Quel événement a marqué le début de la guerre de Cent Ans ?",
-        answer: "La bataille de Crécy en 1346",
-      },
-      {
-        question: "Quel roi a instauré la monarchie absolue en France ?",
-        answer: "Louis XIV",
-      },
-      {
-        question: "En quelle année a eu lieu le mariage de Louis XVI et Marie-Antoinette ?",
-        answer: "1770",
-      },
-      {
-        question: "Quel roi de France est connu pour sa politique de centralisation ?",
-        answer: "Louis XIV",
-      },
-      {
-        question: "Quel traité a mis fin à la guerre de Cent Ans en 1453 ?",
-        answer: "Le traité de Picquigny",
-      },
-    
-      {
-        question: "Quel est le nom du roi qui a signé l'ordonnance de Villers-Cotterêts en 1539 ?",
-        answer: "François Ier",
-      },
-      {
-        question: "En quelle année a été signée l'ordonnance de Villers-Cotterêts ?",
-        answer: "1539",
-      },
-      {
-        question: "Quel est le nom du dernier roi mérovingien ?",
-        answer: "Childeric III",
-      },
-      {
-        question: "Quel est le nom du roi qui a fondé la monarchie capétienne ?",
-        answer: "Hugues Capet",
-      },
-      {
-        question: "Quel est le nom de la guerre qui a opposé la France et l'Angleterre de 1337 à 1453 ?",
-        answer: "La guerre de Cent Ans",
-      },
-      {
-        question: "Quel roi a donné l'Edit de Nantes en 1598 ?",
-        answer: "Henri IV",
-      },
-      {
-        question: "En quelle année est né le roi François Ier ?",
-        answer: "1494",
-      },
-      {
-        question: "Quel roi de France a créé la Compagnie des Indes ?",
-        answer: "Louis XIV",
-      },
-      {
-        question: "Quel est le nom de la guerre civile qui a éclaté en France en 1562 ?",
-        answer: "Les guerres de Religion",
-      },
-      {
-        question: "Qui a écrit les mémoires sur la guerre de Cent Ans ?",
-        answer: "Jean Froissart",
-      },
-      {
-        question: "Quel est le nom de la famille royale qui a régné sur la France durant la guerre de Cent Ans ?",
-        answer: "Les Valois",
-      },
-      {
-        question: "Qui a signé l'Edit de Nantes en 1598 ?",
-        answer: "Henri IV",
-      },
-      {
-        question: "En quelle année le roi Philippe IV a-t-il détruit l'ordre des Templiers ?",
-        answer: "1307",
-      },
-      {
-        question: "Quel est le nom de l'abbaye fondée par Saint-Benoît de Nursie en 529 ?",
-        answer: "L'abbaye de Cluny",
-      },
-      {
-        question: "Quel est le nom du traité signé en 843 qui a partagé l'empire carolingien ?",
-        answer: "Le traité de Verdun",
-      },
-      {
-        question: "Quel est le nom du roi qui a régné lors de la construction de la cathédrale de Chartres ?",
-        answer: "Louis IX",
-      },
-      {
-        question: "En quelle année Henri IV a-t-il abjuré le protestantisme pour se convertir au catholicisme ?",
-        answer: "1593",
-      },
-      {
-        question: "Quel roi de France a créé l'Académie française ?",
-        answer: "Louis XIII",
-      },
-      
-   
-     
-      {
-        question: "Quel roi est connu pour avoir pris part à la croisade contre les Albigeois ?",
-        answer: "Louis VIII",
-      },
-     
-     
-      {
-        question: "Quel est le nom du roi qui a perdu la bataille de Poitiers en 1356 ?",
-        answer: "Jean II le Bon",
-      },
-      {
-        question: "Quel est le nom du fils de Louis IX, qui fut aussi roi de France ?",
-        answer: "Philippe III",
-      },
-      {
-        question: "Quel est le nom du roi de France qui a été excommunié par le pape Boniface VIII en 1303 ?",
-        answer: "Philippe le Bel",
-      },
-      {
-        question: "Quel est le nom du roi de France qui a été assassiné par un moine en 1610 ?",
-        answer: "Henri IV",
-      },
-      {
-        question: "Quel est le nom du roi qui a régné pendant la 2de guerre de Cent Ans ?",
-        answer: "Charles VI",
-      },
-      {
-        question: "Quel est le nom du roi qui a régné pendant la période de la Fronde ?",
-        answer: "Louis XIV",
-      },
-      {
-        question: "Quel est le nom du traité signé en 843 entre les trois petits-fils de Charlemagne ?",
-        answer: "Le traité de Verdun",
-      },
-      {
-        question: "Quel est le nom du roi qui a fondé la ville de Paris ?",
-        answer: "Clovis",
-      },
-   
-      {
-        question: "Quel est le nom du roi de France qui a instauré l'ordonnance de Villers-Cotterêts en 1539 ?",
-        answer: "François Ier",
-      }
-    ]
-    ,
-    Géographie: [
-      
-  {
-    question: "Qui a peint 'La Nuit étoilée' ?",
-    answer: "Vincent van Gogh"
-  },
-  {
-    question: "En quelle année a eu lieu le premier alunissage ?",
-    answer: "1969"
-  },
-  {
-    question: "Qui a écrit '1984' ?",
-    answer: "George Orwell"
-  },
-  {
-    question: "Quel élément chimique a pour symbole 'Fe' ?",
-    answer: "Le fer"
-  },
-  {
-    question: "Combien de notes dans une gamme majeure ?",
-    answer: "Sept"
-  },
-  {
-    question: "Quel est l’organe principal de la respiration ?",
-    answer: "Les poumons"
-  },
-  {
-    question: "Qui a formulé la théorie de la relativité ?",
-    answer: "Albert Einstein"
-  },
-  {
-    question: "Quel est l’animal terrestre le plus rapide ?",
-    answer: "Le guépard"
-  },
-  {
-    question: "Combien y a-t-il de planètes dans le système solaire ?",
-    answer: "Huit"
-  },
-  {
-    question: "Quelle est la plus grande planète du système solaire ?",
-    answer: "Jupiter"
-  },
-  {
-    question: "Qui a peint la Joconde ?",
-    answer: "Léonard de Vinci"
-  },
-  {
-    question: "Quel métal liquide est utilisé dans les thermomètres ?",
-    answer: "Le mercure"
-  },
-  {
-    question: "Quelle est la formule chimique de l’eau ?",
-    answer: "H₂O"
-  },
-  {
-    question: "Dans quel pays a été inventé le papier ?",
-    answer: "La Chine"
-  },
-  {
-    question: "Quel est le plus petit os du corps humain ?",
-    answer: "L’étrier"
-  },
-  {
-    question: "Quel est le symbole chimique de l’or ?",
-    answer: "Au"
-  },
-  {
-    question: "Quelle invention est associée à Alexander Graham Bell ?",
-    answer: "Le téléphone"
-  },
-  {
-    question: "Quelle est la vitesse de la lumière dans le vide ?",
-    answer: "Environ 300 000 km/s"
-  },
-  {
-    question: "Que mesure un baromètre ?",
-    answer: "La pression atmosphérique"
-  },
-  {
-    question: "Combien de dents a un adulte normalement ?",
-    answer: "32"
-  },
-  {
-    question: "Quel est le plus grand organe du corps humain ?",
-    answer: "La peau"
-  },
-  {
-    question: "Qui a écrit 'Le Meilleur des Mondes' ?",
-    answer: "Aldous Huxley"
-  },
-  {
-    question: "Quel gaz les plantes absorbent-elles ?",
-    answer: "Le dioxyde de carbone"
-  },
-  {
-    question: "Quel est l’organe qui pompe le sang ?",
-    answer: "Le cœur"
-  },
-  {
-    question: "Quel est le plus grand mammifère marin ?",
-    answer: "La baleine bleue"
-  },
-  {
-    question: "Que signifie 'www' dans une adresse web ?",
-    answer: "World Wide Web"
-  },
-  {
-    question: "En informatique, que signifie HTML ?",
-    answer: "HyperText Markup Language"
-  },
-  {
-    question: "Qui est l’inventeur de l’ampoule électrique ?",
-    answer: "Thomas Edison"
-  },
-  {
-    question: "Quelle est l’unité de mesure de la fréquence ?",
-    answer: "Le hertz"
-  },
-  {
-    question: "Quel est le nom du processus par lequel les plantes fabriquent leur nourriture ?",
-    answer: "La photosynthèse"
-  },
-  {
-    question: "Qui est l’auteur de 'Roméo et Juliette' ?",
-    answer: "William Shakespeare"
-  },
-  
-  {
-    question: "Que mesure un thermomètre ?",
-    answer: "La température"
-  },
-  {
-    question: "Quelle est la planète la plus proche du Soleil ?",
-    answer: "Mercure"
-  },
-  {
-    question: "Quel animal pond des œufs et allaite ses petits ?",
-    answer: "L’ornithorynque"
-  },
-  {
-    question: "Quel est le nom scientifique du sucre de table ?",
-    answer: "Le saccharose"
-  },
-  {
-    question: "Quel est l’état de l’eau à 0 °C ?",
-    answer: "Solide (glace)"
-  },
-  {
-    question: "Quel organe filtre le sang ?",
-    answer: "Les reins"
-  },
-  {
-    question: "Que signifie l’acronyme USB ?",
-    answer: "Universal Serial Bus"
-  },
-  {
-    question: "Quel est le nom du satellite naturel de la Terre ?",
-    answer: "La Lune"
-  },
-  {
-    question: "Que signifie ADN ?",
-    answer: "Acide désoxyribonucléique"
-  },
-  {
-    question: "Combien de pattes possède une araignée ?",
-    answer: "Huit"
-  },
-  {
-    question: "Quel est le chiffre romain pour 50 ?",
-    answer: "L"
-  },
-  {
-    question: "Quel est le gaz essentiel à la respiration humaine ?",
-    answer: "L’oxygène"
-  },
-  {
-    question: "Quel est le nom de l’effet qui modifie le son selon la vitesse ?",
-    answer: "L’effet Doppler"
-  },
-  {
-    question: "Quelle est la température normale du corps humain ?",
-    answer: "37 °C"
-  },
-  {
-    question: "Quel est l’organe de la parole ?",
-    answer: "Le larynx"
-  },
-  {
-    question: "Quel est le nom du télescope spatial lancé en 1990 ?",
-    answer: "Hubble"
-  },
-  {
-    question: "Quel est le nom du processus de changement d’état de liquide à gaz ?",
-    answer: "L’évaporation"
-  },
-  {
-    question: "Quelle est la racine carrée de 144 ?",
-    answer: "12"
-  },
-  {
-    question: "Combien de zéros dans un milliard ?",
-    answer: "Neuf"
-  },
-  {
-    question: "Quel est le plus grand désert du monde ?",
-    answer: "L’Antarctique"
-  },
-  {
-    question: "Quel est le rôle des globules rouges ?",
-    answer: "Transporter l’oxygène"
-  },
-  
-  {
-    question: "Quel est l’élément chimique numéro 1 ?",
-    answer: "L’hydrogène"
-  },
-  {
-    question: "Combien de côtés a un octogone ?",
-    answer: "Huit"
-  },
-  {
-    question: "Quelle planète est surnommée 'la planète rouge' ?",
-    answer: "Mars"
-  },
-  {
-    question: "Quelle est la fonction principale des globules blancs ?",
-    answer: "Combattre les infections"
-  },
-  {
-    question: "Quelle est l’unité de mesure de l’énergie ?",
-    answer: "Le joule"
-  },
-  {
-    question: "Quel est l’organe qui permet de goûter ?",
-    answer: "La langue"
-  },
-  {
-    question: "Quel est le nom du phénomène qui fait apparaître un arc dans le ciel ?",
-    answer: "Un arc-en-ciel"
-  },
-  {
-    question: "Combien de vertèbres dans la colonne humaine ?",
-    answer: "33"
-  },
-  {
-    question: "Quel scientifique a découvert la loi de la gravité ?",
-    answer: "Isaac Newton"
-  },
-  {
-    question: "Quel est le nom du gaz utilisé dans les ballons gonflables ?",
-    answer: "L’hélium"
-  },
-  {
-    question: "Quelle est la planète la plus chaude du système solaire ?",
-    answer: "Vénus"
-  },
-  {
-    question: "Quel est le nom de la couche qui protège la Terre des UV ?",
-    answer: "La couche d’ozone"
-  },
-  {
-    question: "Quelle est la molécule qui transporte l’oxygène dans le sang ?",
-    answer: "L’hémoglobine"
-  },
-  {
-    question: "Quel est le plus grand océan de la Terre ?",
-    answer: "L’océan Pacifique"
-  },
-  {
-    question: "Quelle science étudie les comportements humains ?",
-    answer: "La psychologie"
-  },
-  {
-    question: "Comment s’appelle l’étude des champignons ?",
-    answer: "La mycologie"
-  },
-  {
-    question: "Quel instrument mesure les tremblements de terre ?",
-    answer: "Le sismographe"
-  },
-  {
-    question: "Combien de paires de chromosomes chez l’humain ?",
-    answer: "23 paires"
-  },
- 
- {
-    question: "Quel pays possède le plus grand nombre d’îles ?",
-    answer: "La Suède",
-  },
-  {
-    question: "Quelle mer borde la côte est de l’Espagne ?",
-    answer: "La mer Méditerranée",
-  },
-  {
-    question: "Quelle est la capitale de l'Écosse ?",
-    answer: "Édimbourg",
-  },
-  {
-    question: "Quel est le plus haut sommet de l’Afrique ?",
-    answer: "Le Kilimandjaro",
-  },
-  {
-    question: "Quel est le plus petit pays du monde ?",
-    answer: "Le Vatican",
-  },
-  {
-    question: "Quel pays partage une frontière avec les États-Unis au sud ?",
-    answer: "Le Mexique",
-  },
-  {
-    question: "Quelle est la capitale de l’Indonésie ?",
-    answer: "Jakarta",
-  },
-  {
-    question: "Quel est le principal fleuve qui traverse l’Égypte ?",
-    answer: "Le Nil",
-  },
-  {
-    question: "Dans quel pays se trouve la ville de Marrakech ?",
-    answer: "Le Maroc",
-  },
-  {
-    question: "Quel est le plus grand lac d’eau douce au monde par superficie ?",
-    answer: "Le lac Supérieur",
-  },
-  {
-    question: "Quelle est la capitale de la Roumanie ?",
-    answer: "Bucarest",
-  },
-  {
-    question: "Quelle est la capitale de la Thaïlande ?",
-    answer: "Bangkok",
-  },
-  {
-    question: "Quel pays a pour capitale Reykjavik ?",
-    answer: "L’Islande",
-  },
-  {
-    question: "Quel fleuve traverse Londres ?",
-    answer: "La Tamise",
-  },
-  {
-    question: "Quel pays a pour capitale Varsovie ?",
-    answer: "La Pologne",
-  },
-  {
-    question: "Quelle mer est située entre l’Italie et les Balkans ?",
-    answer: "La mer Adriatique",
-  },
-  {
-    question: "Quel pays est surnommé le pays du Matin Calme ?",
-    answer: "La Corée du Sud",
-  },
-  {
-    question: "Quel pays est traversé par l’équateur et le méridien de Greenwich ?",
-    answer: "Le Gabon",
-  },
-  {
-    question: "Quelle ville est surnommée la Ville Éternelle ?",
-    answer: "Rome",
-  },
-  {
-    question: "Dans quel pays se trouve le mont Fuji ?",
-    answer: "Le Japon",
-  },
-  {
-    question: "Quel est le nom du désert qui couvre une grande partie de la Chine et de la Mongolie ?",
-    answer: "Le désert de Gobi",
-  },
-  {
-    question: "Quelle est la capitale du Nigeria ?",
-    answer: "Abuja",
-  },
-  {
-    question: "Quelle est la ville la plus peuplée du Canada ?",
-    answer: "Toronto",
-  },
-  {
-    question: "Quel est le plus grand archipel du monde ?",
-    answer: "L’Indonésie",
-  },
-  {
-    question: "Quelle ville est située sur deux continents ?",
-    answer: "Istanbul",
-  },
-
-      {
-        question: "Quel est le plus grand désert du monde ?",
-        answer: "Antarctique",
-      },
-      {
-        question: "Quel est le plus long fleuve du monde ?",
-        answer: "Le Nil",
-      },
-      {
-        question: "Quelle est la capitale du Japon ?",
-        answer: "Tokyo",
-      },
-      {
-        question: "Combien de continents y a-t-il sur Terre ?",
-        answer: "7",
-      },
-      {
-        question: "Quel est le plus grand océan du monde ?",
-        answer: "Océan Pacifique",
-      },
-      {
-        question: "Quel est le pays le plus peuplé du monde ?",
-        answer: "La Chine",
-      },
-      {
-        question: "Quel pays est surnommé le pays du soleil levant ?",
-        answer: "Le Japon",
-      },
-      {
-        question: "Quel est le pays le plus vaste du monde ?",
-        answer: "La Russie",
-      },
-      {
-        question: "Quel est le plus haut sommet du monde ?",
-        answer: "L'Everest",
-      },
-      {
-        question: "Quel est le plus grand lac d'eau douce du monde ?",
-        answer: "Le lac Baïkal",
-      },
-      {
-        question: "Quel est le plus grand archipel du monde ?",
-        answer: "Les Philippines",
-      },
-      {
-        question: "Dans quel océan se trouve la Grande Barrière de Corail ?",
-        answer: "Océan Pacifique",
-      },
-      {
-        question: "Quel est le plus grand pays d'Afrique ?",
-        answer: "L'Algérie",
-      },
-   
-      {
-        question: "Quel pays est connu sous le nom de 'Terre de feu' ?",
-        answer: "L'Argentine",
-      },
-      {
-        question: "Quelle mer borde la côte sud de la France ?",
-        answer: "La mer Méditerranée",
-      },
-      {
-        question: "Quelle est la capitale de l'Australie ?",
-        answer: "Canberra",
-      },
-      {
-        question: "Quel est le plus grand désert chaud du monde ?",
-        answer: "Le désert du Sahara",
-      },
-      {
-        question: "Quel est le pays d'origine de la Pyramide de Gizeh ?",
-        answer: "L'Égypte",
-      },
-      {
-        question: "Quel est le pays le plus petit d'Europe ?",
-        answer: "Le Vatican",
-      },
-      {
-        question: "Dans quel pays se trouve la ville de Machu Picchu ?",
-        answer: "Le Pérou",
-      },
-      {
-        question: "Quelle est la plus grande île du monde ?",
-        answer: "Groenland",
-      },
-      {
-        question: "Quel est le plus grand pays de l'Amérique du Sud ?",
-        answer: "Le Brésil",
-      },
-      {
-        question: "Quel pays possède le plus grand nombre de volcans actifs ?",
-        answer: "L'Indonésie",
-      },
-      {
-        question: "Dans quel pays se trouve le Mont Fuji ?",
-        answer: "Le Japon",
-      },
-      {
-        question: "Dans quel pays se trouve le Lac Titicaca ?",
-        answer: "Le Pérou et la Bolivie",
-      },
-      {
-        question: "Quel est le pays avec le plus grand nombre d'îles ?",
-        answer: "Suède",
-      },
-      {
-        question: "Dans quel pays se trouve la montagne de l'Atlas ?",
-        answer: "Le Maroc",
-      },
-      {
-        question: "Quel est le plus grand pays d'Asie du Sud-Est ?",
-        answer: "L'Indonésie",
-      },
-      {
-        question: "Quel est le plus long fleuve de France ?",
-        answer: "La Loire",
-      },
-      {
-        question: "Quel est le plus grand pays d'Amérique du Nord ?",
-        answer: "Le Canada",
-      },
-      {
-        question: "Quel est le plus petit continent du monde ?",
-        answer: "L'Océanie",
-      },
-      {
-        question: "Quel pays se trouve à la fois en Europe et en Asie ?",
-        answer: "La Turquie",
-      },
-      {
-        question: "Quel pays est connu pour sa forme de botte ?",
-        answer: "L'Italie",
-      },
-      {
-        question: "Quel est le pays qui a le plus de frontières avec d'autres pays ?",
-        answer: "La Russie",
-      },
-      {
-        question: "Quel est le nom du plus grand volcan actif de la Terre ?",
-        answer: "Le Mauna Loa",
-      },
-      {
-        question: "Quel pays possède l'île de Madagascar ?",
-        answer: "Madagascar",
-      },
-      {
-        question: "Dans quel pays se trouve le désert de Gobi ?",
-        answer: "La Mongolie",
-      },
-      {
-        question: "Quel est le fleuve le plus long d'Amérique du Sud ?",
-        answer: "L'Amazone",
-      },
-      {
-        question: "Quel est le plus haut volcan du monde ?",
-        answer: "Le Nevado Ojos del Salado",
-      },
-      {
-        question: "Quel est le plus petit océan du monde ?",
-        answer: "L'océan Arctique",
-      },
-      {
-        question: "Quel est le plus grand pays de l'Océanie ?",
-        answer: "L'Australie",
-      },
-      {
-        question: "Quelle est la capitale de l'Allemagne ?",
-        answer: "Berlin",
-      },
-      {
-        question: "Quelle est la capitale de l'Italie ?",
-        answer: "Rome",
-      },
-      {
-        question: "Quel est le plus grand pays d'Amérique centrale ?",
-        answer: "Le Nicaragua",
-      },
-      {
-        question: "Quel pays a pour capitale Copenhague ?",
-        answer: "Le Danemark",
-      },
-      {
-        question: "Quel est le plus grand archipel d'Asie ?",
-        answer: "Les Philippines",
-      },
-      {
-        question: "Quelle mer borde la côte nord de la France ?",
-        answer: "La mer du Nord",
-      },
-      {
-        question: "Quel est le plus grand pays d'Afrique de l'Est ?",
-        answer: "L'Éthiopie",
-      },
-      {
-        question: "Dans quel pays se trouve le Mont Everest ?",
-        answer: "Le Népal et la Chine",
-      },
-      {
-        question: "Quel est le plus grand lac d'Afrique ?",
-        answer: "Le lac Victoria",
-      },
-      {
-        question: "Quel est le plus grand lac d'Asie ?",
-        answer: "Le lac Caspien",
-      },
-      {
-        question: "Dans quel océan se trouve l'île de Pâques ?",
-        answer: "Océan Pacifique",
-      },
-      {
-        question: "Quel est le pays le plus petit du monde ?",
-        answer: "Le Vatican",
-      },
-      {
-        question: "Quel est le nom de l'archipel le plus peuplé du monde ?",
-        answer: "Les Philippines",
-      },
-      {
-        question: "Quel est le pays d'origine du Taj Mahal ?",
-        answer: "L'Inde",
-      },
-      {
-        question: "Quel est le nom du plus grand lac salé du monde ?",
-        answer: "Le lac Urmia",
-      },
-      {
-        question: "Dans quel pays se trouve la vallée de la mort ?",
-        answer: "Les États-Unis",
-      },
-      {
-        question: "Dans quel pays se trouve la ville de Sydney ?",
-        answer: "L'Australie",
-      },
-      {
-        question: "Quel est le pays le plus au nord du monde ?",
-        answer: "Le Groenland",
-      },
-      {
-        question: "Quel est le pays le plus au sud du monde ?",
-        answer: "L'Antarctique",
-      },
-      {
-        question: "Quel est le plus grand pays d'Afrique centrale ?",
-        answer: "Le Congo",
-      },
-      {
-        question: "Dans quel pays se trouve la ville de New York ?",
-        answer: "Les États-Unis",
-      },
-      {
-        question: "Quel pays a pour capitale Moscou ?",
-        answer: "La Russie",
-      },
-      {
-        question: "Dans quel pays se trouve l'île de Bali ?",
-        answer: "L'Indonésie",
-      },
-      {
-        question: "Quel est le plus petit pays d'Asie ?",
-        answer: "Maldives",
-      },
-      {
-        question: "Dans quel océan se trouve l'île de Madagascar ?",
-        answer: "Océan Indien",
-      },
-      {
-        question: "Quel est le nom de la mer qui sépare l'Europe de l'Afrique ?",
-        answer: "La mer Méditerranée",
-      },
-      {
-        question: "Quel est le plus grand pays d'Amérique du Nord ?",
-        answer: "Le Canada",
-      },
-      {
-        question: "Quel est le plus grand pays d'Afrique du Sud ?",
-        answer: "L'Afrique du Sud",
-      },
-      {
-        question: "Quel est le plus grand désert chaud du monde ?",
-        answer: "Le Sahara",
-      },
-      {
-        question: "Quel est le nom de la plus grande ville d'Afrique ?",
-        answer: "Lagos",
-      },
-      {
-        question: "Quelle chaîne de montagnes est la plus haute du monde ?",
-        answer: "L'Himalaya",
-      },
-      {
-        question: "Quel est le plus grand pays d'Amérique Latine ?",
-        answer: "Le Brésil",
-      },
-      {
-        question: "Dans quel pays se trouve la vallée du Rift ?",
-        answer: "L'Afrique de l'Est",
-      },
-      {
-        question: "Dans quel pays se trouve le Mont Kilimandjaro ?",
-        answer: "La Tanzanie",
-      },
-      {
-        question: "Quel est le pays avec la plus grande superficie de forêts ?",
-        answer: "La Russie",
-      }, {
-    question: "Quelle est la capitale de la Nouvelle-Zélande ?",
-    answer: "Wellington",
-  },
-  {
-    question: "Quel pays est entièrement enclavé dans l'Afrique du Sud ?",
-    answer: "Le Lesotho",
-  },
-  {
-    question: "Quel est le pays le plus montagneux du monde ?",
-    answer: "Le Bhoutan",
-  },
-  {
-    question: "Quelle est la plus grande île de la mer Méditerranée ?",
-    answer: "La Sicile",
-  },
-  {
-    question: "Quel est le plus grand pays sans accès à la mer ?",
-    answer: "Le Kazakhstan",
-  },
-  {
-    question: "Quel est le plus long fleuve d’Europe ?",
-    answer: "La Volga",
-  },
-  {
-    question: "Quel pays a la plus grande densité de population ?",
-    answer: "Monaco",
-  },
-  {
-    question: "Quelle chaîne de montagnes traverse toute l’Amérique du Sud ?",
-    answer: "Les Andes",
-  },
-  {
-    question: "Quel désert est surnommé le désert rouge ?",
-    answer: "Le désert de Simpson",
-  },
-  {
-    question: "Quel est le pays le plus plat du monde ?",
-    answer: "Les Maldives",
-  },
-  {
-    question: "Quel est le point le plus bas sur Terre ?",
-    answer: "La mer Morte",
-  },
-  {
-    question: "Quel est le plus grand delta du monde ?",
-    answer: "Le delta du Gange",
-  },
-  {
-    question: "Quelle est la mer la plus salée au monde ?",
-    answer: "La mer Morte",
-  },
-  {
-    question: "Quelle est la capitale de la Mongolie ?",
-    answer: "Oulan-Bator",
-  },
-  {
-    question: "Quel pays se trouve entre la France, l’Allemagne et la Belgique ?",
-    answer: "Le Luxembourg",
-  },
-  {
-    question: "Dans quel pays peut-on visiter le site antique de Petra ?",
-    answer: "La Jordanie",
-  },
-  {
-    question: "Quelle est la capitale de la Finlande ?",
-    answer: "Helsinki",
-  },
-  {
-    question: "Quel détroit sépare l’Europe de l’Asie en Turquie ?",
-    answer: "Le Bosphore",
-  },
-  {
-    question: "Quelle rivière traverse Paris ?",
-    answer: "La Seine",
-  },
-  {
-    question: "Quel volcan a détruit la ville antique de Pompéi ?",
-    answer: "Le Vésuve",
-  },
-  {
-    question: "Quel pays est célèbre pour ses fjords ?",
-    answer: "La Norvège",
-  },
-   {
-    question: "Quel est le village anciennement nommé le \"pays des loups\" ?",
-    answer: "Laloubère",
-  },
-  {
-    question: "Quelle île française se trouve à l’est de Madagascar ?",
-    answer: "La Réunion",
-  },
-  {
-    question: "Quel pays africain n’a jamais été colonisé ?",
-    answer: "L’Éthiopie",
-  },
-  {
-    question: "Dans quel pays se trouve le Cap Nord ?",
-    answer: "La Norvège",
-  },
-  {
-    question: "Quelle est la capitale de la Corée du Sud ?",
-    answer: "Séoul",
-  }
-    ]
-    ,
-    Général: [
-       {
-        "question": "Qui est le père de la philosophie?",
-        "answer": "Thalès"
-      },
-       {
-        "question": "Qui était le maitre de Platon?",
-        "answer": "Socrate"
-      },
-       {
-        "question": "Quel philosophe a connu Alexandre Le Grand?",
-        "answer": "Aristote"
-      },
-      {
-        "question": "Quel philosophe sépare la morale de la politique?",
-        "answer": "Machiavel"
-      },
-      {
-        "question": "Quel philosophe voit l'esprit humain comme une \"tabula rasa\"?",
-        "answer": "John Locke"
-      },
-      {
-        "question": "Quel philosophe a théorisé le Dasein?",
-        "answer": "Heidegger"
-      },
-      {
-        "question": "Quel philosophe a utilisé le doute hyperbolique?",
-        "answer": "Descartes"
-      },
-      {
-        "question": "Qui cherché en dehors de lui alors que Dieu étais à l'intérieur?",
-        "answer": "St Augustin d'Hiponne"
-      },
-          {
-        "question": "Qui a écris les Sommes Théologiques?",
-        "answer": "St Thomas d'Aquin"
-      },
-          {
-        "question": "Quel philosophe théorise l'apprentissage par négation?",
-        "answer": "Hegel"
-      },
-       {
-        "question": "Quel philosophe théorise les monades?",
-        "answer": "Leibniz"
-      },
-       {
-        "question": "A quel philosophe doit-on la théorie de la caverne?",
-        "answer": "Platon"
-      },
-      {
-        "question": "Quel est le premier philosophe à s'intéresser au bonheur individuel?",
-        "answer": "Epicure"
-      },
-      {
-        "question": "A qui doit-on, la phrase \"Esse est percipi\"?",
-        "answer": "Berkeley"
-      },
-        {
-        "question": "A qui doit-on, la phrase \"Homo homini lupus\"?",
-        "answer": "Thomas Hobbes"
-      },
-       {
-        "question": "A qui doit-on, la phrase \"Deus sive natura\"?",
-        "answer": "Baruch Spinoza"
-      },
-       {
-        "question": "A qui doit-on, la phrase \"On se baigne jamais dans le même fleuve\"?",
-        "answer": "Héraclite"
-      },
-       {
-        "question": "Le monisme est une doctrine inventé par?",
-        "answer": "Parménide"
-      },
-   {
-  "question": "Quel philosophe grec est connu pour avoir utilisé la maïeutique ?",
-  "answer": "Socrate"
+  question: string;
+  options: string[];
+  correctIndex: number;
+  theme: string;
 }
-,
-       {
-        "question": "Pour quel philosophe il n'y a aucune idée sans impression?",
-        "answer": "David Hume"
-      },
-        {
-        "question": "Zarathoustra représente quelle notion?",
-        "answer": "Le surhomme"
-      },
-       {
-        "question": "Qui différencie le phénomène du noumène et s'inspire du boudhisme?",
-        "answer": "Schopenhauer"
-      },
-      {
-        "question": "Quel philosophe est le premier à néoplatonisé l'islam?",
-        "answer": "Al-Farabi"
-      },
-      {
-        "question": "Qui est le fondateur de la psychanalyse?",
-        "answer": "Sigmund Freud"
-      },
-       {
-        "question": "Quel philosophe aurait parlé à la 'dame philosophie'?",
-        "answer": "Boèce"
-      },
-      {
-        "question": "Quelle expérience de pensée célèbre Avicenne a-t-il formulée ?",
-        "answer": "L'homme volant"
-      },
-      {
-        "question": "Où Albert le Grand a enseigné Thomas d'Aquin?",
-        "answer": "Cologne"
-      },
-       {
-        "question": "A qui doit-on le \"to on te on \"?",
-        "answer": "Aristote"
-      },
-      {
-        "question": "Quel est le symbole chimique de l'eau?",
-        "answer": "H2O"
-      },
-      {
-        "question": "Quel est le nom de l'inventeur de l'ampoule électrique?",
-        "answer": "Thomas Edison"
-      },
-      {
-        "question": "Quel est le nombre de côtés d'un hexagone?",
-        "answer": "Six"
-      },
-      {
-        "question": "Quelle est l'unité de mesure de la fréquence?",
-        "answer": "Hertz"
-      },
-      {
-        "question": "Quel est le nombre d'électrons dans un atome d'hydrogène neutre?",
-        "answer": "Un"
-      },
-      {
-        "question": "Comment appelle-t-on une figure géométrique à huit côtés?",
-        "answer": "Un octogone"
-      },
-      {
-        "question": "Quel est le nom du premier satellite artificiel envoyé dans l'espace?",
-        "answer": "Spoutnik"
-      },
-      {
-        "question": "Quelle est la principale source d'énergie de la Terre?",
-        "answer": "Le Soleil"
-      },
-      {
-        "question": "Quel gaz constitue la majorité de l'atmosphère terrestre?",
-        "answer": "Azote"
-      },
-      {
-        "question": "Quel est le nom du tableau le plus célèbre de Léonard de Vinci?",
-        "answer": "La Joconde"
-      },
-      {
-        "question": "Comment appelle-t-on un polygone avec 12 côtés?",
-        "answer": "Un dodécagone"
-      },
-      {
-        "question": "Quelle est la formule chimique du dioxyde de carbone?",
-        "answer": "CO2"
-      },
-      {
-        "question": "Quel métal est le meilleur conducteur d'électricité?",
-        "answer": "L'argent"
-      },
-      {
-        "question": "Comment s'appelle la couche externe du Soleil visible lors d'une éclipse?",
-        "answer": "La couronne solaire"
-      },
-      {
-        "question": "Quel est le nombre de bits dans un octet?",
-        "answer": "8"
-      },
-      {
-        "question": "Quel est le seul mammifère capable de voler?",
-        "answer": "La chauve-souris"
-      },
-      {
-        "question": "Comment s'appelle le processus par lequel les plantes produisent de l'énergie à partir de la lumière?",
-        "answer": "La photosynthèse"
-      },
-      {
-        "question": "Quel est l'ingrédient principal du verre?",
-        "answer": "Le sable (silice)"
-      },
-      {
-        "question": "Comment appelle-t-on un animal qui mange à la fois des plantes et de la viande?",
-        "answer": "Omnivore"
-      },
-      {
-        "question": "Quel est le plus grand nombre premier inférieur à 10?",
-        "answer": "7"
-      },
-      {
-        "question": "Quel est le terme pour une étoile mourante qui explose?",
-        "answer": "Une supernova"
-      },
-      {
-        "question": "Quelle est la vitesse approximative de la lumière dans le vide?",
-        "answer": "300 000 km/s"
-      },
-      {
-        "question": "Quel est l'élément chimique dont le symbole est Fe?",
-        "answer": "Fer"
-      },
-      {
-        "question": "Comment appelle-t-on une ligne droite qui coupe un cercle en deux parties égales?",
-        "answer": "Le diamètre"
-      },
-      {
-        "question": "Quel est le nombre total de faces d'un cube?",
-        "answer": "6"
-      },
-      {
-        "question": "Quel animal est connu pour son aptitude à construire des barrages?",
-        "answer": "Le castor"
-      },
-      {
-        "question": "Quel est le composant chimique essentiel à la respiration des êtres vivants?",
-        "answer": "L'oxygène"
-      },
-      {
-        "question": "Quel est le nom du plus petit os du corps humain?",
-        "answer": "L'étrier"
-      },
-      {
-        "question": "Quelle est la température d'ébullition de l'eau au niveau de la mer en degrés Celsius?",
-        "answer": "100"
-      },
-      {
-        "question": "Quel est l'animal terrestre le plus rapide?",
-        "answer": "Le guépard"
-      },
-      {
-        "question": "Quelle unité est utilisée pour mesurer la puissance d'une ampoule?",
-        "answer": "Le watt"
-      },
-      {
-        "question": "Quel est le principal composant de l'air que nous respirons?",
-        "answer": "L'azote"
-      },
-      {
-        "question": "Quel phénomène est à l'origine de l'arc-en-ciel?",
-        "answer": "La réfraction de la lumière"
-      },
-      {
-        "question": "Comment appelle-t-on une molécule formée de plusieurs unités répétées?",
-        "answer": "Un polymère"
-      },
-      {
-        "question": "Quel est le point commun entre le mercure, le bromure et l'eau?",
-        "answer": "Ce sont des liquides à température ambiante"
-      },
-      {
-        "question": "Quel élément chimique a pour symbole Na?",
-        "answer": "Sodium"
-      },
-      {
-        "question": "Quel est le plus grand organe du corps humain?",
-        "answer": "La peau"
-      },
-      {
-        "question": "Quel gaz est utilisé pour gonfler les ballons dirigeables modernes?",
-        "answer": "L'hélium"
-      },
-      {
-        "question": "Quel est le nom de l'étoile la plus proche de la Terre après le Soleil?",
-        "answer": "Proxima Centauri"
-      },
-      {
-        "question": "Comment appelle-t-on un atome qui a perdu ou gagné un ou plusieurs électrons?",
-        "answer": "Un ion"
-      },
-      {
-        "question": "Quel est le point d'ébullition de l'azote liquide en degrés Celsius?",
-        "answer": "-196"
-      },
-      {
-        "question": "Quel est le nom de la partie la plus interne de la Terre?",
-        "answer": "Le noyau"
-      },
-      {
-        "question": "Comment appelle-t-on l'étude des couches géologiques de la Terre?",
-        "answer": "La stratigraphie"
-      },
-      {
-        "question": "Quel est l'élément chimique avec le numéro atomique 79?",
-        "answer": "L'or"
-      },
-      {
-        "question": "Quel est le nom de la ceinture située entre Mars et Jupiter?",
-        "answer": "La ceinture d'astéroïdes"
-      },
-      {
-        "question": "Quel est le nom de la théorie selon laquelle l'univers est en expansion?",
-        "answer": "La théorie du Big Bang"
-      },
-      {
-        "question": "Quelle est la formule chimique du méthane?",
-        "answer": "CH4"
-      },
-      {
-        "question": "Comment appelle-t-on un triangle qui a deux côtés de même longueur?",
-        "answer": "Un triangle isocèle"
-      },
-      {
-        "question": "Comment s'appelle la plus petite unité de matière?",
-        "answer": "L'atome"
-      },
-      {
-        "question": "Quel est le liquide le plus visqueux au monde connu?",
-        "answer": "La poix (bitume naturel)"
-      },
-      {
-        "question": "Quel est le nombre total d'angles dans un triangle?",
-        "answer": "180 degrés"
-      },
-      {
-        "question": "Quel type de liaison chimique implique le partage d'électrons?",
-        "answer": "Liaison covalente"
-      },
-      {
-        "question": "Quel type de particule subatomique porte une charge négative?",
-        "answer": "L'électron"
-      },
-      {
-        "question": "Quelle planète est surnommée la Planète Rouge?",
-        "answer": "Mars"
-      },
-      {
-        "question": "Quel phénomène naturel produit des charges électriques dans le ciel?",
-        "answer": "Les éclairs"
-      },
-      {
-        "question": "Quel est l'état de la matière avec un volume et une forme fixes?",
-        "answer": "Solide"
-      },
-      {
-        "question": "Comment appelle-t-on un changement d'état de solide à gaz sans passer par le liquide?",
-        "answer": "Sublimation"
-      },
-      {
-        "question": "Quel est le type de roche formée par la solidification du magma?",
-        "answer": "Roche ignée"
-      },
-      {
-        "question": "Quel est le nom donné à une solution qui résiste aux changements de pH?",
-        "answer": "Un tampon"
-      },
-      {
-        "question": "Quel type d'onde sonore est au-dessus de la fréquence que les humains peuvent entendre?",
-        "answer": "Ultrason"
-      },
-      {
-        "question": "Quelle est la force qui nous maintient sur Terre?",
-        "answer": "La gravité"
-      },
-      {
-        "question": "Quelle est l'unité de mesure de la résistance électrique?",
-        "answer": "Ohm"
-      },
-      {
-        "question": "Quel élément chimique a pour symbole K?",
-        "answer": "Potassium"
-      },
-      {
-        "question": "Quelle est la couleur de la lumière avec la plus grande longueur d'onde visible?",
-        "answer": "Rouge"
-      },
-      {
-        "question": "Comment appelle-t-on un liquide qui ne peut pas dissoudre une certaine substance?",
-        "answer": "Un solvant non-polaire"
-      },
-      {
-        "question": "Comment appelle-t-on une étoile en phase finale de contraction gravitationnelle?",
-        "answer": "Un trou noir"
-      },
-      {
-        "question": "Quel type de miroir fait converger les rayons lumineux?",
-        "answer": "Un miroir concave"
-      },
-      {
-        "question": "Comment appelle-t-on le cycle d'eau de la mer vers l'atmosphère, puis au sol?",
-        "answer": "Le cycle de l'eau"
-      },
-      {
-        "question": "Comment s'appelle une réaction chimique qui libère de la chaleur?",
-        "answer": "Exothermique"
-      },
-      {
-        "question": "Quel est le processus par lequel une étoile produit de l'énergie?",
-        "answer": "La fusion nucléaire"
-      },
-      {
-        "question": "Quel est le nom de la couche d'ozone qui protège la Terre des UV?",
-        "answer": "La stratosphère"
-      },
-      {
-        "question": "Quel est l'instrument utilisé pour mesurer la pression atmosphérique?",
-        "answer": "Le baromètre"
-      },
-      {
-        "question": "Quel métal liquide est utilisé dans les thermomètres traditionnels?",
-        "answer": "Le mercure"
-      },
-      {
-        "question": "Quelle est l'unité de mesure de l'énergie?",
-        "answer": "Joule"
-      },
-      {
-        "question": "Quel type de mouvement implique une rotation autour d'un axe?",
-        "answer": "Le mouvement de rotation"
-      },
-      {
-        "question": "Quel est l'état de la matière trouvé à l'intérieur des étoiles?",
-        "answer": "Plasma"
-      },
-      {
-        "question": "Quel est le nom de la molécule qui stocke l'énergie dans les cellules?",
-        "answer": "ATP (Adénosine triphosphate)"
-      },
-      {
-        "question": "Quel est le principal composant chimique des os?",
-        "answer": "Phosphate de calcium"
-      },
-      {
-        "question": "Quelle est la constante gravitationnelle universelle (G)?",
-        "answer": "6,674 × 10⁻¹¹ N·m²/kg²"
-      },
-      {
-        "question": "Quelle est la source principale de vent?",
-        "answer": "Les différences de pression atmosphérique"
-      },
-      {
-        "question": "Quel est le plus grand satellite naturel de Saturne?",
-        "answer": "Titan"
-      },
-      {
-        "question": "Quel type de matière transmet le son le plus rapidement?",
-        "answer": "Les solides"
-      },
-      {
-        "question": "Quel métal précieux a été utilisé dans les premières monnaies?",
-        "answer": "L'or"
-      },
-      {
-        "question": "Comment appelle-t-on une éclipse où la Lune est entre le Soleil et la Terre?",
-        "answer": "Éclipse solaire"
-      },
-      {
-        "question": "Quel est le processus par lequel une plante perd de l'eau par ses feuilles?",
-        "answer": "Transpiration"
-      },
-      {
-        "question": "Quel est l'autre nom de l'étoile Polaire?",
-        "answer": "Polaris"
-      },
-      {
-        "question": "Quel est l'élément le plus abondant dans l'univers?",
-        "answer": "Hydrogène"
-      },
-      {
-        "question": "Quel est le poids approximatif d'un litre d'eau pure?",
-        "answer": "1 kilogramme"
-      },
-      {
-        "question": "Quel est l'autre nom donné à la Voie Lactée?",
-        "answer": "La galaxie de la Voie Lactée"
-      },
-      {
-        "question": "Comment appelle-t-on un angle supérieur à 90 degrés?",
-        "answer": "Un angle obtus"
-      },
-      {
-        "question": "Quel est le nom du télescope lancé en 1990 pour explorer l'univers?",
-        "answer": "Hubble"
-      },
-      {
-        "question": "Quel est le nom de la couche terrestre où se produit le magma?",
-        "answer": "Le manteau"
-      },
-      {
-        "question": "Quelle est la particule responsable de la charge positive d'un atome?",
-        "answer": "Proton"
-      },
-      {
-        "question": "Quel est le nom de l'étude des insectes?",
-        "answer": "L'entomologie"
-      },
-      {
-        "question": "Quelle est la force qui s'oppose au mouvement d'un objet?",
-        "answer": "La friction"
-      },
-      {
-        "question": "Quel est le terme pour la température à laquelle une substance fond?",
-        "answer": "Point de fusion"
-      },
-      {
-        "question": "Quel est le gaz responsable de l'effet de serre sur Vénus?",
-        "answer": "Le dioxyde de carbone"
-      },
-      {
-        "question": "Quel est le nom de la substance qui donne leur couleur verte aux plantes?",
-        "answer": "La chlorophylle"
-      },
-      {
-        "question": "Comment appelle-t-on une étoile qui se forme à partir d'un nuage de gaz et de poussières?",
-        "answer": "Une proto-étoile"
-      }
-    ],
-  };
   
-  export default questions;
   
+ export const allQuestions: Question[] = [
+  {
+    question: 'Comment s\'appelle le premier livre de la Torah ?',
+    options: ['Genèse'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  
+   {
+    question: 'Comment s\'appelle le deuxième livre de la Torah ?',
+    options: ['Exode'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+   {
+    question: 'Comment s\'appelle le troisième livre de la Torah ?',
+    options: ['Lévitiques'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+   {
+    question: 'Comment s\'appelle le quatrième livre de la Torah ?',
+    options: ['Nombres'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+   {
+    question: 'Comment s\'appelle le cinquième livre de la Torah ?',
+    options: ['Deutéronome'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+     {
+    question: 'Comment s\'appelle la promesse de Dieu faites dans la Genèse ?',
+    options: ['Protévangile'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+     {
+    question: 'Quel crime commet Caïn ?',
+    options: ['Meurtre'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+   {
+    question: 'Pour survivre à quoi Noé a-t-il construit une arche ?',
+    options: ['Déluge'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+
+  {
+    question: 'Vers quelle terre Dieu dit à Abram où allaient ?',
+    options: ['Canaan'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  {
+    question: 'Pourquoi Cham est-il puni ?',
+    options: ['Moquerie'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  {
+    question: 'Abraham offre qui à holocauste à la place de l\'agneau ?',
+    options: ['Isaac'],
+    correctIndex: 0,
+    theme: 'Torah',
+  }, {
+    question: 'Quel fruit est mangé dans le récit de la chute ?',
+    options: ['Fruit défendu'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  {
+    question: 'Quel est le signe de l’alliance entre Dieu et Noé ?',
+    options: ['Arc-en-ciel'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  {
+    question: 'Quel est le nom de la tour construite pour atteindre le ciel ?',
+    options: ['Tour de Babel'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  {
+    question: 'Quel aliment tombe du ciel dans le désert ?',
+    options: ['Manne'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  {
+    question: 'Quel animal est utilisé pour indiquer la venue du sabbat ?',
+    options: ['Chauffar'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  {
+    question: 'Quelle mer est traversée à pied sec par les Hébreux ?',
+    options: ['Mer des Roseaux'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  {
+    question: 'Quel est le signe de l’alliance entre Dieu et Abraham ?',
+    options: ['Circoncision'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  {
+    question: 'Quelle ville est détruite par le feu dans la Genèse ?',
+    options: ['Sodome'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  {
+    question: 'Combien de jours dure la création ?',
+    options: ['Six'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  {
+    question: 'Quel jour Dieu se repose-t-il après la création ?',
+    options: ['Septième jour'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  {
+    question: 'Combien de plaies frappent l\'Égypte ?',
+    options: ['Dix'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  {
+    question: 'Quel aliment est interdit pendant la Pâque ?',
+    options: ['Levain'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  {
+    question: 'Quel objet contient les tables de la Loi ?',
+    options: ['Arche de l\'Alliance'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  {
+    question: 'Quel animal est sacrifié pour protéger les maisons lors de la dernière plaie ?',
+    options: ['Agneau'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  {
+    question: 'Combien de commandements sont donnés au Sinaï ?',
+    options: ['Dix'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  {
+    question: 'Quel lieu désertique est traversé pendant quarante ans ?',
+    options: ['Désert du Sinaï'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  {
+    question: 'Quelle plante est utilisée pour badigeonner les linteaux pendant la Pâque ?',
+    options: ['Hysope'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  {
+    question: 'Quel aliment est associé à l’amertume de l’esclavage en Égypte ?',
+    options: ['Herbes amères'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  {
+    question: 'Quel est le premier mot de la Genèse ?',
+    options: ['Au commencement'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  {
+    question: 'Quel élément est séparé des eaux lors de la création ?',
+    options: ['Étendue'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  {
+    question: 'Quelle offrande est acceptée dans la Genèse ?',
+    options: ['Offrande d’Abel'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  {
+    question: 'Quel métal est mentionné dans la construction du tabernacle ?',
+    options: ['Or'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  {
+    question: 'Quel objet est placé au centre du campement des Hébreux ?',
+    options: ['Tabernacle'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  {
+    question: 'Quelle est la durée du jeûne de Moïse au Sinaï ?',
+    options: ['Quarante jours'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  {
+    question: 'Quel jour de la semaine est sanctifié ?',
+    options: ['Sabbat'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  {
+    question: 'Quel animal ne doit pas être consommé selon la loi de Moïse ?',
+    options: ['Porc'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  {
+    question: 'Quel fleuve est frappé et devient du sang ?',
+    options: ['Nil'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  {
+    question: 'Quel est le lieu où la Loi est donnée ?',
+    options: ['Mont Sinaï'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  {
+    question: 'Quelle fête célèbre la sortie d\'Égypte ?',
+    options: ['Pâque'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  {
+    question: 'Quel instrument est utilisé pour appeler l’assemblée ?',
+    options: ['Trompette d’argent'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  {
+    question: 'Quel objet contient la manne conservée ?',
+    options: ['Pot d’or'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  {
+    question: 'Quelle substance recouvre le sol chaque matin dans le désert ?',
+    options: ['Manne'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  {
+    question: 'Quel bois est utilisé pour construire l\'arche de l’Alliance ?',
+    options: ['Bois d’acacia'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  {
+    question: 'Quel est le nombre d’années dans un jubilé ?',
+    options: ['Cinquante'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  {
+    question: 'Quel animal parle dans le livre des Nombres ?',
+    options: ['Ânesse'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  {
+    question: 'Quelle ville est bâtie par les hommes après le déluge ?',
+    options: ['Babel'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  {
+    question: 'Quel signe est placé sur les maisons pendant la dixième plaie ?',
+    options: ['Sang d’agneau'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  {
+    question: 'Quel animal est utilisé dans le rituel du Yom Kippour ?',
+    options: ['Boucs'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  {
+    question: 'Quelle partie du corps est marquée lors de la circoncision ?',
+    options: ['Prépuce'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  {
+    question: 'Combien de jours durent les fêtes des pains sans levain ?',
+    options: ['Sept jours'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  {
+    question: 'Quelle structure est couverte de peaux de dauphins ?',
+    options: ['Tabernacle'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  {
+    question: 'Quelle tribu est chargée du service du sanctuaire ?',
+    options: ['Lévi'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  {
+    question: 'Quel vêtement spécial est porté par le grand prêtre ?',
+    options: ['Éphod'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  {
+    question: 'Quelle fête célèbre la récolte et la Torah ?',
+    options: ['Shavouot'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  {
+    question: 'Quel objet contient les commandements inscrits ?',
+    options: ['Tables de pierre'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  {
+    question: 'Quel événement entraîne la confusion des langues ?',
+    options: ['Construction de Babel'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  {
+    question: 'Combien d’animaux purs sont embarqués dans l’arche ?',
+    options: ['Sept paires'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  {
+    question: 'Quelle offrande est faite en farine sans levain ?',
+    options: ['Minh’a'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  {
+    question: 'Quelle punition est donnée pour le vol dans la Loi ?',
+    options: ['Remboursement multiplié'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  {
+    question: 'Quel liquide est utilisé pour oindre les objets sacrés ?',
+    options: ['Huile d’onction'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  {
+    question: 'Combien de jours dure la purification d’une femme après un garçon ?',
+    options: ['Quarante jours'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  {
+    question: 'Quel animal est interdit car il ne rumine pas et n’a pas le sabot fendu ?',
+    options: ['Chameau'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  {
+    question: 'Quel vêtement est interdit car fait de lin et de laine mélangés ?',
+    options: ['Shatnez'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  {
+    question: 'Quelle fête implique de vivre dans des huttes temporaires ?',
+    options: ['Souccot'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  {
+    question: 'Quelle mesure de temps est utilisée pour le sabbat de la terre ?',
+    options: ['Sept ans'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  {
+    question: 'Quel métal est utilisé dans les bases du tabernacle ?',
+    options: ['Argent'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  {
+    question: 'Quel encens est interdit de reproduire à l’extérieur du sanctuaire ?',
+    options: ['Encens sacré'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  {
+    question: 'Quelle couleur est utilisée pour les rideaux du sanctuaire ?',
+    options: ['Pourpre'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  {
+    question: 'Quelle ville est synonyme de confusion ?',
+    options: ['Babel'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  {
+    question: 'Quel jour est consacré à l’expiation annuelle des péchés ?',
+    options: ['Yom Kippour'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  {
+    question: 'Quel animal est attaché au rite du bouc émissaire ?',
+    options: ['Bouquetin'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  {
+    question: 'Quel aliment est défendu à la consommation avec le sang ?',
+    options: ['Viande avec sang'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  {
+    question: 'Quel est le nom du chandelier à sept branches ?',
+    options: ['Menorah'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  {
+    question: 'Quel est le nombre d’espions envoyés en Canaan ?',
+    options: ['Douze'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  {
+    question: 'Quel est le sort réservé aux rebelles lors de l’épisode de Koré ?',
+    options: ['La terre s’ouvre'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  {
+    question: 'Quel fruit symbolise la fertilité de la terre promise ?',
+    options: ['Raisin'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  {
+    question: 'Quel objet est placé au sommet du bâton pour guérir des serpents ?',
+    options: ['Serpent d’airain'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  {
+    question: 'Quel est le nombre de jours d’errance dans le désert ?',
+    options: ['Quarante ans'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  {
+    question: 'Quelle pierre précieuse est utilisée dans le pectoral du grand prêtre ?',
+    options: ['Saphir'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  {
+    question: 'Quel est le nom de la corne utilisée pour les appels solennels ?',
+    options: ['Shofar'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  {
+    question: 'Quel est le pain préparé rapidement lors de la sortie d’Égypte ?',
+    options: ['Pain sans levain'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  {
+    question: 'Quelle fonction religieuse est héritée par les fils d’Aaron ?',
+    options: ['Sacrificateur'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  {
+    question: 'Quel est le nombre de campements pendant l’errance dans le désert ?',
+    options: ['Quarante-deux'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  {
+    question: 'Quelle est la position de la tribu de Juda dans le campement ?',
+    options: ['À l’Est'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+  {
+    question: 'Quelle rivière est franchie pour entrer en Canaan ?',
+    options: ['Jourdain'],
+    correctIndex: 0,
+    theme: 'Torah',
+  },
+{
+  question: 'Quel jour Dieu créa la lumière ?',
+  options: ['Premier jour'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quel jour Dieu sépara les eaux d’en haut et d’en bas ?',
+  options: ['Deuxième jour'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quel jour la mer et la terre apparurent ?',
+  options: ['Troisième jour'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quel jour les plantes furent créées ?',
+  options: ['Troisième jour'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quel jour Dieu plaça les astres dans le ciel ?',
+  options: ['Quatrième jour'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quel jour le soleil et la lune furent créés ?',
+  options: ['Quatrième jour'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quel jour les oiseaux furent créés ?',
+  options: ['Cinquième jour'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quel jour les poissons furent créés ?',
+  options: ['Cinquième jour'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quel jour les animaux terrestres furent créés ?',
+  options: ['Sixième jour'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quel jour l’homme fut créé ?',
+  options: ['Sixième jour'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quel jour Dieu se reposa ?',
+  options: ['Septième jour'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Qu’a fait Dieu le premier jour ?',
+  options: ['Lumière'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Qu’a fait Dieu le deuxième jour ?',
+  options: ['Séparation des eaux'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Qu’a fait Dieu le troisième jour ?',
+  options: ['Sols et végétation'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Qu’a fait Dieu le quatrième jour ?',
+  options: ['Astres'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Qu’a fait Dieu le cinquième jour ?',
+  options: ['Oiseaux et poissons'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Qu’a fait Dieu le sixième jour ?',
+  options: ['Animaux et hommes'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Qu’a fait Dieu le septième jour ?',
+  options: ['Repos'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Que sépare Dieu en créant le ciel ?',
+  options: ['Les eaux'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quelle parole crée la lumière ?',
+  options: ['Que la lumière soit'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Comment Dieu appelle-t-il la lumière ?',
+  options: ['Jour'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Comment Dieu appelle-t-il les ténèbres ?',
+  options: ['Nuit'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Que produisit la terre le troisième jour ?',
+  options: ['Végétation'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quel astre gouverne le jour selon la Genèse ?',
+  options: ['Soleil'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quel astre gouverne la nuit ?',
+  options: ['Lune'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quel but ont les astres selon la Genèse ?',
+  options: ['Marquer les temps'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Que bénit Dieu le cinquième jour ?',
+  options: ['Poissons et oiseaux'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quel commandement Dieu donne-t-il aux hommes et animaux ?',
+  options: ['Fécondez, multipliez'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'À quoi Dieu donne-t-il le nom “terre” ?',
+  options: ['Sol sec'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Que couvre la surface des eaux avant la création ?',
+  options: ['Ténèbres'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Qu’est-ce qui plane au-dessus des eaux ?',
+  options: ['Esprit de Dieu'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quel élément est créé avant les astres ?',
+  options: ['Lumière'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quel aliment Dieu donne à l’homme dans la Genèse ?',
+  options: ['Plantes portant semence'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Comment Dieu qualifie sa création chaque jour ?',
+  options: ['Bonne'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quel est le sommet de la création selon Genèse 1 ?',
+  options: ['L’homme'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'À quelle image l’homme est-il créé ?',
+  options: ['Image de Dieu'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quel genre est créé le sixième jour ?',
+  options: ['Homme et femme'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quel pouvoir l’homme reçoit-il sur la terre ?',
+  options: ['Domination sur les créatures'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quel nom Dieu donne-t-il à Jacob ?',
+  options: ['Israël'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Combien de fils Jacob a-t-il ?',
+  options: ['Douze'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Combien de tribus proviennent des fils de Jacob ?',
+  options: ['Douze'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quel fils de Jacob reçoit la tunique multicolore ?',
+  options: ['Joseph'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quelle est la femme préférée de Jacob ?',
+  options: ['Rachel'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quel fils de Jacob est le premier-né ?',
+  options: ['Ruben'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quels fils de Jacob sont nés de Rachel ?',
+  options: ['Joseph et Benjamin'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quel fils de Jacob est vendu comme esclave ?',
+  options: ['Joseph'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quel fils de Jacob est retenu en otage en Égypte ?',
+  options: ['Siméon'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quel fils de Jacob offre sa vie en garantie pour Benjamin ?',
+  options: ['Juda'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quel fils de Jacob reçoit une bénédiction royale ?',
+  options: ['Juda'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quel fils de Jacob est comparé à un lion dans les bénédictions ?',
+  options: ['Juda'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quelle tribu est associée au service du Temple ?',
+  options: ['Lévi'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quelle tribu n’a pas de territoire propre ?',
+  options: ['Lévi'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'À quel fils la tribu de Joseph est-elle divisée ?',
+  options: ['Éphraïm et Manassé'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quel fils reçoit la double part d’héritage par ses deux fils ?',
+  options: ['Joseph'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quel rêve prophétique Joseph fait-il concernant ses frères ?',
+  options: ['Gerbes inclinées'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quel rêve annonce l’ascension de Joseph ?',
+  options: ['Soleil, lune et étoiles inclinés'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quel poste Joseph obtient-il en Égypte ?',
+  options: ['Vizir'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quelle crise pousse les frères de Joseph à descendre en Égypte ?',
+  options: ['Famine'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Combien d’années dure la famine en Égypte ?',
+  options: ['Sept'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quel peuple s’installe à Goshen en Égypte ?',
+  options: ['Israélites'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Combien de personnes de la famille de Jacob s’installent en Égypte ?',
+  options: ['Soixante-dix'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quel territoire d’Égypte est attribué aux Hébreux ?',
+  options: ['Goshen'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quel métier les fils de Jacob exercent-ils en Égypte ?',
+  options: ['Bergers'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Combien d’années Joseph dirige-t-il l’Égypte sous Pharaon ?',
+  options: ['80 ans'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Où Jacob est-il enterré ?',
+  options: ['Machpéla'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quel fils Jacob bénit-il en croisant les mains ?',
+  options: ['Éphraïm'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quel fils reçoit la bénédiction la plus forte selon Jacob ?',
+  options: ['Juda'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Combien d’années Joseph vit-il en Égypte ?',
+  options: ['110 ans'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Où Joseph demande-t-il que ses os soient emportés ?',
+  options: ['Canaan'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quelle promesse Joseph rappelle-t-il à ses frères avant sa mort ?',
+  options: ['Retour en Canaan'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quel âge avait Abram lorsqu’il quitta Harân pour Canaan ?',
+  options: ['75 ans'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quelle terre fut promise à la descendance d’Abram ?',
+  options: ['Canaan'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quel signe visible symbolise l’alliance entre Dieu et Abram ?',
+  options: ['Circoncision'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Combien de descendants Dieu promit-il à Abram ?',
+  options: ['Innombrables comme les étoiles'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quel âge avait Abram lors de la naissance de son fils promis ?',
+  options: ['100 ans'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quel rite Abram pratiqua-t-il à l’âge de 99 ans ?',
+  options: ['Circoncision'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quel événement marqua l’alliance entre Dieu et Abram ?',
+  options: ['Sacrifice d’animaux partagés'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quel âge avait le fils d’Abram lors de sa circoncision ?',
+  options: ['8 jours'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quelle ville Abram quitta-t-il pour obéir à l’appel divin ?',
+  options: ['Ur'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quelle pratique Abram adopta-t-il pour sceller l’alliance avec Dieu ?',
+  options: ['Circoncision'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quel événement poussa Abram à descendre en Égypte ?',
+  options: ['Famine'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quelle ville Abram traversa-t-il en premier en Canaan ?',
+  options: ['Sichem'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quel lieu Abram nomma-t-il en l’honneur de Dieu après une vision ?',
+  options: ['Béthel'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quel territoire Abram refusa-t-il de prendre après une victoire ?',
+  options: ['Biens de Sodome'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quel roi bénit Abram après une bataille ?',
+  options: ['Melchisédek'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quel animal fut offert en remplacement lors d’un sacrifice ?',
+  options: ['Bélier'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Sur quelle montagne le sacrifice devait-il avoir lieu ?',
+  options: ['Morija'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Combien de jours dura le voyage vers le lieu du sacrifice ?',
+  options: ['3 jours'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quel objet le fils d’Abram porta-t-il lors du sacrifice ?',
+  options: ['Bois'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quel message divin arrêta le sacrifice ?',
+  options: ['Intervention angélique'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quel âge avait le fils d’Abram lors de son mariage ?',
+  options: ['40 ans'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Combien de fils le fils d’Abram eut-il ?',
+  options: ['Deux'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quel événement marqua la naissance des fils jumeaux ?',
+  options: ['Lutte prénatale'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quel plat fut échangé contre un droit d’aînesse ?',
+  options: ['Ragoût'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quel membre de la famille reçut la bénédiction paternelle par ruse ?',
+  options: ['Le cadet'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quel objet apparut dans un rêve reliant ciel et terre ?',
+  options: ['Échelle'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quel lieu fut nommé en raison d’une vision nocturne ?',
+  options: ['Béthel'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quel engagement fut pris après un rêve divin ?',
+  options: ['Dîme'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quel message fut délivré dans un rêve concernant la descendance ?',
+  options: ['Multiplication'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quel symbole représenta la présence divine dans un rêve ?',
+  options: ['Échelle avec anges'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quel métier les descendants d’Abram exercèrent-ils principalement ?',
+  options: ['Bergers'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quel conflit surgit entre les bergers d’Abram et ceux de son neveu ?',
+  options: ['Dispute sur les pâturages'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quel territoire fut choisi par le neveu d’Abram après leur séparation ?',
+  options: ['Plaine du Jourdain'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quel événement marqua la séparation entre Abram et son neveu ?',
+  options: ['Choix de territoires distincts'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quel lieu Abram établit-il après la séparation avec son neveu ?',
+  options: ['Hébron'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quel rite fut institué comme signe d’alliance avec Dieu ?',
+  options: ['Circoncision'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'À quel âge les nouveau-nés mâles devaient-ils être circoncis ?',
+  options: ['8 jours'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quel objet Abram érigea-t-il en plusieurs lieux pour adorer Dieu ?',
+  options: ['Autel'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quel geste Abram fit-il pour honorer Dieu après une vision ?',
+  options: ['Offrande'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quel rite Abram pratiqua-t-il pour sceller une alliance ?',
+  options: ['Sacrifice d’animaux'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quel pays Abram visita-t-il en raison d’une famine ?',
+  options: ['Égypte'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quel lieu Abram établit-il après son retour d’Égypte ?',
+  options: ['Béthel'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quel territoire fut promis à la descendance d’Abram ?',
+  options: ['Canaan'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quel lieu Abram quitta-t-il pour se diriger vers Canaan ?',
+  options: ['Harân'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quel endroit Abram atteignit-il en premier en Canaan ?',
+  options: ['Sichem'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quel commandement Dieu donna-t-il à Abram concernant sa descendance ?',
+  options: ['Circoncision'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quel engagement Abram prit-il envers Dieu après une vision ?',
+  options: ['Offrir la dîme'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quel rite Abram institua-t-il pour sa maisonnée ?',
+  options: ['Circoncision'],
+  correctIndex: 0,
+  theme: 'Torah',
+},
+{
+  question: 'Quel événement marque le début du ministère public dans le Nouveau Testament ?',
+  options: ['Baptême'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel signe est associé à l’Esprit descendant lors d’un baptême dans le Nouveau Testament ?',
+  options: ['Colombe'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quelle durée est mentionnée pour le jeûne au désert avant les premières prédications ?',
+  options: ['40 jours'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel phénomène accompagne souvent les révélations divines dans le Nouveau Testament ?',
+  options: ['Voix du ciel'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel acte est souvent accompagné par la parole "tes péchés sont pardonnés" ?',
+  options: ['Guérison'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quelle pratique est enseignée comme modèle de prière dans le Nouveau Testament ?',
+  options: ['Notre Père'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quelle fête juive correspond au moment de l’effusion de l’Esprit sur les disciples ?',
+  options: ['Pentecôte'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel moyen surnaturel est souvent utilisé pour libérer des personnes de maladies ?',
+  options: ['Imposition des mains'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quelle construction est détruite symboliquement puis relevée en trois jours ?',
+  options: ['Temple'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel élément naturel est utilisé dans les paraboles pour symboliser la croissance du Royaume ?',
+  options: ['Graine'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel chiffre est souvent utilisé pour désigner un groupe de disciples envoyés ?',
+  options: ['12'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel aliment est multiplié pour nourrir une foule ?',
+  options: ['Pain'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel élément est utilisé pour symboliser le corps lors du dernier repas ?',
+  options: ['Pain'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel élément est utilisé pour symboliser le sang lors du dernier repas ?',
+  options: ['Vin'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel animal est monté pour une entrée triomphale à Jérusalem ?',
+  options: ['Ânon'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel objet est roulé pour fermer une tombe ?',
+  options: ['Pierre'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quelle durée sépare la crucifixion de la résurrection ?',
+  options: ['3 jours'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quelle manifestation céleste accompagne souvent les apparitions après la résurrection ?',
+  options: ['Lumière éclatante'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel commandement est considéré comme le plus important ?',
+  options: ['Aimer Dieu'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel est le second commandement le plus important ?',
+  options: ['Aimer son prochain'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quelle prière est enseignée comme modèle dans les évangiles ?',
+  options: ['Notre Père'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quelle pratique est mentionnée pour se rapprocher de Dieu en secret ?',
+  options: ['Jeûne'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel geste est recommandé en cas de conflit ?',
+  options: ['Pardon'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel nombre de fois est conseillé pour pardonner ?',
+  options: ['70 fois 7'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel acte extérieur manifeste un changement intérieur ?',
+  options: ['Baptême'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel mot signifie "bonne nouvelle" ?',
+  options: ['Évangile'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel fruit est évoqué pour illustrer les effets de l’Esprit ?',
+  options: ['Amour'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quelle pratique est recommandée pour éviter l’orgueil dans la prière ?',
+  options: ['Se retirer dans le secret'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quelle réaction accompagne souvent une guérison miraculeuse ?',
+  options: ['Louange'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel jugement est réservé aux hypocrites ?',
+  options: ['Condamnation'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel élément est comparé à la lumière du monde ?',
+  options: ['Lampe'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel support de prière est mentionné dans le Temple ?',
+  options: ['Encens'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel symbole représente la vigilance dans les paraboles ?',
+  options: ['Lampe allumée'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quelle durée correspond au ministère terrestre avant la crucifixion ?',
+  options: ['3 ans'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quelle action est faite sur les pieds pour montrer l’humilité ?',
+  options: ['Lavage'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel lieu est associé à la tentation après le baptême ?',
+  options: ['Désert'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel élément est associé à l’annonce de la résurrection ?',
+  options: ['Tombe vide'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel outil de torture est au centre du salut dans le Nouveau Testament ?',
+  options: ['Croix'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel jour est devenu celui de la résurrection ?',
+  options: ['Premier jour de la semaine'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel geste symbolise la paix donnée après la résurrection ?',
+  options: ['Souffle'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel phénomène accompagne l’ascension ?',
+  options: ['Nuée'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel don spirituel est manifesté à la Pentecôte ?',
+  options: ['Langues'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel acte précède souvent le baptême dans les Actes ?',
+  options: ['Conversion'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel livre vient après les évangiles ?',
+  options: ['Actes'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel moyen est utilisé pour répandre l’enseignement dans les églises ?',
+  options: ['Épîtres'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel thème revient dans les lettres aux églises ?',
+  options: ['Foi'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel mot désigne la "venue finale" attendue dans le Nouveau Testament ?',
+  options: ['Parousie'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel métier est exercé par plusieurs des premiers disciples ?',
+  options: ['Pêcheur'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel type d’arbre ne porte pas de fruit dans une parabole ?',
+  options: ['Figuier'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel élément est associé à la mise à l’épreuve de la foi ?',
+  options: ['Feu'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel fruit symbolise la paix dans les enseignements du Nouveau Testament ?',
+  options: ['Olive'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel nombre est utilisé pour désigner un groupe missionnaire élargi ?',
+  options: ['70'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel animal est utilisé comme symbole de l’innocence envoyée dans le monde ?',
+  options: ['Mouton'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel type de sol est comparé au cœur qui reçoit la parole ?',
+  options: ['Bonne terre'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quelle structure est construite sur le roc dans une parabole ?',
+  options: ['Maison'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel bâtiment est renversé par des marchands expulsés ?',
+  options: ['Temple'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quelle unité monétaire est souvent citée dans les paraboles ?',
+  options: ['Denier'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel instrument est utilisé pour semer dans les enseignements ?',
+  options: ['Main'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quelle heure de la journée est mentionnée lors des ténèbres à la crucifixion ?',
+  options: ['Sixième'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quelle mer est traversée en barque dans plusieurs récits ?',
+  options: ['Galilée'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel son annonce souvent une intervention divine dans l’Apocalypse ?',
+  options: ['Trompette'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel phénomène accompagne l’ouverture du ciel dans le livre de l’Apocalypse ?',
+  options: ['Tonnerre'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel chiffre est utilisé pour les sceaux dans l’Apocalypse ?',
+  options: ['7'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel objet est mangé dans l’Apocalypse pour transmettre la prophétie ?',
+  options: ['Petit livre'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quelle couleur est associée à la royauté dans l’Apocalypse ?',
+  options: ['Pourpre'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel objet symbolise la justice dans les lettres aux églises ?',
+  options: ['Balance'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quelle forme est utilisée pour représenter les lampes dans l’Apocalypse ?',
+  options: ['Chandeliers'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel chiffre représente la plénitude dans plusieurs passages ?',
+  options: ['7'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quelle ville est décrite comme la grande prostituée dans l’Apocalypse ?',
+  options: ['Babylone'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel élément naturel est changé en sang dans les jugements ?',
+  options: ['Mer'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quelle promesse est donnée à ceux qui vainquent dans les lettres aux églises ?',
+  options: ['Couronne'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel animal est symbolique du mal dans l’Apocalypse ?',
+  options: ['Dragon'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel type d’arme sort de la bouche dans une vision apocalyptique ?',
+  options: ['Épée'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quelle cité céleste est décrite dans l’Apocalypse ?',
+  options: ['Nouvelle Jérusalem'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quelle pierre est mentionnée comme fondement de la cité céleste ?',
+  options: ['Jaspe'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quelle forme géométrique est associée à la cité céleste ?',
+  options: ['Cube'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quelle substance précieuse est utilisée pour les rues de la cité céleste ?',
+  options: ['Or'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel type de chant est entendu autour du trône céleste ?',
+  options: ['Louange'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel nom est écrit sur le front des élus dans l’Apocalypse ?',
+  options: ['Nom de Dieu'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel est le nom du fleuve mentionné dans la Nouvelle Jérusalem ?',
+  options: ['Fleuve de vie'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel arbre est planté au bord du fleuve céleste ?',
+  options: ['Arbre de vie'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel élément ne sera plus présent dans la cité céleste ?',
+  options: ['Nuit'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quelle est la réaction des puissances face au retour glorieux ?',
+  options: ['Tremblement'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel titre est donné à la fin du livre de l’Apocalypse à celui qui revient ?',
+  options: ['Alpha et Oméga'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel terme désigne la promesse de retour à la fin ?',
+  options: ['Maranatha'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel est le nombre de bêtes mentionnées dans l’Apocalypse ?',
+  options: ['2'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel chiffre est lié au nom de la bête ?',
+  options: ['666'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quelle action est demandée pour être inscrit dans le livre de vie ?',
+  options: ['Victoire'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quelle est la durée du règne millénaire mentionnée ?',
+  options: ['1000 ans'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quelle ville terrestre est appelée "grande cité" et jugée à la fin ?',
+  options: ['Babylone'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel instrument est donné à chaque cavalier de l’Apocalypse ?',
+  options: ['Objet symbolique'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel élément est projeté sur la terre comme jugement ?',
+  options: ['Grêle'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel fléau touche les eaux dans les jugements ?',
+  options: ['Aigreur'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel nom est inscrit sur les fondements de la ville céleste ?',
+  options: ['Apôtres'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel est l’état final des fidèles selon la dernière vision ?',
+  options: ['Joie éternelle'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel type de graine devient un grand arbre dans une parabole ?',
+  options: ['Grain de moutarde'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel animal est recherché jusqu’à être retrouvé dans une parabole ?',
+  options: ['Brebis'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel objet de valeur est perdu puis retrouvé avec joie ?',
+  options: ['Pièce d’argent'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel arbre est maudit pour ne pas avoir de fruits ?',
+  options: ['Figuier'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel aliment est multiplié pour nourrir une foule ?',
+  options: ['Pain'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quelle boisson est transformée dans un miracle ?',
+  options: ['Eau en vin'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel élément naturel est calmé par une parole ?',
+  options: ['Tempête'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel fruit est mentionné comme produit du bon arbre ?',
+  options: ['Bon fruit'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel matériau est comparé au fondement solide ?',
+  options: ['Roche'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel métal est mentionné dans l’épreuve de la foi ?',
+  options: ['Or'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel organe est utilisé pour bénir ou maudire dans les épîtres ?',
+  options: ['Langue'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel vêtement est requis pour entrer au festin ?',
+  options: ['Habit de noce'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel sol étouffe la semence dans une parabole ?',
+  options: ['Sol pierreux'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quelle mesure est donnée à ceux qui donnent ?',
+  options: ['Bonne mesure, serrée'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quelle substance précieuse illustre la foi éprouvée ?',
+  options: ['Or purifié'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel liquide est versé sur les pieds en signe d’amour ?',
+  options: ['Parfum'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel instrument est utilisé dans une parabole de talents ?',
+  options: ['Pièces d’argent'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quelle lumière ne doit pas être cachée ?',
+  options: ['Lampe'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel jour est sanctifié pour faire du bien ?',
+  options: ['Sabbat'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel bâtiment est construit par folie sur le sable ?',
+  options: ['Maison'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel animal est utilisé pour montrer la prudence dans l’envoi en mission ?',
+  options: ['Serpent'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel animal est utilisé pour illustrer l’innocence en mission ?',
+  options: ['Colombe'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quelle plante est arrachée à la fin dans une parabole ?',
+  options: ['Ivraie'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel aliment est caché par une femme dans la pâte ?',
+  options: ['Levain'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel objet précieux est trouvé dans un champ ?',
+  options: ['Trésor caché'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel instrument est utilisé pour séparer les bons et les mauvais ?',
+  options: ['Filet'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel élément naturel est utilisé dans une guérison d’un aveugle ?',
+  options: ['Boues'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel aliment est donné à une foule assise sur l’herbe ?',
+  options: ['Poissons'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quelle distance est parcourue en marchant sur l’eau ?',
+  options: ['Jusqu’à la barque'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel élément est secoué lors de la résurrection ?',
+  options: ['Terre'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quelle partie du corps est guérie d’une hémorragie ?',
+  options: ['Vêtement touché'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quelle structure est descendue du toit pour un miracle ?',
+  options: ['Brancard'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel animal entre dans une troupe et les précipite dans la mer ?',
+  options: ['Pourceaux'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel fruit spirituel est premier dans les épîtres ?',
+  options: ['Amour'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel élément est le symbole du salut dans les épîtres ?',
+  options: ['Croix'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quelle armure protège la justice dans les épîtres ?',
+  options: ['Cuirasse'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel instrument défensif est mentionné dans l’armure spirituelle ?',
+  options: ['Bouclier'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel fruit spirituel est associé à la maîtrise de soi ?',
+  options: ['Tempérance'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel élément doit abonder avec la foi dans les lettres ?',
+  options: ['Œuvres'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quelle structure spirituelle est édifiée avec des pierres vivantes ?',
+  options: ['Temple spirituel'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel mot désigne la transformation de l’intelligence ?',
+  options: ['Renouvellement'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel terme désigne l’unité du corps spirituel ?',
+  options: ['Unité de l’Esprit'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel fruit spirituel est lié à la patience ?',
+  options: ['Longanimité'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel acte symbolique est lié à la nouvelle naissance ?',
+  options: ['Baptême'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel est le salaire du péché selon les épîtres ?',
+  options: ['Mort'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel don est appelé à être exercé dans l’amour ?',
+  options: ['Prophétie'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quelle loi est accomplie par l’amour ?',
+  options: ['Loi du Christ'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quelle est la première épître du Nouveau Testament ?',
+  options: ['Romains'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quelle langue est miraculeusement parlée à la Pentecôte ?',
+  options: ['Langues étrangères'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel type de feu apparaît au-dessus des têtes à la Pentecôte ?',
+  options: ['Langues de feu'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel événement soudain accompagne l’effusion de l’Esprit ?',
+  options: ['Bruissement violent'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quelle distance est parcourue en un clin d’œil dans une téléportation miraculeuse ?',
+  options: ['D’une ville à une autre'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel châtiment tombe sur des menteurs dans l’église primitive ?',
+  options: ['Mort soudaine'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel édifice est secoué pendant une prière collective ?',
+  options: ['Maison'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quelle partie du corps est guérie par un mouchoir ou un linge ?',
+  options: ['Malades guéris'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel objet est envoyé comme contact de guérison ?',
+  options: ['Mouchoir'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel phénomène rend la prison inutile lors d’un miracle ?',
+  options: ['Portes ouvertes'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel élément est utilisé pour guérir des yeux dans une vision ?',
+  options: ['Écailles tombées'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel son retentit avant une résurrection future selon les épîtres ?',
+  options: ['Trompette'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel aliment est interdit aux païens convertis ?',
+  options: ['Viande sacrifiée aux idoles'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel phénomène accompagne un tremblement de terre en prison ?',
+  options: ['Libération des chaînes'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quelle boisson est utilisée dans un rite de mémoire ?',
+  options: ['Vin'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel aliment est rompu dans un rite de mémoire ?',
+  options: ['Pain'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel acte marque la venue de l’Esprit dans les Actes ?',
+  options: ['Imposition des mains'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel bâtiment est visité pour prier à l’heure fixée ?',
+  options: ['Temple'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel son est entendu lors d’une théophanie dans une vision ?',
+  options: ['Voix du ciel'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel objet est utilisé pour descendre quelqu’un dans une ouverture ?',
+  options: ['Corbeille'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel animal est vu dans une nappe descendue du ciel ?',
+  options: ['Animaux impurs'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel élément du ciel est vu ouvert dans une vision ?',
+  options: ['Ciel ouvert'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel genre d’événement transporte une personne en esprit ?',
+  options: ['Vision céleste'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quelle fête juive précède l’effusion de l’Esprit ?',
+  options: ['Pentecôte'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel symbole désigne l’amour suprême dans une lettre ?',
+  options: ['Cloche sans amour'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel acte permet de laver les péchés symboliquement ?',
+  options: ['Baptême'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel mur est symboliquement renversé entre deux peuples ?',
+  options: ['Mur de séparation'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quelle fonction est comparée à un don spirituel dans les lettres ?',
+  options: ['Langue'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quelle qualité accompagne la foi selon les épîtres ?',
+  options: ['Espérance'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel élément est le signe d’une alliance renouvelée ?',
+  options: ['Coupe'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quelle ville est le théâtre d’un miracle de guérison d’un infirme ?',
+  options: ['Portique du Temple'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel phénomène lumineux entoure une vision céleste ?',
+  options: ['Lumière éclatante'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel obstacle est retiré surnaturellement d’un tombeau ?',
+  options: ['Pierre roulée'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel instrument est utilisé pour écrire les lettres aux églises ?',
+  options: ['Lettre manuscrite'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel élément terrestre est secoué lors d’une résurrection ?',
+  options: ['Séisme'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel nombre est associé à l’Esprit de conseil et de force ?',
+  options: ['Sept'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel liquide est versé pour marquer un envoi en mission ?',
+  options: ['Huile'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel livre contient les lettres aux sept églises ?',
+  options: ['Apocalypse'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel type de trône est vu dans une vision céleste ?',
+  options: ['Trône blanc'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel fleuve symbolique sort du trône dans une vision ?',
+  options: ['Fleuve de vie'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel arbre symbolique donne douze fruits ?',
+  options: ['Arbre de vie'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel fruit est réservé à ceux qui vainquent ?',
+  options: ['Fruit de l’arbre de vie'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quelle ville céleste descend du ciel dans une vision ?',
+  options: ['Jérusalem nouvelle'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel chiffre est associé aux fondations de la cité céleste ?',
+  options: ['Douze'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quelle mer symbolique est comme du cristal ?',
+  options: ['Mer de verre'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quelle couleur est associée à la robe de pureté ?',
+  options: ['Blanc'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel chiffre est associé aux sceaux ouverts dans une vision ?',
+  options: ['Sept'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel fléau est libéré à l’ouverture d’un sceau ?',
+  options: ['Famine'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel son annonce la fin dans une vision ?',
+  options: ['Trompette finale'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel élément tombe du ciel pour nourrir dans le désert selon une citation du Nouveau Testament ?',
+  options: ['Manne'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quelle action suit immédiatement une guérison dans plusieurs récits ?',
+  options: ['Se lever et marcher'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel animal est utilisé comme image de la ruse dans une instruction ?',
+  options: ['Serpent'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quelle saison est mentionnée pour illustrer un temps de moisson spirituelle ?',
+  options: ['Été'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel outil est utilisé pour séparer le bon grain dans une image du jugement ?',
+  options: ['Fourche'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quelle partie du vêtement est touchée dans un miracle de guérison ?',
+  options: ['Ourlet'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel liquide est transformé dans un miracle à un mariage ?',
+  options: ['Eau en vin'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel type de pièce est perdue puis retrouvée dans une parabole ?',
+  options: ['Drachme'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel outil de pêche est utilisé dans une parabole du Royaume ?',
+  options: ['Filet'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel temps est utilisé comme image d’attente du retour ?',
+  options: ['Nuit'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel matériau est comparé à une fondation solide ?',
+  options: ['Roc'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quelle plante est comparée à une foi vivante ?',
+  options: ['Grain de moutarde'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quelle partie du corps est lavée lors d’un acte d’humilité ?',
+  options: ['Pieds'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel animal est chassé dans un miracle près d’un cimetière ?',
+  options: ['Cochons'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel type de sol rend la semence stérile dans une parabole ?',
+  options: ['Sol pierreux'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quelle partie d’un bâtiment est remplie lors d’un miracle sonore ?',
+  options: ['Maison entière'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel type de monnaie est trouvée dans un poisson ?',
+  options: ['Statère'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel jour est souvent réservé à la lecture dans les synagogues ?',
+  options: ['Sabbat'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel meuble est retourné dans un acte symbolique dans le temple ?',
+  options: ['Table'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel instrument est cité dans une vision céleste pour la louange ?',
+  options: ['Harpe'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quelle mer est traversée miraculeusement pour rejoindre une rive ?',
+  options: ['Mer de Galilée'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel phénomène atmosphérique est apaisé par une parole ?',
+  options: ['Tempête'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel oiseau est utilisé comme symbole de l’Esprit dans un récit ?',
+  options: ['Colombe'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel aliment est multiplié avec les poissons dans un miracle ?',
+  options: ['Pains'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel contenant est rempli de vin nouveau dans une image ?',
+  options: ['Outre neuve'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel animal est lié dans une prophétie accomplie sur une monture ?',
+  options: ['Âne'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel type de lumière est comparé à la venue du Fils ?',
+  options: ['Éclair'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel liquide est symbolique du sang dans un repas sacré ?',
+  options: ['Vin'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quelle position est prise en prière dans les récits ?',
+  options: ['À genoux'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel objet est brisé lors d’un souvenir rituel ?',
+  options: ['Pain'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel corps est vu sans corruption dans une résurrection ?',
+  options: ['Glorifié'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quelle construction humaine est déclarée inutile pour Dieu dans un discours ?',
+  options: ['Temple'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quelle chaîne est brisée dans une prison par un miracle ?',
+  options: ['Liens de fer'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quelle réaction suit l’écoute de langues inconnues à la Pentecôte ?',
+  options: ['Étonnement'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel type d’écriture est gravée non sur pierre mais sur le cœur ?',
+  options: ['Loi intérieure'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quelle qualité est comparée à une cloche sans son ?',
+  options: ['Amour'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel fruit est cité comme fruit de l’Esprit ?',
+  options: ['Joie'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel voile est déchiré lors d’un événement majeur ?',
+  options: ['Voile du Temple'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel nombre est associé aux jours d’enseignements après la résurrection ?',
+  options: ['Quarante'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quelle activité est pratiquée dans la chambre haute ?',
+  options: ['Prière'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel mot est crié en louange dans les visions apocalyptiques ?',
+  options: ['Alléluia'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel livre est décrit comme doux à la bouche mais amer au ventre ?',
+  options: ['Petit livre'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel nombre est associé aux trompettes apocalyptiques ?',
+  options: ['Sept'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quelle coupe est pleine de la colère divine dans l’Apocalypse ?',
+  options: ['Coupe d’or'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel objet est lancé à la mer dans une vision apocalyptique ?',
+  options: ['Pierre'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel type de jugement est réservé au trône blanc ?',
+  options: ['Jugement dernier'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel mot est écrit sur les fronts dans une vision céleste ?',
+  options: ['Nom de Dieu'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quelle pierre précieuse compose les fondations de la cité céleste ?',
+  options: ['Jaspe'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel métal est associé aux pieds dans une vision d’Apocalypse ?',
+  options: ['Airain'],
+  correctIndex: 0,
+  theme: 'Nouveau Testament',
+},
+{
+  question: 'Quel objet est brisé par un prophète pour illustrer la destruction d’Israël ?',
+  options: ['Cruche'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel aliment est mangé cuit sur des excréments dans une vision prophétique ?',
+  options: ['Pain'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel instrument à corde est mentionné pour décrire une lamentation prophétique ?',
+  options: ['Harpe'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel type de vent sec représente la colère divine chez un prophète ?',
+  options: ['Vent d’orient'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel animal représente un royaume envahisseur dans une vision ?',
+  options: ['Lion'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quelle partie du corps est touchée par un charbon ardent dans une vision ?',
+  options: ['Lèvres'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quelle structure immense est vue pleine de roues et d’yeux dans une vision ?',
+  options: ['Char céleste'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel type de robe est déchiré pour symboliser la rupture d’une alliance ?',
+  options: ['Robe de lin'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel fruit est vu dans un panier pour illustrer la fin d’Israël ?',
+  options: ['Figues'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quelle construction est mesurée dans une vision d’Ézéchiel ?',
+  options: ['Temple'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel métal est chauffé pour représenter la purification ?',
+  options: ['Argent'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel élément naturel couvre la terre dans une vision de jugement ?',
+  options: ['Ténèbres'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel outil agricole est transformé en arme dans une vision apocalyptique ?',
+  options: ['Faucille'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel objet d’écriture est utilisé pour enregistrer les fautes d’un peuple ?',
+  options: ['Tablette'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel végétal est utilisé comme image d’un peuple infidèle ?',
+  options: ['Vigne'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel animal représente un royaume rusé dans la vision de Daniel ?',
+  options: ['Léopard'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel métal est le plus bas dans la statue de Daniel ?',
+  options: ['Fer'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel type d’eau est vue sortant du Temple dans une vision ?',
+  options: ['Ruisseau'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel feu est allumé dans les os d’un prophète selon ses paroles ?',
+  options: ['Feu intérieur'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel ustensile de cuisine est utilisé pour illustrer la ville assiégée ?',
+  options: ['Poêle de fer'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel nombre de jours un prophète doit-il rester couché sur un côté ?',
+  options: ['390'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quelle ville est appelée prostituée dans une accusation prophétique ?',
+  options: ['Jérusalem'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel fleuve est vu dans une vision de vie renaissante ?',
+  options: ['Jourdain'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel objet est lié à la bouche dans une vision d’envoi prophétique ?',
+  options: ['Livre ouvert'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel animal est tenu en laisse pour illustrer la domination divine ?',
+  options: ['Chien'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel vêtement est porté en signe de deuil par un prophète ?',
+  options: ['Sacs'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel aliment est mélangé à de la cendre dans un signe de malédiction ?',
+  options: ['Pain'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel instrument de musique est suspendu aux saules selon un psaume prophétique ?',
+  options: ['Lyre'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel membre du corps est rendu muet dans une vision jusqu’à l’accomplissement ?',
+  options: ['Langue'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel bâtiment sera reconstruit selon une promesse prophétique ?',
+  options: ['Temple'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel fléau naturel est souvent cité comme châtiment dans les prophéties ?',
+  options: ['Sécheresse'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel type d’insecte est vu comme jugement contre la moisson ?',
+  options: ['Sauterelle'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel livre doit être mangé dans une vision pour annoncer la parole ?',
+  options: ['Rouleau'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel métal précieux est comparé à un peuple purifié ?',
+  options: ['Or'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel fruit est attendu d’un figuier dans une prophétie ?',
+  options: ['Figue'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quelle voix est entendue dans le désert selon un oracle ?',
+  options: ['Cri'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel lieu élevé est souvent dénoncé dans les prophéties ?',
+  options: ['Hauteurs'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel animal docile est conduit à l’abattoir dans une prophétie ?',
+  options: ['Agneau'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel objet cassé illustre l’inutilité d’Israël dans une parabole prophétique ?',
+  options: ['Cruche'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel type de balance est utilisé pour mesurer les actions d’un peuple ?',
+  options: ['Balance fausse'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel animal est utilisé pour représenter un empire puissant et destructeur ?',
+  options: ['Ours'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel aliment est dit amer lors de la lecture des jugements ?',
+  options: ['Rouleau prophétique'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel métal est associé aux dents d’une bête dans la vision de Daniel ?',
+  options: ['Fer'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel nombre de cornes représente des royaumes futurs dans une vision ?',
+  options: ['Dix'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quelle région désertique est le lieu d’apparition de nombreuses visions ?',
+  options: ['Babylone'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel jour du mois est souvent lié aux jeûnes prophétiques ?',
+  options: ['Dixième'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel vêtement est lié à l’humilité dans les visions prophétiques ?',
+  options: ['Toile de sac'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel instrument de mesure est utilisé dans la vision du nouveau Temple ?',
+  options: ['Roseau'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel état spirituel est comparé à une prostituée dans les oracles ?',
+  options: ['Infidélité'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel objet est vu dans une vision pour symboliser une fausse balance ?',
+  options: ['Fil à plomb'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel type de fruit pourri est utilisé pour décrire la corruption d’un peuple ?',
+  options: ['Raisin'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quelle mer est évoquée comme témoin du jugement ?',
+  options: ['Mer Rouge'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel élément céleste est obscurci dans une prophétie ?',
+  options: ['Lune'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quelle odeur est rejetée dans une dénonciation prophétique ?',
+  options: ['Encens'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel lieu est transformé en désert dans une prophétie de jugement ?',
+  options: ['Juda'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel objet agricole est transformé en instrument de paix dans une vision ?',
+  options: ['Lance'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel métal est comparé à une ville corrompue dans une dénonciation ?',
+  options: ['Étain'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel jour est souvent mentionné comme « le jour du Seigneur » ?',
+  options: ['Jour de ténèbres'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel type de nuée est vue accompagnant le trône céleste ?',
+  options: ['Nuée éclatante'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel liquide représente la bénédiction répandue sur le peuple ?',
+  options: ['Huile'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel animal représente un peuple oppresseur dans la vision d’Ézéchiel ?',
+  options: ['Aigle'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel objet d’argile illustre la soumission de l’homme à Dieu ?',
+  options: ['Vase'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel fleuve est asséché dans une prophétie contre une nation ?',
+  options: ['Euphrate'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel type de sol est évoqué comme maudit par une prophétie ?',
+  options: ['Sol aride'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel instrument de mesure est utilisé dans une vision de reconstruction ?',
+  options: ['Niveau à bulle'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel type d’arbre est souvent mentionné pour décrire la prospérité ou la ruine ?',
+  options: ['Olivier'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel bâtiment est appelé « repaire de brigands » par un prophète ?',
+  options: ['Temple'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quelle boisson est utilisée pour symboliser la colère divine ?',
+  options: ['Coupe de vin'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel instrument de sonnerie est utilisé pour appeler à la repentance ?',
+  options: ['Cor'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel phénomène naturel est utilisé pour illustrer la voix de Dieu ?',
+  options: ['Tremblement de terre'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel animal est comparé à un pasteur mauvais ?',
+  options: ['Chien muet'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel ustensile cassé illustre l’irréversibilité du jugement ?',
+  options: ['Cruche'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel acte rituel est critiqué comme étant sans cœur par les prophètes ?',
+  options: ['Sacrifice vide'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel type de pluie est absente comme punition ?',
+  options: ['Pluie de printemps'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel membre du corps est symboliquement durci ?',
+  options: ['Front'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel lieu élevé est détruit dans une dénonciation prophétique ?',
+  options: ['Autel païen'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel type d’animaux est mentionné pour illustrer la désolation ?',
+  options: ['Chacals'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel geste est ordonné à un prophète pour montrer la captivité ?',
+  options: ['Porter un joug'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel ustensile est utilisé pour filtrer un peuple comme le blé ?',
+  options: ['Tamis'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel produit agricole est mangé en silence dans une vision de deuil ?',
+  options: ['Pain d’orge'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel objet est suspendu dans le ciel dans une vision de jugement ?',
+  options: ['Rouleau volant'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quelle lumière est comparée à l’intervention divine ?',
+  options: ['Éclair'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel acte public est exigé pour dénoncer l’infidélité du peuple ?',
+  options: ['Crier dans les rues'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel endroit désertique est transformé en jardin dans une vision de restauration ?',
+  options: ['Éden'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel ustensile est utilisé comme symbole d’Israël dans un enseignement ?',
+  options: ['Lampe'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quelle partie du ciel est secouée dans une prophétie apocalyptique ?',
+  options: ['Étoiles'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel objet métallique est utilisé pour casser les nations dans une vision ?',
+  options: ['Bâton de fer'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel son de la nature précède souvent la manifestation divine ?',
+  options: ['Tonnerre'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel lieu est décrit comme une coupe d’étourdissement pour les nations ?',
+  options: ['Jérusalem'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel acte symbolique représente la dispersion du peuple ?',
+  options: ['Jeter des pierres'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel vêtement est porté en signe de souffrance prophétique ?',
+  options: ['Toile de sac'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel type d’arbre est abattu dans une image du jugement divin ?',
+  options: ['Cèdre du Liban'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel feu descend du ciel pour purifier ou juger dans les visions prophétiques ?',
+  options: ['Feu de l’autel'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel type de marche symbolique est imposée à un prophète pour illustrer l’exil ?',
+  options: ['Marche pieds nus'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel type d’objet précieux est comparé à la justice recherchée ?',
+  options: ['Perle'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel aliment est amer à la bouche mais doux dans l’estomac dans une vision ?',
+  options: ['Rouleau prophétique'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quelle forme animale hybride est décrite dans les visions prophétiques ?',
+  options: ['Créature à quatre faces'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel type de pluie symbolise le renouveau dans les prophéties ?',
+  options: ['Pluie de l’arrière-saison'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel instrument est utilisé pour symboliser la surveillance divine ?',
+  options: ['Tour de guet'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quelle activité illustre l’infidélité du peuple dans une parabole prophétique ?',
+  options: ['Adultère'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel aliment est préparé avec des cendres dans un geste symbolique ?',
+  options: ['Pain d’orge impur'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel phénomène accompagne l’arrivée de la gloire de Dieu dans le temple ?',
+  options: ['Nuée épaisse'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quelle saison représente le jugement dans plusieurs prophéties ?',
+  options: ['Moisson'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel instrument de pesée est manipulé avec injustice selon un prophète ?',
+  options: ['Balance fausse'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel type de mur est décrit comme étant crépi de mensonges ?',
+  options: ['Mur fragile'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel animal représente la menace venant du nord dans une vision ?',
+  options: ['Ours'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel type de feu est mentionné comme dévorant les montagnes ?',
+  options: ['Feu consumant'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel type de vêtement est utilisé comme symbole de jugement ?',
+  options: ['Vêtement souillé'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel objet est vu tournant dans une vision de jugement rapide ?',
+  options: ['Épée'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel type de bâtiment est réduit en ruine dans une prophétie ?',
+  options: ['Palais'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel animal mange l’herbe dans une vision de destruction ?',
+  options: ['Sauterelle'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel récipient est rempli de colère divine selon une vision apocalyptique ?',
+  options: ['Coupe'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel métal représente la purification par le feu ?',
+  options: ['Argent'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel objet est suspendu dans le ciel pour mesurer une ville ?',
+  options: ['Fil à plomb'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel aliment est mangé sec et sans saveur dans une période de jeûne ?',
+  options: ['Pain sec'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel son est associé à la venue de l’Éternel dans plusieurs prophéties ?',
+  options: ['Son du shofar'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel matériau est évoqué dans la fabrication d’idoles ?',
+  options: ['Bois'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quelle ville est représentée comme une prostituée infidèle ?',
+  options: ['Samarie'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel type d’arbre est mentionné comme sec et brûlé ?',
+  options: ['Vigne desséchée'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel ciel est décrit comme étant de bronze dans une malédiction ?',
+  options: ['Ciel fermé'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel animal rongeur est utilisé comme symbole de dévastation ?',
+  options: ['Chenille'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel type de pierre est mentionné comme fondement juste ?',
+  options: ['Pierre d’angle'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel objet céleste est décrit comme tombant dans le jugement final ?',
+  options: ['Étoile'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quelle herbe est évoquée comme flétrie par le vent brûlant ?',
+  options: ['Herbe du désert'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel outil est utilisé dans une parabole pour représenter le labour du cœur ?',
+  options: ['Charrue'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel type de jugement est évoqué comme « crié des toits » ?',
+  options: ['Jugement public'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel liquide est comparé aux larmes du prophète ?',
+  options: ['Eau'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel animal représente la désolation après le jugement ?',
+  options: ['Hibou'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel objet est pesé dans une balance divine ?',
+  options: ['Péché'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel phénomène illustre la voix puissante de Dieu ?',
+  options: ['Vent fort'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel type d’eau est recherchée dans une terre aride spirituellement ?',
+  options: ['Eau vive'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel instrument est transformé en outil agricole dans une vision de paix ?',
+  options: ['Épée'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel vêtement est arraché dans un signe de deuil ?',
+  options: ['Manteau'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel élément naturel est bloqué pour punir le peuple ?',
+  options: ['Pluie'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel type de mur est utilisé pour illustrer une protection illusoire ?',
+  options: ['Mur crépi'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel objet quotidien devient impur dans une prophétie ?',
+  options: ['Pain'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel type de roche est percée dans une vision symbolique ?',
+  options: ['Roche dure'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quelle forme de vent emporte la poussière dans un jugement ?',
+  options: ['Tourbillon'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quelle couleur est associée au sang dans un jugement prophétique ?',
+  options: ['Rouge'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel aliment est mesuré et rationné dans une prophétie de siège ?',
+  options: ['Blé'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel instrument musical est suspendu dans le silence du deuil ?',
+  options: ['Harpe'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quelle couleur symbolise souvent le péché lavé ?',
+  options: ['Écarlate'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel objet brûle sans se consumer dans une vision divine ?',
+  options: ['Buisson'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel objet volant est vu dans une vision de malédiction ?',
+  options: ['Rouleau volant'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel phénomène secoue les fondations de la terre ?',
+  options: ['Séisme'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel type de feu descend pour consommer l’autel dans une vision ?',
+  options: ['Feu du ciel'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel liquide représente le jugement répandu ?',
+  options: ['Sang'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel type de fruit est mentionné comme porteur de jugement ?',
+  options: ['Figue gâtée'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel récipient illustre la colère remplie de Dieu prête à être déversée ?',
+  options: ['Coupe de fureur'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel type d’arbre est secoué dans une image de jugement ?',
+  options: ['Olivier'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel métal fondu représente la purification du peuple ?',
+  options: ['Or'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel animal incarne la ruse dans un avertissement prophétique ?',
+  options: ['Renard'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel bâtiment est symboliquement reconstruit dans une vision ?',
+  options: ['Temple'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel instrument de musique est utilisé pour annoncer le jour du Seigneur ?',
+  options: ['Trompette'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel récipient est jeté pour illustrer la destruction irréversible ?',
+  options: ['Cruche'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel type de pluie est retenue dans un signe de malédiction ?',
+  options: ['Pluie tardive'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel animal de montagne représente un ennemi impitoyable ?',
+  options: ['Léopard'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel objet de cuisine est brisé pour représenter Israël ?',
+  options: ['Pot'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel lieu est décrit comme une vallée de vision ?',
+  options: ['Vallée de Hinnom'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel son accompagne le tremblement de terre prophétique ?',
+  options: ['Rugissement'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quelle boisson est comparée à la colère divine ?',
+  options: ['Vin amer'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel type de route est rendue droite dans une vision de restauration ?',
+  options: ['Chemin du désert'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quelle partie du corps symbolise l’obéissance ou la rébellion ?',
+  options: ['Oreille'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel ustensile de mesure est utilisé dans une vision de justice ?',
+  options: ['Mesure d’efa'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel symbole est suspendu entre ciel et terre dans une vision ?',
+  options: ['Volant de malédiction'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel type de vent est associé à la colère du Seigneur ?',
+  options: ['Vent d’orient'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quelle couleur est associée à la pureté retrouvée ?',
+  options: ['Blanc'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel lieu est vu comme un désert spirituel dans les prophéties ?',
+  options: ['Juda'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quelle image agricole illustre l’attente divine d’un peuple juste ?',
+  options: ['Vigne'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quelle action rituelle est simulée avec des cendres ?',
+  options: ['Pénitence'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quelle chose est décrite comme rongée par la rouille à cause de l’iniquité ?',
+  options: ['Chaudron'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel acte symbolique illustre la captivité d’Israël ?',
+  options: ['Porter un joug'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel objet lourd représente l’aveuglement du peuple ?',
+  options: ['Pierre'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quelle direction est souvent associée à la menace ennemie ?',
+  options: ['Nord'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel phénomène céleste est obscurci dans le jugement ?',
+  options: ['Soleil noirci'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel animal est attaché pour représenter un peuple réticent ?',
+  options: ['Âne sauvage'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel objet d’apparat est enlevé dans le deuil prophétique ?',
+  options: ['Turban'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel type de bâton est brisé pour représenter l’unité perdue ?',
+  options: ['Bâton de fraternité'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel son est utilisé pour annoncer l’invasion ?',
+  options: ['Trompette de guerre'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel fruit est mûr dans une vision de jugement ?',
+  options: ['Panier de figues'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel organe est dit endurci spirituellement ?',
+  options: ['Cœur'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel objet de luxe devient méprisable dans une vision de renversement ?',
+  options: ['Ornement'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel ustensile est rougi par le feu dans une vision de purification ?',
+  options: ['Charbon ardent'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quelle source devient amère dans une prophétie ?',
+  options: ['Eaux de Mara'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quelle route est fermée à cause de l’iniquité du peuple ?',
+  options: ['Route du sanctuaire'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel objet est jeté à la terre dans un geste prophétique ?',
+  options: ['Trente pièces'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel type de lien est brisé par la désobéissance ?',
+  options: ['Alliance'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel objet est mesuré pour évaluer la fidélité ?',
+  options: ['Cordeau à mesurer'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel matériau représente la dureté du cœur ?',
+  options: ['Fer'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel aliment devient amer dans la bouche ?',
+  options: ['Rouleau'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quelle structure est abaissée dans le jugement final ?',
+  options: ['Montagne orgueilleuse'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel outil agricole est transformé en outil de guerre ?',
+  options: ['Faucille'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quelle action illustre la repentance nationale ?',
+  options: ['Déchirer ses vêtements'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quelle forme de lumière est retirée dans la nuit prophétique ?',
+  options: ['Lune obscure'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel type de porte est fermée à cause du péché ?',
+  options: ['Porte du sanctuaire'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel liquide est comparé à une inondation de jugement ?',
+  options: ['Eau débordante'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel tissu est utilisé pour signifier le deuil dans les prophéties ?',
+  options: ['Sacs'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quelle mer est frappée dans une vision de destruction ?',
+  options: ['Mer Rouge'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel type d’arme est brisé dans une prophétie de paix ?',
+  options: ['Épée'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel outil est suspendu pour mesurer Jérusalem ?',
+  options: ['Cordeau'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel type d’arbre illustre la stabilité du juste dans les prophéties ?',
+  options: ['Cèdre'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quelle image de poterie illustre la souveraineté de Dieu ?',
+  options: ['Tour du potier'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel son annonce la venue du jugement dans les montagnes ?',
+  options: ['Rugissement du lion'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel élément est comparé à une muraille protectrice ?',
+  options: ['Feu'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel élément naturel est retenu dans un temps de sécheresse spirituelle ?',
+  options: ['Pluie'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel type de champs est livré aux bêtes dans une prophétie de jugement ?',
+  options: ['Vignes'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel animal symbolise les nations féroces dans les visions ?',
+  options: ['Ours'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel mur est rebâti dans une prophétie de restauration ?',
+  options: ['Mur de Jérusalem'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel arbre sec devient un symbole d’espérance ?',
+  options: ['Tronc de souche'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel métal est raffiné dans un feu symbolique ?',
+  options: ['Argent'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel objet est secoué pour symboliser la purification du peuple ?',
+  options: ['Tamis'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quelle maison est rendue déserte dans une prophétie ?',
+  options: ['Maison de Juda'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel symbole aérien illustre le message céleste dans une vision ?',
+  options: ['Vol du rouleau'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel son est étouffé dans une ville jugée ?',
+  options: ['Chants de joie'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel fruit est cueilli trop tôt dans un avertissement prophétique ?',
+  options: ['Raisin immature'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel liquide est versé comme offrande dans un appel au retour ?',
+  options: ['Vin'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel aliment devient inexistant dans une famine spirituelle ?',
+  options: ['Pain de la parole'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel vêtement est enlevé pour symboliser la honte ?',
+  options: ['Manteau'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel instrument est brisé dans les lamentations prophétiques ?',
+  options: ['Cithare'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel type de feu consume une forêt dans les jugements de Dieu ?',
+  options: ['Feu dévorant'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel objet est pesé dans une balance divine ?',
+  options: ['Actions'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel type de souffle emporte la paille dans un jugement ?',
+  options: ['Souffle du Seigneur'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel type d’animal est frappé par les plaies prophétiques ?',
+  options: ['Troupeaux'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel type de pierre est lancée dans la mer pour illustrer la chute de Babylone ?',
+  options: ['Pierre de meule'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel oiseau est silencieux dans une ville dévastée ?',
+  options: ['Tourterelle'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel élément est transformé en sang dans une vision de fléau ?',
+  options: ['Eau'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel lieu est transformé en désert dans une vision de jugement ?',
+  options: ['Montagne de Sion'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel vêtement est souillé dans une vision de péché ?',
+  options: ['Tunique'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quelle étoffe est déchirée dans une image de division ?',
+  options: ['Voile'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel fruit est absent d’un figuier desséché ?',
+  options: ['Figue'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel type de lumière est comparé à la justice ?',
+  options: ['Aurore'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel liquide est comparé à la justice dans Amos ?',
+  options: ['Eaux qui coulent'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel arbre est déraciné dans la colère divine ?',
+  options: ['Palmier'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel symbole agricole évoque la moisson du jugement ?',
+  options: ['Faucille'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quelle voix est entendue dans le désert ?',
+  options: ['Appel à préparer la voie du Seigneur'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel type de sable est utilisé pour mesurer les limites du peuple ?',
+  options: ['Sable de la mer'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel type de muraille illustre la confiance vaine ?',
+  options: ['Muraille de plâtre'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel élément du ciel est secoué dans les visions apocalyptiques ?',
+  options: ['Étoiles'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel matériau représente les cœurs endurcis ?',
+  options: ['Pierre'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel objet de lumière cesse de briller dans le jour du Seigneur ?',
+  options: ['Lune'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quelle plante devient sèche à cause du jugement ?',
+  options: ['Herbe'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel vent disperse les ennemis selon Nahum ?',
+  options: ['Tourbillon'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel type de feu entoure le trône céleste ?',
+  options: ['Feu ardent'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quel objet roule dans la plaine dans une image d’abandon ?',
+  options: ['Buisson sec'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quelle odeur est comparée à celle de la rébellion ?',
+  options: ['Puanteur'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Quelle vallée est remplie d’ossements dans une vision ?',
+  options: ['Vallée des ossements secs'],
+  correctIndex: 0,
+  theme: 'Prophètes',
+},
+{
+  question: 'Qui a mangé le fruit défendu dans le jardin d’Éden ?',
+  options: ['Ève'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui est le premier homme ?',
+  options: ['Adam'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui est la première femme ?',
+  options: ['Eve'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Quel animal a dit à Eve de manger le fruit ?',
+  options: ['Serpent'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a tué Abel ?',
+  options: ['Caïn'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a été tué par Caïn ?',
+  options: ['Abel'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui est le frère de Caïn ?',
+  options: ['Abel'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+ {
+  question: 'Qui est le frère de Abel ?',
+  options: ['Caïn'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+ {
+  question: 'Qui est le nouveau frère de Caïn ?',
+  options: ['Sett'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui est la première assomption ?',
+  options: ['Hénoch'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui est l\'homme qui a vécu le plus longtemps ?',
+  options: ['Mathusalem'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Combien d\'années à vécu Mathusalem ?',
+  options: ['969 ans'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a construit une arche pour survivre au déluge ?',
+  options: ['Noé'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui est le frère de Sem et Japhet ?',
+  options: ['Cham'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui est le frère de Japhet et Cham ?',
+  options: ['Sem'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui est le frère de Sem et Cham ?',
+  options: ['Japhet'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui est le fils de Cham ?',
+  options: ['Canaan'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui est maudit par Noé ?',
+  options: ['Canaan'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a été vu ivre par ses fils ?',
+  options: ['Noé'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui est le père de Abraham ?',
+  options: ['Térah'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Quel père de patriarche était idolatre ?',
+  options: ['Térah'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a reçu les dix commandements sur le mont Sinaï ?',
+  options: ['Moïse'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a traversé la mer Rouge avec les Israélites ?',
+  options: ['Moïse'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a été vendu par ses frères et emmené en Égypte ?',
+  options: ['Joseph'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a interprété les rêves de Pharaon en Égypte ?',
+  options: ['Joseph'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a combattu Goliath ?',
+  options: ['David'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui était roi lors de la construction du Temple à Jérusalem ?',
+  options: ['Salomon'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a été jeté dans la fosse aux lions ?',
+  options: ['Daniel'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a survécu dans un grand poisson pendant trois jours ?',
+  options: ['Jonas'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a été le premier roi d’Israël ?',
+  options: ['Saül'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a reçu la visite d’un ange annonçant une naissance miraculeuse ?',
+  options: ['Marie'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a baptisé Jésus ?',
+  options: ['Jean-Baptiste'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a trahi Jésus pour de l’argent ?',
+  options: ['Judas'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a renié Jésus trois fois ?',
+  options: ['Pierre'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a porté la croix de Jésus ?',
+  options: ['Simon de Cyrène'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a vu Jésus ressuscité en premier ?',
+  options: ['Marie de Magdala'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a écrit la majorité des épîtres du Nouveau Testament ?',
+  options: ['Paul'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a été transformé en statue de sel ?',
+  options: ['Femme de Lot'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a interprété le rêve de Nabuchodonosor ?',
+  options: ['Daniel'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui est monté au ciel sans mourir selon la Genèse ?',
+  options: ['Énoch'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a reçu les tables de la Loi deux fois ?',
+  options: ['Moïse'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a enduré de grandes souffrances sans renier Dieu ?',
+  options: ['Job'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui s\'est transformé en statue de sel ?',
+  options: ['Femme de Lot'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui est morte car elle n\'a pas écouté Dieu à Sodome ?',
+  options: ['Femme de Lot'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Abraham a prié pour sauver qui ?',
+  options: ['Lot'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui est le seul survivant de Sodome ?',
+  options: ['Lot'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Lot a été violé par qui ?',
+  options: ['Ses filles'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui sont les enfants de Lot ?',
+  options: ['Moab et Ben-Ammi'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Où sont allés se réfugiés Lot et ses filles ?',
+  options: ['Dans une grotte'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a rêvé d’une échelle atteignant le ciel ?',
+  options: ['Jacob'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a combattu avec un ange toute une nuit ?',
+  options: ['Jacob'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a été jeté dans une citerne par ses frères ?',
+  options: ['Joseph'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a refusé de se prosterner devant une idole et a été jeté dans la fournaise ?',
+  options: ['Shadrak'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a reconstruit le mur de Jérusalem après l’exil ?',
+  options: ['Néhémie'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a eu un fils dans sa vieillesse avec Sara ?',
+  options: ['Abraham'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a reçu la loi orale et écrite au mont Sinaï ?',
+  options: ['Moïse'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a reçu l’ordre de parler à un ossement sec ?',
+  options: ['Ézéchiel'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a vu des roues dans une vision céleste ?',
+  options: ['Ézéchiel'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a entendu l’appel de Dieu dans le Temple alors qu’il était enfant ?',
+  options: ['Samuel'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a été élevé par la fille du pharaon ?',
+  options: ['Moïse'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a fait tomber les murs de Jéricho ?',
+  options: ['Josué'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a vécu dans le désert en mangeant des sauterelles ?',
+  options: ['Jean-Baptiste'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a annoncé à Marie qu’elle serait mère ?',
+  options: ['Gabriel'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a douté de la résurrection de Jésus jusqu’à voir ses plaies ?',
+  options: ['Thomas'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a écrit l’Apocalypse ?',
+  options: ['Jean'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a été choisi pour remplacer Judas parmi les apôtres ?',
+  options: ['Matthias'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a converti un eunuque éthiopien sur la route ?',
+  options: ['Philippe'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a été mordu par un serpent sans en mourir ?',
+  options: ['Paul'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a été frappé aveugle sur le chemin de Damas ?',
+  options: ['Paul'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a dit "Voici l’Agneau de Dieu" ?',
+  options: ['Jean-Baptiste'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a lavé les pieds des disciples ?',
+  options: ['Jésus'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a été enlevé au ciel dans un char de feu ?',
+  options: ['Élie'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a fait tomber le feu du ciel sur un autel ?',
+  options: ['Élie'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a vu l’échelle entre la terre et le ciel dans un rêve ?',
+  options: ['Jacob'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a transformé l’eau en vin ?',
+  options: ['Jésus'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a renié Jésus trois fois avant le chant du coq ?',
+  options: ['Pierre'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a été englouti par un grand poisson après avoir fui sa mission ?',
+  options: ['Jonas'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a été trahi pour trente pièces d’argent ?',
+  options: ['Judas'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a tué Goliath avec une fronde ?',
+  options: ['David'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a écrit de nombreux psaumes dans la Bible ?',
+  options: ['David'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a interprété les rêves du pharaon en Égypte ?',
+  options: ['Joseph'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a construit un bateau pour survivre au déluge ?',
+  options: ['Noé'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a reçu une tunique multicolore de son père ?',
+  options: ['Joseph'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a vu un buisson ardent qui ne se consumait pas ?',
+  options: ['Moïse'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a conduit le peuple hors d’Égypte ?',
+  options: ['Moïse'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a reçu les dix commandements ?',
+  options: ['Moïse'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a trahi son frère pour un plat de lentilles ?',
+  options: ['Ésaü'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a béni les fils de Joseph avant de mourir ?',
+  options: ['Jacob'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a été reconnu vivant par ses frères en Égypte ?',
+  options: ['Joseph'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a été sauvé dans un panier sur le Nil ?',
+  options: ['Moïse'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a été roi après Saül ?',
+  options: ['David'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui est resté fidèle à Dieu malgré de grandes souffrances ?',
+  options: ['Job'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a chanté un cantique après avoir traversé la mer Rouge ?',
+  options: ['Myriam'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a refusé de renier sa foi face aux lions ?',
+  options: ['Daniel'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a conduit le peuple après la mort de Moïse ?',
+  options: ['Josué'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a demandé la sagesse à Dieu plutôt que la richesse ?',
+  options: ['Salomon'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a jugé Israël sous un palmier ?',
+  options: ['Déborah'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a été caché dans le Temple enfant pour être protégé ?',
+  options: ['Joas'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a été exaucé alors qu’il priait pour un fils au Temple ?',
+  options: ['Zacharie'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui est l’épouse d’Abraham ?',
+  options: ['Sara'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui est le neveu d’Abraham ?',
+  options: ['Lot'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a conduit les Israélites dans la Terre Promise ?',
+  options: ['Josué'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui était la femme de Jacob et mère de Joseph ?',
+  options: ['Rachel'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui était le frère jumeau de Jacob ?',
+  options: ['Ésaü'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui était la femme de David et mère de Salomon ?',
+  options: ['Bath-Shéba'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a trahi Samson ?',
+  options: ['Dalila'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui était la reine qui a visité Salomon ?',
+  options: ['Reine de Saba'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a remplacé Élie comme prophète ?',
+  options: ['Élisée'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui était la femme de Zacharie, mère de Jean-Baptiste ?',
+  options: ['Élisabeth'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui était le père de Jean-Baptiste ?',
+  options: ['Zacharie'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui était la servante d’Abraham et mère d’Ismaël ?',
+  options: ['Agar'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui était le fils d’Abraham et d’Agar ?',
+  options: ['Ismaël'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a succédé à Moïse ?',
+  options: ['Josué'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui était la reine qui a sauvé le peuple juif ?',
+  options: ['Esther'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui était l’oncle d’Esther ?',
+  options: ['Mardochée'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui était le roi perse mari d’Esther ?',
+  options: ['Assuérus'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a accusé faussement Joseph en Égypte ?',
+  options: ['Femme de Potiphar'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a violé Joseph en Égypte ?',
+  options: ['Femme de Potiphar'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui était le roi de Babylone quand Daniel fut jeté dans la fosse ?',
+  options: ['Darius'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a été crucifié aux côtés de Jésus ?',
+  options: ['Le bon larron'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui était la femme d’Abraham ?',
+  options: ['Sara'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a été la mère de Samuel ?',
+  options: ['Anne'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui était le roi d’Israël connu pour sa grande sagesse ?',
+  options: ['Salomon'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a été la mère de Jean-Baptiste ?',
+  options: ['Élisabeth'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a été le mari de Ruth ?',
+  options: ['Boaz'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a été la belle-mère de Ruth ?',
+  options: ['Naomi'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a été la fille de Jacob aimée par Jacob ?',
+  options: ['Rachel'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui était la sœur aînée de Rachel, épouse de Jacob ?',
+  options: ['Léa'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui était le père de Jean-Baptiste ?',
+  options: ['Zacharie'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui était la femme de Zacharie ?',
+  options: ['Élisabeth'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui était la mère de Jésus ?',
+  options: ['Marie'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui était le père adoptif de Jésus sur terre ?',
+  options: ['Joseph'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a été choisi comme roi après Saül ?',
+  options: ['David'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui était le père de David ?',
+  options: ['Isaï'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui était la femme d’Isaac ?',
+  options: ['Rébecca'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a trompé son père pour obtenir la bénédiction ?',
+  options: ['Jacob'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui était le fils d’Abraham et Sara ?',
+  options: ['Isaac'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui était le fils aîné d’Isaac ?',
+  options: ['Ésaü'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a été transformé en statue de sel en regardant derrière elle ?',
+  options: ['Femme de Lot'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a donné naissance à Jésus dans une étable ?',
+  options: ['Marie'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a été le premier roi d’Israël ?',
+  options: ['Saül'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a été le père de Moïse ?',
+  options: ['Amram'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a été la sœur de Moïse ?',
+  options: ['Myriam'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a été le frère de Moïse ?',
+  options: ['Aaron'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a été le grand prêtre d’Israël pendant l’Exode ?',
+  options: ['Aaron'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a été le père de Jean ?',
+  options: ['Zacharie'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui était l’épouse d’Ézéchiel ?',
+  options: ['Femme d’Ézéchiel'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a eu une vision d’un char céleste avec des roues ?',
+  options: ['Ézéchiel'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui était le cousin de Jésus ?',
+  options: ['Jean-Baptiste'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui était le roi à la naissance de Jésus ?',
+  options: ['Hérode'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a accueilli Jésus et ses parents dans le temple ?',
+  options: ['Siméon'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui était la prophétesse âgée qui a vu Jésus au temple ?',
+  options: ['Anne'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui était le père de Jean-Baptiste ?',
+  options: ['Zacharie'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a trahi Samson en révélant le secret de sa force ?',
+  options: ['Dalila'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a été juge en Israël avant les rois ?',
+  options: ['Samuel'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a donné naissance à Isaac à un âge avancé ?',
+  options: ['Sara'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a conduit le peuple d’Israël dans la terre promise ?',
+  options: ['Josué'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui était la femme courageuse qui a tué Sisera ?',
+  options: ['Jaël'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a été choisi par Dieu pour être juge en Israël et était fort ?',
+  options: ['Gédéon'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a été l’époux de Bath-Shéba ?',
+  options: ['Urie'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a été la mère de Salomon ?',
+  options: ['Bath-Shéba'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a pleuré la mort d’Absalom ?',
+  options: ['David'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui était le père de Salomon ?',
+  options: ['David'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a été le cousin et mentor d’Esther ?',
+  options: ['Mardochée'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a été le roi qui a épousé Esther ?',
+  options: ['Assuérus'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a sauvé le peuple juif de l’extermination sous Assuérus ?',
+  options: ['Esther'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a été choisi comme apôtre à la place de Judas ?',
+  options: ['Matthias'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a été le premier martyr chrétien ?',
+  options: ['Étienne'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a été le chef des apôtres ?',
+  options: ['Pierre'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a écrit le livre de l’Apocalypse ?',
+  options: ['Jean'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a nié Jésus trois fois ?',
+  options: ['Pierre'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a été le compagnon de Paul lors de son premier voyage missionnaire ?',
+  options: ['Barnabas'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a été le premier roi de Juda après la division du royaume ?',
+  options: ['Roboam'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a été le roi d’Israël pendant qu’Élie était prophète ?',
+  options: ['Achab'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui était la méchante reine épouse d’Achab ?',
+  options: ['Jézabel'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a monté au ciel dans un char de feu ?',
+  options: ['Élie'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a reçu le manteau d’Élie ?',
+  options: ['Élisée'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui était le prophète qui a prédit la venue de Jésus ?',
+  options: ['Ésaïe'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a été avalé par un gros poisson ?',
+  options: ['Jonas'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+
+{
+  question: 'Qui a eu le don d’interpréter les songes à Babylone ?',
+  options: ['Daniel'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a été jeté dans la fosse aux lions ?',
+  options: ['Daniel'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui était le prophète envoyé à Ninive ?',
+  options: ['Jonas'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui était le roi qui a écrit de nombreux proverbes ?',
+  options: ['Salomon'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui était le père de Salomon ?',
+  options: ['David'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a combattu le géant Goliath ?',
+  options: ['David'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a été appelé "homme selon le cœur de Dieu" ?',
+  options: ['David'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui était le disciple que Jésus aimait ?',
+  options: ['Jean'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a lavé les pieds de ses disciples ?',
+  options: ['Jésus'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a été le premier à voir Jésus ressuscité ?',
+  options: ['Marie de Magdala'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a été l’apôtre surnommé "le jumeau" ?',
+  options: ['Thomas'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a été l’apôtre collecteur d’impôts ?',
+  options: ['Matthieu'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a été le jeune homme qui a fui nu lorsque Jésus a été arrêté ?',
+  options: ['Marc'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a été le compagnon de Paul lors de ses voyages ?',
+  options: ['Silas'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a été le disciple médecin qui a écrit un évangile ?',
+  options: ['Luc'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui était le gouverneur romain qui a jugé Jésus ?',
+  options: ['Pilate'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a porté la croix de Jésus ?',
+  options: ['Simon de Cyrène'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a été crucifié à côté de Jésus et s’est repenti ?',
+  options: ['Le bon larron'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a vendu Jésus pour trente pièces d’argent ?',
+  options: ['Judas Iscariote'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a été ressuscité par Jésus ?',
+  options: ['Lazare'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a été l’épouse d’Abraham après la mort de Sara ?',
+  options: ['Kétura'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui était le père de Samuel ?',
+  options: ['Elkana'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a été le juge d’Israël et a oint les deux premiers rois ?',
+  options: ['Samuel'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a combattu seul contre 600 Philistins ?',
+  options: ['Shamgar'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a été la première femme juge d’Israël ?',
+  options: ['Debora'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a été le roi qui a ordonné le massacre des enfants à Bethléem ?',
+  options: ['Hérode le Grand'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a demandé la tête de Jean-Baptiste ?',
+  options: ['Hérodiade'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a été le père d’Abraham ?',
+  options: ['Térach'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a été la femme d’Isaac ?',
+  options: ['Rébecca'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a été la fille de Pharaon qui a sauvé Moïse ?',
+  options: ['Fille de Pharaon'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a été le grand prophète et législateur d’Israël ?',
+  options: ['Moïse'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui a été le serviteur fidèle d’Abraham qui a trouvé une femme pour Isaac ?',
+  options: ['Éliézer'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui était le plus jeune fils de Jacob ?',
+  options: ['Benjamin'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Qui était le fils préféré de Jacob ?',
+  options: ['Joseph'],
+  correctIndex: 0,
+  theme: 'Personnages',
+},
+{
+  question: 'Quel jour les chrétiens célèbrent-ils la résurrection de Jésus ?',
+  options: ['Le dimanche'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Comment s’appelle le lieu principal de prière des catholiques ?',
+  options: ['Église'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quelle fête célèbre la naissance de Jésus ?',
+  options: ['Noël'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le livre saint des chrétiens ?',
+  options: ['La Bible'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le nom du repas rituel commémorant la Cène ?',
+  options: ['L’eucharistie'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel jour est considéré comme le jour de repos chrétien ?',
+  options: ['Dimanche'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quelle période précède Pâques ?',
+  options: ['Le Carême'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Comment s’appelle le temps d’attente avant Noël ?',
+  options: ['L’Avent'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le nom du chef de l’Église catholique ?',
+  options: ['Le Pape'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Où vit le pape ?',
+  options: ['Au Vatican'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Comment s’appelle la prière principale du chrétien ?',
+  options: ['Notre Père'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le symbole principal du christianisme ?',
+  options: ['La croix'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Que célèbre-t-on à Pâques ?',
+  options: ['La résurrection de Jésus'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le nom du sacrement qui marque l’entrée dans la vie chrétienne ?',
+  options: ['Le baptême'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le nom du pain consacré à la messe ?',
+  options: ['L’hostie'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel objet utilise-t-on pour prier le chapelet ?',
+  options: ['Un rosaire'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Comment s’appelle le chant liturgique ?',
+  options: ['Un cantique'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel vêtement porte le prêtre pendant la messe ?',
+  options: ['Une chasuble'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quelle fête célèbre l’arrivée de l’Esprit Saint sur les apôtres ?',
+  options: ['La Pentecôte'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le nom de la fête chrétienne célébrée le 1er novembre ?',
+  options: ['La Toussaint'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le jour de la Semaine Sainte où l’on commémore la crucifixion ?',
+  options: ['Le Vendredi saint'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Comment appelle-t-on un livre de chants religieux ?',
+  options: ['Un recueil de cantiques'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quelle est la couleur liturgique du temps de l’Avent ?',
+  options: ['Violet'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le nom du calice utilisé à la messe ?',
+  options: ['Le calice'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Comment s’appelle le récipient pour conserver l’hostie ?',
+  options: ['Le ciboire'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Comment s’appelle le lieu où l’on se confesse ?',
+  options: ['Le confessionnal'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le nom de l’encensoir dans les cérémonies ?',
+  options: ['Le thurible'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Comment s’appelle la grande église d’un évêché ?',
+  options: ['La cathédrale'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le nom de l’huile sainte utilisée dans les sacrements ?',
+  options: ['Le saint chrême'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Combien de sacrements compte l’Église catholique ?',
+  options: ['Sept'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le nom du jour où on impose les cendres sur le front ?',
+  options: ['Le mercredi des Cendres'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Que célèbre-t-on à l’Épiphanie ?',
+  options: ['La visite des rois mages à Jésus'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le nom de la célébration du corps du Christ ?',
+  options: ['La Fête-Dieu'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+
+{
+  question: 'Comment s’appelle l’autel portatif utilisé lors des processions ?',
+  options: ['Le reposoir'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le nom de la prière répétée pendant le chapelet ?',
+  options: ['Ave Maria'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+
+{
+  question: 'Quel est le nom du bâtiment où vit une communauté religieuse ?',
+  options: ['Un monastère'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+
+{
+  question: 'Comment appelle-t-on le livre contenant les lectures de la messe ?',
+  options: ['Le lectionnaire'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel objet est plongé dans l’eau bénite ?',
+  options: ['Le goupillon'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le rôle de l’acolyte ?',
+  options: ['Servir à l’autel pendant la messe'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+
+{
+  question: 'Quelle est la signification de “messe” ?',
+  options: ['Envoi en mission'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Comment s’appelle la période entre Noël et le Carême ?',
+  options: ['Le temps ordinaire'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Que célèbre-t-on le jeudi saint ?',
+  options: ['La dernière Cène'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le nom du prêtre qui dirige un diocèse ?',
+  options: ['L’évêque'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quelle prière commence par “Je crois en Dieu…” ?',
+  options: ['Le Credo'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Comment appelle-t-on une série de neuf jours de prière ?',
+  options: ['Une neuvaine'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le nom de la cloche utilisée à la messe ?',
+  options: ['La clochette d’autel'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le nom du petit meuble où l’on range les hosties consacrées ?',
+  options: ['Le tabernacle'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le nom du bâton porté par les évêques ?',
+  options: ['La crosse'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le nom du couvre-chef porté par le pape ?',
+  options: ['La tiare'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Que signifie le mot “liturgie” ?',
+  options: ['Service public de Dieu'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le jour liturgique le plus important ?',
+  options: ['Pâques'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Comment appelle-t-on les petites images religieuses ?',
+  options: ['Les images pieuses'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le nom du long vêtement blanc du prêtre ?',
+  options: ['L’aube'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le rôle du diacre ?',
+  options: ['Assister le prêtre et servir les pauvres'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le nom de la célébration du mariage chrétien ?',
+  options: ['Le sacrement de mariage'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Que signifie “sanctuaire” ?',
+  options: ['Lieu saint consacré à Dieu'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quelle est la couleur liturgique des fêtes ?',
+  options: ['Blanc'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quelle est la signification du signe de croix ?',
+  options: ['Profession de foi en la Trinité'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le nom du passage rituel de l’enfance à la foi adulte ?',
+  options: ['La confirmation'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Comment s’appelle l’acte de recevoir le pardon de Dieu ?',
+  options: ['La confession'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quelle est la prière souvent récitée avant de manger ?',
+  options: ['Le bénédicité'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Comment s’appelle le rituel de prière pour les morts ?',
+  options: ['Les obsèques chrétiennes'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le nom du lavement des mains du prêtre à la messe ?',
+  options: ['Le lavabo'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Comment s’appelle l’espace autour de l’autel ?',
+  options: ['Le chœur'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le nom du meuble où repose la Bible pendant la messe ?',
+  options: ['L’ambon'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le nom du siège du prêtre à la messe ?',
+  options: ['La présidence'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Comment appelle-t-on les grandes fêtes chrétiennes ?',
+  options: ['Solemnités'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le nom du chant d’entrée à la messe ?',
+  options: ['Le chant d’ouverture'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Comment s’appelle la période de 50 jours après Pâques ?',
+  options: ['Le temps pascal'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le nom de la prière de louange à la Trinité ?',
+  options: ['Le Gloria'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Comment appelle-t-on le silence méditatif à la messe ?',
+  options: ['Le recueillement'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le nom du livre contenant les psaumes ?',
+  options: ['Le psautier'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Comment appelle-t-on l’eau utilisée pour le baptême ?',
+  options: ['L’eau bénite'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le nom du livre du prêtre pour célébrer la messe ?',
+  options: ['Le missel'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Que célèbre-t-on le jour de l’Assomption ?',
+  options: ['La montée de Marie au ciel'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le nom du chant avant l’évangile ?',
+  options: ['Alléluia'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Que célèbre-t-on le jour de la Chandeleur ?',
+  options: ['La présentation de Jésus au Temple'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quelle est la prière avant de se coucher ?',
+  options: ['La prière du soir'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Comment s’appelle la veillée précédant Pâques ?',
+  options: ['La Vigile pascale'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Comment appelle-t-on le peuple rassemblé à la messe ?',
+  options: ['L’assemblée'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le nom du prêtre qui célèbre la messe ?',
+  options: ['Le célébrant'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Comment appelle-t-on le début de la messe ?',
+  options: ['Le rite d’accueil'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le nom du passage de la Bible lu à la messe ?',
+  options: ['La lecture'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Que signifie “Kyrie eleison” ?',
+  options: ['Seigneur, prends pitié'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Que célèbre-t-on à l’Immaculée Conception ?',
+  options: ['Marie conçue sans péché'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le nom du cantique de Marie ?',
+  options: ['Le Magnificat'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le nom du prêtre supérieur d’un monastère ?',
+  options: ['L’abbé'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le nom de la messe du soir à Noël ?',
+  options: ['La messe de minuit'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quelle fête célèbre la royauté du Christ ?',
+  options: ['La fête du Christ-Roi'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quelle fête termine l’année liturgique ?',
+  options: ['Le Christ-Roi'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Comment appelle-t-on un chrétien engagé dans la prière ?',
+  options: ['Un fidèle'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le nom de la bénédiction finale ?',
+  options: ['La bénédiction solennelle'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Comment s’appelle l’espace de silence après la communion ?',
+  options: ['L’action de grâce'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le nom du jour de jeûne obligatoire avant Pâques ?',
+  options: ['Le Vendredi saint'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+
+{
+  question: 'Comment s’appelle la grande croix portée lors des processions ?',
+  options: ['La croix de procession'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le nom de la pièce où le prêtre se prépare avant la messe ?',
+  options: ['La sacristie'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le nom de la pièce plate utilisée pour l’hostie à la messe ?',
+  options: ['La patène'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le nom du calice utilisé à la messe ?',
+  options: ['Le calice'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Comment appelle-t-on les vêtements liturgiques du prêtre ?',
+  options: ['Les ornements liturgiques'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+
+{
+  question: 'Quelle fête marque l’arrivée des mages ?',
+  options: ['L’Épiphanie'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quelle période précède Noël ?',
+  options: ['L’Avent'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quelle période prépare à Pâques ?',
+  options: ['Le Carême'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Combien de dimanches comprend l’Avent ?',
+  options: ['Quatre'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le symbole principal du Carême ?',
+  options: ['Les cendres'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Que fait-on le Mercredi des Cendres ?',
+  options: ['On reçoit les cendres sur le front'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quelle est la couleur liturgique du Carême ?',
+  options: ['Violet'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Que signifie “Amen” ?',
+  options: ['Ainsi soit-il'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Que signifie “Alléluia” ?',
+  options: ['Louez le Seigneur'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le nom du chant chanté pendant la communion ?',
+  options: ['Le chant de communion'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Comment s’appelle l’huile utilisée pour les sacrements ?',
+  options: ['Le saint chrême'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quelle est la prière principale des catholiques ?',
+  options: ['Notre Père'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Combien de sacrements compte l’Église catholique ?',
+  options: ['Sept'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel objet sert à compter les Ave Maria ?',
+  options: ['Le chapelet'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le nom de la prière répétée dans le chapelet ?',
+  options: ['Je vous salue Marie'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Combien de mystères compte un rosaire complet ?',
+  options: ['Vingt'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le nom de la petite croix fixée au chapelet ?',
+  options: ['Le crucifix'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Que représente l’eau bénite ?',
+  options: ['La purification et le baptême'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quelle fête célèbre l’Ascension de Jésus ?',
+  options: ['L’Ascension'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quelle fête célèbre la venue de l’Esprit Saint ?',
+  options: ['La Pentecôte'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quelle fête célèbre la présence réelle du Christ dans l’Eucharistie ?',
+  options: ['La Fête-Dieu'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le rôle des servants d’autel ?',
+  options: ['Aider le prêtre pendant la messe'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Comment s’appelle l’invocation chantée pour demander la paix ?',
+  options: ['L’Agneau de Dieu'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le nom de l’encensoir utilisé à la messe ?',
+  options: ['Le thurible'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le nom de la fête où les rameaux sont bénis ?',
+  options: ['Le dimanche des Rameaux'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quelle est la couleur liturgique du dimanche des Rameaux ?',
+  options: ['Rouge'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Comment appelle-t-on la grande prière d’intercession à la messe ?',
+  options: ['La prière universelle'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quelle est la première lecture de la messe ?',
+  options: ['L’Ancien Testament'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quelle prière est récitée après la communion ?',
+  options: ['La prière après la communion'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Que célèbre-t-on le Jeudi saint ?',
+  options: ['L’institution de l’Eucharistie'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le sens de la prière en commun ?',
+  options: ['Unir les fidèles dans la foi'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le nom du moment où les fidèles échangent un geste de paix ?',
+  options: ['Le baiser de paix'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le rôle du catéchiste ?',
+  options: ['Former les enfants à la foi chrétienne'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Que signifie être baptisé ?',
+  options: ['Être plongé dans la vie de Dieu'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Comment s’appelle le moment où le prêtre élève le pain et le vin ?',
+  options: ['La consécration'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Que célèbre-t-on à la Toussaint ?',
+  options: ['Tous les saints'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Que célèbre-t-on le 2 novembre ?',
+  options: ['Les fidèles défunts'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le jour de fête pour les prêtres ?',
+  options: ['Le Jeudi saint'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le rôle des cloches dans l’Église ?',
+  options: ['Appeler à la prière'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Pourquoi les chrétiens font-ils le signe de croix avec de l’eau bénite ?',
+  options: ['Pour se rappeler leur baptême'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le nom du texte central de la foi chrétienne ?',
+  options: ['Le Credo'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quelle est la position de prière traditionnelle ?',
+  options: ['À genoux'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est l’objet contenant les hosties consacrées lors des processions ?',
+  options: ['L’ostensoir'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le jour consacré à la Vierge Marie dans la semaine ?',
+  options: ['Le samedi'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le nom de la prière récitée pour les défunts ?',
+  options: ['Le De profundis'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le nom du meuble où repose la Bible à l’église ?',
+  options: ['L’ambon'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le nom du vêtement blanc porté au baptême ?',
+  options: ['La robe baptismale'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Comment appelle-t-on la méditation silencieuse dans la prière ?',
+  options: ['L’oraison'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+
+{
+  question: 'Quel est le nom de la prière du soir ?',
+  options: ['Complies'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Comment s’appelle le repas pris par les moines en silence ?',
+  options: ['Le repas monastique'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Qui est l\'Immaculée Conception ?',
+  options: ['La conception sans péché de Marie'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le symbole de la paix chez les chrétiens ?',
+  options: ['La colombe'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel jour célèbre-t-on la Résurrection du Christ ?',
+  options: ['Le dimanche de Pâques'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le geste traditionnel en entrant dans une église ?',
+  options: ['Faire le signe de croix avec de l’eau bénite'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quelle est la prière récitée pour confesser ses péchés ?',
+  options: ['Je confesse à Dieu'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quelle fête célèbre le Sacré-Cœur de Jésus ?',
+  options: ['La fête du Sacré-Cœur'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le jour où les prêtres renouvellent leurs promesses ?',
+  options: ['Le Jeudi Saint'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+
+{
+  question: 'Quelle est la mission principale des religieux ?',
+  options: ['La prière et le service'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quelle est la mission du pape ?',
+  options: ['Conduire l’Église universelle'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quelle est la couleur liturgique du temps ordinaire ?',
+  options: ['Vert'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quelle prière est récitée à midi dans l’Église ?',
+  options: ['L’angélus'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Comment appelle-t-on le chant avant l’Évangile ?',
+  options: ['L’Alléluia'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le nom du siège du prêtre à l’église ?',
+  options: ['Le siège de présidence'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Que célèbre-t-on le 15 août ?',
+  options: ['L’Assomption'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le lieu de résidence du pape ?',
+  options: ['Le Vatican'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le nom du chant traditionnel de Noël ?',
+  options: ['Le cantique'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Comment appelle-t-on les chants liturgiques ?',
+  options: ['Les chants d’assemblée'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le nom de la fête des morts ?',
+  options: ['La Commémoration des fidèles défunts'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est l’organe de musique traditionnel de l’église ?',
+  options: ['L’orgue'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Que signifie “paroisse” ?',
+  options: ['Communauté chrétienne locale'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le jour saint de la semaine pour les chrétiens ?',
+  options: ['Le dimanche'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est l’objet dans lequel sont gardées les hosties consacrées ?',
+  options: ['Le tabernacle'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quelle fête marque le début du Carême ?',
+  options: ['Le Mercredi des Cendres'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le temps liturgique entre Pâques et la Pentecôte ?',
+  options: ['Le temps pascal'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est l’objet porté par l’évêque sur la tête ?',
+  options: ['La mitre'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Comment appelle-t-on le bâton de l’évêque ?',
+  options: ['La crosse'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le nom du vêtement long porté par le prêtre ?',
+  options: ['La chasuble'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Comment appelle-t-on le pain et le vin avant la consécration ?',
+  options: ['Les oblats'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le nom du geste de louange avec les bras levés ?',
+  options: ['L’orant'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Comment appelle-t-on la lecture du Nouveau Testament à la messe ?',
+  options: ['La deuxième lecture'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le nom de la prière chantée de louange ?',
+  options: ['Le Gloria'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le nom de la lampe allumée près du tabernacle ?',
+  options: ['La lampe du sanctuaire'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le nom du jour où Jésus lave les pieds de ses disciples ?',
+  options: ['Le Jeudi saint'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le nom de la célébration du vendredi saint ?',
+  options: ['La célébration de la Passion'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le nom de la veillée de Pâques ?',
+  options: ['La Vigile pascale'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le rôle du diacre ?',
+  options: ['Servir dans la liturgie et la charité'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le nom de l’espace où les fidèles se rassemblent à l’église ?',
+  options: ['La nef'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le nom de la salle où se tiennent les réunions paroissiales ?',
+  options: ['La salle paroissiale'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le rôle du chantre ?',
+  options: ['Animer les chants liturgiques'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le symbole du baptême ?',
+  options: ['L’eau'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quelle est l’intention de prière pour les vocations ?',
+  options: ['Demander des prêtres et religieux pour l’Église'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel objet le prêtre utilise-t-il pour bénir avec de l’eau ?',
+  options: ['L’aspersion'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le nom du récipient qui contient l’eau bénite à l’entrée de l’église ?',
+  options: ['Le bénitier'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le nom du grand cierge allumé à Pâques ?',
+  options: ['Le cierge pascal'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel objet est porté autour du cou par les évêques et cardinaux ?',
+  options: ['La croix pectorale'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Que signifie “amen” à la fin d’une prière ?',
+  options: ['Ainsi soit-il'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Comment appelle-t-on un rassemblement mondial de jeunes catholiques ?',
+  options: ['Les JMJ'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le nom du jeûne avant Pâques ?',
+  options: ['Le Carême'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+
+{
+  question: 'Quel est le rôle du servant d’autel ?',
+  options: ['Aider le prêtre pendant la messe'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le nom du livre qui contient les lectures de la messe ?',
+  options: ['Le lectionnaire'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quelle est la couleur liturgique du temps de Pâques ?',
+  options: ['Blanc'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le nom du récipient utilisé pour le vin à la messe ?',
+  options: ['Le calice'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quelle prière est récitée pour remercier Dieu ?',
+  options: ['Le Magnificat'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+
+{
+  question: 'Comment s’appelle la fête chrétienne célébrée 50 jours après Pâques ?',
+  options: ['La Pentecôte'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le nom de la prière à Marie souvent dite avec un chapelet ?',
+  options: ['Ave Maria'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel est le jour de fête qui honore tous les saints ?',
+  options: ['La Toussaint'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Comment s’appelle le temps d’attente entre la mort et la résurrection de Jésus ?',
+  options: ['Le Samedi saint'],
+  correctIndex: 0,
+  theme: 'Culture',
+},
+{
+  question: 'Quel empereur romain a autorisé le christianisme avec l’édit de Milan ?',
+  options: ['Constantin'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel roi des Francs s’est fait baptiser en 496, favorisant la christianisation du royaume ?',
+  options: ['Clovis'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel roi a donné les États pontificaux au pape ?',
+  options: ['Pépin le Bref'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel empereur a défendu la foi chrétienne et encouragé l’éducation religieuse en Europe ?',
+  options: ['Charlemagne'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quelle sainte française est connue pour avoir sauvé la France en suivant les voix célestes ?',
+  options: ['Jeanne d’Arc'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel saint italien a prêché la pauvreté et fondé un ordre mendiant ?',
+  options: ['Saint François d’Assise'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel missionnaire jésuite a évangélisé l’Asie, notamment l’Inde et le Japon ?',
+  options: ['Saint François Xavier'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quelle sainte est invoquée à Paris pour avoir protégé la ville contre les Huns ?',
+  options: ['Sainte Geneviève'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel roi mérovingien a été le premier roi franc chrétien ?',
+  options: ['Clovis'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel rôle joua Charlemagne dans la propagation du christianisme ?',
+  options: ['Il imposa le baptême dans ses conquêtes'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quelle sainte pria trois jours pour que Paris soit épargnée par Attila ?',
+  options: ['Sainte Geneviève'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Comment s’appelait le moine qui accompagna Charlemagne dans la réforme de l’Église ?',
+  options: ['Alcuin'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel saint a été surnommé « l’apôtre des Gaules » ?',
+  options: ['Saint Martin de Tours'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel empereur romain a vu une croix dans le ciel avant une bataille victorieuse ?',
+  options: ['Constantin'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quelle figure chrétienne a établi des hôpitaux et prêché la paix avec les musulmans ?',
+  options: ['Saint François d’Assise'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel roi a été sacré par le pape Léon III en l’an 800 ?',
+  options: ['Charlemagne'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel ordre religieux fondé au Moyen Âge a joué un grand rôle dans l’évangélisation ?',
+  options: ['Les Dominicains'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel roi a offert Ravenne et d’autres terres au pape, formant les États pontificaux ?',
+  options: ['Pépin le Bref'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel empereur a convoqué le Concile de Nicée en 325 ?',
+  options: ['Constantin'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel missionnaire a converti les peuples slaves et créé l’alphabet cyrillique ?',
+  options: ['Saint Cyrille'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel roi franc a défendu le pape contre les Lombards et renforcé l’Église ?',
+  options: ['Pépin le Bref'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel empereur chrétien a fondé une nouvelle capitale appelée Constantinople ?',
+  options: ['Constantin'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel saint a partagé son manteau avec un pauvre et est devenu évêque de Tours ?',
+  options: ['Saint Martin'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+
+
+{
+  question: 'Quel empereur a imposé la foi chrétienne dans son empire ?',
+  options: ['Théodose Ier'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel ordre religieux a été fondé pour la prédication au XIIIe siècle ?',
+  options: ['Dominicains'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel missionnaire a prêché l’Évangile dans les Flandres et la Frise ?',
+  options: ['Saint Willibrord'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel roi fut baptisé à Reims par l’évêque Saint Remi ?',
+  options: ['Clovis'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quelle abbaye fondée par Benoît de Nursie a rayonné sur l’Europe chrétienne ?',
+  options: ['Abbaye du Mont-Cassin'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel saint moine est considéré comme le père du monachisme occidental ?',
+  options: ['Saint Benoît'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel évêque de Lyon a été martyrisé pour sa foi au IIe siècle ?',
+  options: ['Saint Irénée'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel roi est surnommé « le père de l’Europe chrétienne » ?',
+  options: ['Charlemagne'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel saint a fondé l’ordre des Franciscains ?',
+  options: ['Saint François d’Assise'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quelle sainte patronne de Paris pria pour la protection de la ville ?',
+  options: ['Sainte Geneviève'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel concile a affirmé que Jésus est vrai Dieu et vrai homme ?',
+  options: ['Concile de Nicée'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel pape a envoyé des missionnaires en Angleterre en 597 ?',
+  options: ['Grégoire le Grand'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+
+
+
+{
+  question: 'Quel saint a vécu dans la pauvreté totale et prêché la paix avec les animaux ?',
+  options: ['Saint François d’Assise'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel roi a été couronné empereur chrétien en l’an 800 ?',
+  options: ['Charlemagne'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel missionnaire a évangélisé les peuples germaniques au VIIIe siècle ?',
+  options: ['Saint Boniface'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel apôtre est considéré comme le fondateur de l’Église de Rome ?',
+  options: ['Saint Pierre'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quelle ville est devenue le centre du christianisme occidental ?',
+  options: ['Rome'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel saint évangélisa l’Irlande au Ve siècle ?',
+  options: ['Saint Patrick'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel roi a protégé les missionnaires chrétiens dans ses conquêtes ?',
+  options: ['Charlemagne'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel évêque de Tours est connu pour ses miracles ?',
+  options: ['Saint Martin'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel saint a introduit la règle bénédictine en France ?',
+  options: ['Saint Benoît d’Aniane'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quelle sainte française est invoquée dans les épreuves nationales ?',
+  options: ['Jeanne d’Arc'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel roi franc fut soutenu par l’Église contre les païens ?',
+  options: ['Clovis'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel saint a converti les Lombards au christianisme ?',
+  options: ['Saint Colomban'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel pape a envoyé Saint Augustin évangéliser l’Angleterre ?',
+  options: ['Grégoire Ier'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quelle impératrice chrétienne était la mère de Constantin ?',
+  options: ['Sainte Hélène'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel roi mérovingien a soutenu la christianisation de la Gaule ?',
+  options: ['Clovis'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel saint moine a fondé de nombreux monastères en Gaule ?',
+  options: ['Saint Martin'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel évêque de Rome est considéré comme le premier pape ?',
+  options: ['Saint Pierre'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel roi a réformé l’Église franque avec des synodes et des écoles ?',
+  options: ['Charlemagne'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel saint a évangélisé l’Aquitaine et fondé l’abbaye de Ligugé ?',
+  options: ['Saint Martin'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel apôtre a été crucifié à Rome sous Néron ?',
+  options: ['Saint Pierre'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel saint a fondé l’ordre des Jésuites ?',
+  options: ['Saint Ignace de Loyola'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel missionnaire jésuite a évangélisé l’Asie au XVIe siècle ?',
+  options: ['Saint François Xavier'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel saint a refusé la violence pendant les croisades et prêché la paix ?',
+  options: ['Saint François d’Assise'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+
+
+{
+  question: 'Quel saint a prêché à travers la Gaule au VIe siècle ?',
+  options: ['Saint Remi'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+
+{
+  question: 'Quel saint moine a introduit la vie cénobitique en Occident ?',
+  options: ['Saint Benoît'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel évêque de l’Afrique du Nord a écrit "Les Confessions" et "La Cité de Dieu" ?',
+  options: ['Saint Augustin'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Qui est surnommée "la petite Thérèse" et connue pour sa "petite voie" ?',
+  options: ['Sainte Thérèse de Lisieux'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel philosophe et théologien a écrit la "Somme théologique" ?',
+  options: ['Saint Thomas d’Aquin'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel moine a fondé l’ordre des Bénédictins ?',
+  options: ['Saint Benoît'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel saint a reçu les stigmates et prêchait aux oiseaux ?',
+  options: ['Saint François d’Assise'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Qui a évangélisé une grande partie de l’Asie, notamment l’Inde et le Japon ?',
+  options: ['Saint François Xavier'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quelle sainte parisienne aurait protégé Paris contre les Huns par ses prières ?',
+  options: ['Sainte Geneviève'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel moine irlandais a évangélisé l’Écosse ?',
+  options: ['Saint Colomban'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel missionnaire italien est mort martyr en Chine au XVIIe siècle ?',
+  options: ['Saint Jean-Gabriel Perboyre'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quelle sainte carmélite a écrit "Histoire d’une âme" ?',
+  options: ['Sainte Thérèse de Lisieux'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel empereur romain a convoqué le concile de Nicée en 325 ?',
+  options: ['Constantin'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel prêtre fondateur s’est occupé des pauvres et des missionnaires en France ?',
+  options: ['Saint Vincent de Paul'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quelle sainte espagnole a réformé l’ordre du Carmel au XVIe siècle ?',
+  options: ['Sainte Thérèse d’Avila'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel saint a fondé les Jésuites ?',
+  options: ['Saint Ignace de Loyola'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Qui a baptisé Clovis, roi des Francs ?',
+  options: ['Saint Remi'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel roi anglais a évangélisé son peuple au VIIe siècle avec l’aide d’Augustin de Cantorbéry ?',
+  options: ['Saint Æthelberht'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel saint à ecris "De Bono Coniugali" ?',
+  options: ['Saint Augustin'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel saint à ecris "La Cité de Dieu" ?',
+  options: ['Saint Augustin'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel saint est né à Thagaste ?',
+  options: ['Saint Augustin'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Où est né Saint Augustin ?',
+  options: ['Thagaste'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel saint débattu avec Saint Augustin ?',
+  options: ['Saint Ambroise'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel évêque a baptiser Saint Augustin ?',
+  options: ['Saint Ambroise'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel saint à écrit sur les relations conjuguales ?',
+  options: ['Saint Augustin'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel saint à critiqué le fort nombre de divorces ?',
+  options: ['Saint Augustin'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel saint à critiqué le manque de respect devant le mariage ?',
+  options: ['Saint Augustin'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel saint conseille le célibat ?',
+  options: ['Saint Augustin'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quelle religieuse française a fondé la congrégation des Petites Sœurs des Pauvres ?',
+  options: ['Jeanne Jugan'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel frère capucin a été connu pour son apostolat en Sicile et ses miracles ?',
+  options: ['Saint Padre Pio'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel saint médecin missionnaire a œuvré en Afrique ?',
+  options: ['Saint Joseph Moscati'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel saint dominicain a combattu les hérésies par la prédication au Moyen Âge ?',
+  options: ['Saint Dominique'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel moine bénédictin est considéré comme le "père de l’Europe" ?',
+  options: ['Saint Benoît de Nursie'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel saint italien est connu pour sa pauvreté radicale et son amour de la nature ?',
+  options: ['Saint François d’Assise'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel intellectuel catholique du Moyen Âge a défendu la foi face à l’islam et au judaïsme ?',
+  options: ['Saint Thomas d’Aquin'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel martyr français a été tué au Canada au XVIIe siècle ?',
+  options: ['Saint Jean de Brébeuf'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quelle religieuse allemande a reçu des visions mystiques et écrit des œuvres spirituelles ?',
+  options: ['Sainte Hildegarde de Bingen'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel missionnaire a traduit la Bible en chinois ?',
+  options: ['Matteo Ricci'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel saint a fondé l’ordre des Prêcheurs ?',
+  options: ['Saint Dominique'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel saint moine a introduit le monachisme en Gaule ?',
+  options: ['Saint Martin de Tours'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel missionnaire espagnol a évangélisé la Californie ?',
+  options: ['Junípero Serra'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel pape a envoyé de nombreux missionnaires au Moyen Âge ?',
+  options: ['Grégoire le Grand'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel évêque de Lyon au IIe siècle a combattu les hérésies et écrit "Contre les hérésies" ?',
+  options: ['Saint Irénée'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel moine missionnaire a évangélisé les peuples germaniques ?',
+  options: ['Saint Boniface'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel jésuite français a été missionnaire en Amérique du Nord ?',
+  options: ['Saint Isaac Jogues'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quelle sainte a soutenu l’unité de l’Église par ses lettres aux papes ?',
+  options: ['Sainte Catherine de Sienne'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel missionnaire belge a servi les lépreux à Molokaï ?',
+  options: ['Saint Damien de Molokaï'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quelle martyre chrétienne fut brûlée à Rome à l’âge de 13 ans ?',
+  options: ['Sainte Agnès'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel apôtre est considéré comme le premier évangélisateur de l’Inde ?',
+  options: ['Saint Thomas'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quelle sainte espagnole a vécu dans le silence et la prière à Avila ?',
+  options: ['Sainte Thérèse d’Avila'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel saint a défendu la divinité du Christ face à l’arianisme ?',
+  options: ['Saint Athanase'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quelle religieuse a fondé l’ordre de la Visitation avec saint François de Sales ?',
+  options: ['Sainte Jeanne de Chantal'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel frère capucin italien est connu pour sa piété et ses miracles au XXe siècle ?',
+  options: ['Padre Pio'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel cardinal converti du protestantisme a influencé l’Église en Angleterre ?',
+  options: ['John Henry Newman'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel saint a combattu l’hérésie albigeoise au XIIIe siècle ?',
+  options: ['Saint Dominique'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel saint a fondé l’ordre des Clarisses ?',
+  options: ['Sainte Claire d’Assise'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel martyr romain est fêté le 29 juin avec saint Pierre ?',
+  options: ['Saint Paul'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel évêque espagnol est l’un des premiers docteurs de l’Église ?',
+  options: ['Saint Isidore de Séville'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quelle mystique italienne a reçu les stigmates au XXe siècle ?',
+  options: ['Gemma Galgani'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel saint carmélite français a écrit des poèmes spirituels ?',
+  options: ['Saint Jean de la Croix'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel frère franciscain a fondé une école missionnaire à Padoue ?',
+  options: ['Saint Antoine de Padoue'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel moine a introduit l’écriture et la foi chrétienne en Bohême ?',
+  options: ['Saint Cyrille'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel pape a envoyé saint Augustin de Cantorbéry évangéliser l’Angleterre ?',
+  options: ['Grégoire le Grand'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel médecin et prêtre italien du XXe siècle est connu pour sa charité ?',
+  options: ['Saint Joseph Moscati'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quelle sainte a inspiré la dévotion au Sacré-Cœur ?',
+  options: ['Sainte Marguerite-Marie Alacoque'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel saint espagnol est le patron des séminaristes ?',
+  options: ['Saint Jean de la Croix'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel missionnaire a converti l’Arménie au christianisme ?',
+  options: ['Saint Grégoire l’Illuminateur'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel évêque de Milan a été un grand prédicateur et influenceur de la foi ?',
+  options: ['Saint Ambroise'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quelle femme mystique allemande était aussi musicienne et médecin ?',
+  options: ['Hildegarde de Bingen'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quelle sainte italienne du XXe siècle a vécu une vie de souffrance offerte ?',
+  options: ['Sainte Gianna Beretta Molla'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel saint africain a été esclave avant de devenir moine au Soudan ?',
+  options: ['Sainte Joséphine Bakhita'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quelle religieuse française a été missionnaire au Liban au XIXe siècle ?',
+  options: ['Sainte Rafqa'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel saint moine a fondé le Mont-Cassin ?',
+  options: ['Saint Benoît'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel roi polonais a œuvré à la christianisation de la Pologne ?',
+  options: ['Mieszko Ier'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel missionnaire italien du XXe siècle a été évêque de Hong Kong ?',
+  options: ['Cardinal Celso Costantini'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel jésuite a promu le dialogue entre foi et science ?',
+  options: ['Teilhard de Chardin'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel moine copte est considéré comme père du monachisme ?',
+  options: ['Saint Antoine le Grand'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel saint franciscain a été un grand prédicateur italien ?',
+  options: ['Saint Bernardin de Sienne'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel saint canoniste a codifié le droit canonique médiéval ?',
+  options: ['Gratien'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel missionnaire français a œuvré dans les Antilles ?',
+  options: ['Saint Pierre Claver'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel pape du XXe siècle a promu l’évangélisation moderne ?',
+  options: ['St Jean-Paul II'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel saint mexicain a été martyrisé durant la persécution anticatholique ?',
+  options: ['José Luis Sánchez del Río'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quelle carmélite juive convertie est morte à Auschwitz ?',
+  options: ['Sainte Edith Stein'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel roi scandinave a introduit le christianisme en Norvège ?',
+  options: ['Saint Olaf'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel évangélisateur de l’Europe centrale a été tué par des païens ?',
+  options: ['Saint Venceslas'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel saint africain a été patriarche d’Alexandrie au IIIe siècle ?',
+  options: ['Saint Cyrille d’Alexandrie'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quelle sainte fondatrice d’un ordre hospitalier est née en Allemagne ?',
+  options: ['Sainte Elisabeth de Hongrie'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel saint moine a évangélisé les Pays-Bas et l’Allemagne ?',
+  options: ['Saint Willibrord'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel prêtre a fondé les Spiritains pour les missions étrangères ?',
+  options: ['Claude Poullart des Places'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel apôtre est mort crucifié en Grèce ?',
+  options: ['Saint André'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel missionnaire africain est devenu évêque au Bénin ?',
+  options: ['Isidore de Souza'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel prêtre français a fondé les Missions Étrangères de Paris ?',
+  options: ['Alexandre de Rhodes'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel moine irlandais a fondé des monastères en Italie et en Suisse ?',
+  options: ['Saint Colomban'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel saint a été évêque de Poitiers et a lutté contre l’arianisme ?',
+  options: ['Saint Hilaire'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel roi viking s’est converti au christianisme vers l’an 960 ?',
+  options: ['Harald à la dent bleue'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quelle mission chrétienne a introduit le christianisme en Moravie ?',
+  options: ['Mission de Cyrille et Méthode'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel roi polonais a adopté le christianisme en 966 ?',
+  options: ['Mieszko Ier'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel empereur byzantin a converti les peuples slaves au christianisme ?',
+  options: ['Basile Ier'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel apôtre a évangélisé l’Éthiopie selon la tradition ?',
+  options: ['Saint Matthieu'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel empereur byzantin a imposé le christianisme à Kiev ?',
+  options: ['Vladimir Ier'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quelle reine franque a influencé la conversion de Clovis ?',
+  options: ['Sainte Clotilde'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel empereur a interdit les cultes païens dans l’Empire romain ?',
+  options: ['Théodose Ier'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel moine a été le premier évêque de Canterbury ?',
+  options: ['Saint Augustin de Cantorbéry'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quelle missionnaire anglaise a évangélisé l’Allemagne au VIIIe siècle ?',
+  options: ['Sainte Walburge'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quelle ville est devenue capitale religieuse de l’Empire byzantin ?',
+  options: ['Constantinople'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel concile a fixé le canon du Nouveau Testament ?',
+  options: ['Concile de Carthage'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel moine a fondé l’abbaye de Luxeuil ?',
+  options: ['Saint Colomban'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel roi a fait du christianisme la religion officielle de l’Arménie ?',
+  options: ['Tiridate III'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel missionnaire a traduit la Bible en gothique ?',
+  options: ['Wulfila'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel apôtre est traditionnellement associé à l’évangélisation de l’Inde ?',
+  options: ['Saint Thomas'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quelle sainte a fondé de nombreuses écoles chrétiennes en Irlande ?',
+  options: ['Sainte Brigitte'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel roi hongrois a christianisé son royaume au Xe siècle ?',
+  options: ['Étienne Ier'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel pape a soutenu l’évangélisation des Saxons ?',
+  options: ['Grégoire le Grand'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quelle abbaye fondée par Colomban a rayonné en Europe ?',
+  options: ['Luxeuil'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel empereur byzantin a imposé le christianisme orthodoxe ?',
+  options: ['Justinien'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel roi scandinave s’est fait baptiser à Rouen vers l’an 1000 ?',
+  options: ['Olaf Tryggvason'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel saint a évangélisé la Bavière ?',
+  options: ['Saint Rupert'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel empereur a fait bâtir Sainte-Sophie ?',
+  options: ['Justinien'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quelle abbaye fut fondée par saint Benoît ?',
+  options: ['Mont-Cassin'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel concile a condamné l’arianisme ?',
+  options: ['Concile de Nicée'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel roi anglo-saxon fut canonisé pour sa foi ?',
+  options: ['Saint Edmond'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel évêque d’Hippone a combattu l’hérésie donatiste ?',
+  options: ['Saint Augustin'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel empereur a tenté de restaurer le paganisme ?',
+  options: ['Julien l’Apostat'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel saint a fondé l’abbaye de Clairvaux ?',
+  options: ['Saint Bernard'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel moine est célèbre pour la mission en Germanie ?',
+  options: ['Saint Boniface'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel roi serbe s’est converti au christianisme au IXe siècle ?',
+  options: ['Mutimir'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel patriarche d’Alexandrie est un Père de l’Église ?',
+  options: ['Athanase'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quelle impératrice byzantine a soutenu les monastères ?',
+  options: ['Théodora'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel concile a affirmé la double nature du Christ ?',
+  options: ['Concile de Chalcédoine'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel moine syrien est connu pour ses hymnes ?',
+  options: ['Éphrem le Syrien'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel saint a fondé la mission de Lindisfarne ?',
+  options: ['Saint Aidan'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel roi russe a christianisé la Rus\' de Kiev ?',
+  options: ['Vladimir Ier'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel saint moine a fondé l’abbaye de Cluny ?',
+  options: ['Saint Benoît d’Aniane'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel ordre religieux a été fondé par saint Dominique ?',
+  options: ['Dominicains'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel missionnaire a été envoyé par Rome chez les Angles ?',
+  options: ['Saint Augustin de Cantorbéry'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel saint est le patron de l’Europe ?',
+  options: ['Saint Benoît'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel empereur a bâti de nombreuses églises en Terre Sainte ?',
+  options: ['Constantin'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel moine irlandais est associé à la fondation d’Iona ?',
+  options: ['Saint Colomba'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel saint a prêché en Suède et en Scandinavie ?',
+  options: ['Ansgar'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel roi danois s’est converti pour unir son royaume ?',
+  options: ['Harald à la dent bleue'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel moine est considéré comme le premier historien de l’Église anglaise ?',
+  options: ['Bède le Vénérable'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quelle abbesse est connue pour ses visions et ses écrits spirituels ?',
+  options: ['Sainte Hildegarde de Bingen'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quelle sainte est allé jusqu\'à Rome pour rentrer au Carmel ?',
+  options: ['Sainte Thérèse de la Sainte Face'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'En quelle année ont eu lieu les apparitions de la Vierge à Lourdes ?',
+  options: ['1858'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'À quel pays est associée l’apparition mariale de Fatima ?',
+  options: ['Portugal'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Qui était la jeune fille ayant vu la Vierge à Lourdes ?',
+  options: ['Bernadette Soubirous'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Combien d’enfants ont vu la Vierge à Fatima ?',
+  options: ['Trois'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quelle est la date de la première apparition à Fatima ?',
+  options: ['13 mai 1917'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel événement miraculeux aurait eu lieu à Fatima en octobre 1917 ?',
+  options: ['Le miracle du soleil'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Dans quelle langue la Vierge aurait-elle parlé à Juan Diego à Guadalupe ?',
+  options: ['Nahuatl'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quelle est la particularité du vêtement (tilma} de Juan Diego ?',
+  options: ['L’image de la Vierge y est apparue'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'En quelle année la Vierge est-elle apparue à Guadalupe ?',
+  options: ['1531'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel est le nom complet de la Vierge de Guadalupe ?',
+  options: ['Notre-Dame de Guadalupe'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'À Lourdes, combien apparitions ont été rapportées ?',
+  options: ['18'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quelle phrase célèbre la Vierge aurait-elle dite à Bernadette ?',
+  options: ['Je suis l’Immaculée Conception'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Que représente la Vierge de Guadalupe pour de nombreux Mexicains ?',
+  options: ['La mère du peuple mexicain'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quelle source miraculeuse aurait jailli à Lourdes ?',
+  options: ['Une source d’eau'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Comment s’appelle le sanctuaire où la Vierge est apparue à Fatima ?',
+  options: ['Sanctuaire de Notre-Dame de Fatima'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quels sont les prénoms des trois enfants de Fatima ?',
+  options: ['Lucia, Francisco, Jacinta'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel pape a béatifié deux des enfants de Fatima en 2000 ?',
+  options: ['Jean-Paul II'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Que porte la Vierge de Guadalupe dans l’image miraculeuse ?',
+  options: ['Une ceinture noire de maternité'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Où se trouve le sanctuaire de la Vierge de Lourdes ?',
+  options: ['Sud-ouest de la France'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel pape a officiellement reconnu l’apparition de Guadalupe ?',
+  options: ['Benoît XIV'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+  // Ajoute tes autres questions ici...
+];

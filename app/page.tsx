@@ -20,10 +20,10 @@ export default function HomePage() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-r from-blue-800 to-blue-600 flex flex-col items-center justify-center p-8">
+    <div className="min-h-screen bg-gradient-to-r from-brown-800 to-brown-600 flex flex-col items-center justify-center p-8">
       <div className="bg-white shadow-lg rounded-lg p-8 w-full max-w-md text-center">
-        <h1 className="text-4xl font-bold text-blue-900 mb-4">
-          Bienvenue sur Trivial Pursuit !
+        <h1 className="text-4xl font-bold text-brown-900 mb-4">
+          Bienvenue sur Trivia Biblique !
         </h1>
         <p className="text-gray-600 mb-8">
           Entrez les noms des joueurs pour commencer.
@@ -34,25 +34,25 @@ export default function HomePage() {
             placeholder="Nom du Joueur 1"
             value={player1}
             onChange={(e) => setPlayer1(e.target.value)}
-            className="p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none"
+            className="p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-brown-500 focus:outline-none"
           />
           <input
             type="text"
             placeholder="Nom du Joueur 2"
             value={player2}
             onChange={(e) => setPlayer2(e.target.value)}
-            className="p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none"
+            className="p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-brown-500 focus:outline-none"
           />
           <button
             onClick={handleStartGame}
-            className="px-6 py-3 bg-blue-700 text-gray-100 font-bold rounded-md hover:bg-orange-600 transition"
+            className="px-6 py-3 bg-brown-700 text-gray-100 font-bold rounded-md hover:bg-orange-600 transition"
           >
             Commencer le jeu
           </button>
         </div>
       </div>
       <footer className="mt-12 text-gray-500 text-sm">
-  © 2025 <Link href="/politique" className="underline hover:text-blue-200 transition">Trivial Pursuit</Link>. Tous droits réservés.
+  © 2025 <Link href="/politique" className="underline hover:text-brown-200 transition">Trivial Pursuit</Link>. Tous droits réservés.
 </footer>
     </div>
   );

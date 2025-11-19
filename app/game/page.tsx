@@ -13,7 +13,8 @@ import {
   toggleCamembertRound,
 } from "../store/gameSlice"; // Remplace par le chemin réel de gameSlice
 import { RootState } from "../store";
-import questionsData from "../data/questions";
+import { allQuestions } from "../data/questions";
+
 import shuffleArray from "../utils/shuffleArray"; // Remplace par ton utilitaire de mélange
 import { addUsedQuestion } from "../store/gameSlice"; // Assure-toi que le chemin est correct
 
@@ -24,16 +25,19 @@ export default function GamePage() {
     (state: RootState) => state.game
   );
 
-  const [currentQuestion, setCurrentQuestion] = useState<{
-    question: string;
-    answer: string;
-    category: string;
-  } | null>(null);
+ const [currentQuestion, setCurrentQuestion] = useState<{
+  question: string;
+  options: string[];
+  correctIndex: number;
+  category: string;
+} | null>(null);
+
 
   const [showAnswer, setShowAnswer] = useState(false);
   const [modalMessage, setModalMessage] = useState<string | null>(null);
   const [showNextPlayerModal, setShowNextPlayerModal] = useState(false);
-  const categories = Object.keys(questionsData);
+  const categories = Array.from(new Set(allQuestions.map(q => q.theme)));
+
 
   // Initialisation des joueurs depuis localStorage
   useEffect(() => {
@@ -83,7 +87,9 @@ export default function GamePage() {
     }
 
     const selectedCategory = shuffleArray(availableCategories)[0];
-    const shuffledQuestions = shuffleArray(questionsData[selectedCategory]);
+   const shuffledQuestions = shuffleArray(
+  allQuestions.filter(q => q.theme === selectedCategory)
+);
 
     const availableQuestions = shuffledQuestions.filter(
       (q) => !usedQuestions.includes(q.question)
@@ -95,11 +101,13 @@ export default function GamePage() {
     }
 
     const question = availableQuestions[0];
-    setCurrentQuestion({
-      question: question.question,
-      answer: question.answer,
-      category: selectedCategory,
-    });
+  setCurrentQuestion({
+  question: question.question,
+  options: question.options,
+  correctIndex: question.correctIndex,
+  category: selectedCategory,
+});
+
 
     dispatch(addUsedQuestion(question.question));
   };
@@ -200,17 +208,19 @@ export default function GamePage() {
    {currentQuestion?.category}
         </h2>
         <p className="text-lg mt-4">{currentQuestion?.question}</p>
-        <button
-          className="mt-6 bg-gradient-to-r from-blue-500 to-gray-500 text-white py-2 px-6 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition duration-300"
-          onClick={() => setShowAnswer(!showAnswer)}
-        >
-          {showAnswer ? "Cacher" : "Révéler"} la réponse
-        </button>
-        {showAnswer && (
-          <p className="text-md text-gray-700 mt-4">
-            Réponse : {currentQuestion?.answer}
-          </p>
-        )}
+      <button
+  className="mt-6 bg-gradient-to-r from-blue-500 to-gray-500 text-white py-2 px-6 rounded-lg shadow-md hover:shadow-lg transform hover:scale-105 transition duration-300"
+  onClick={() => setShowAnswer(!showAnswer)}
+>
+  {showAnswer ? "Cacher" : "Révéler"} la réponse
+</button>
+
+{showAnswer && (
+  <p className="text-md text-gray-700 mt-4">
+    Réponse : {currentQuestion?.options[currentQuestion.correctIndex]}
+  </p>
+)}
+
       </div>
   
       <div className="flex space-x-4 mt-6">
