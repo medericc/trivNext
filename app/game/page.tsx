@@ -118,14 +118,26 @@ export default function GamePage() {
 
     if (isCorrect) {
       if (isCamembertRound) {
-        dispatch(addCamembert(currentQuestion?.category || ""));
-        setModalMessage(
-          `${player.name} gagne un camembert ${currentQuestion?.category} !`
-        );
+       // Ajout du camembert dans une copie locale (ainsi Redux ne bloque pas la mise à jour)
+const newCamemberts = [...player.camemberts, currentQuestion?.category || ""];
 
-        const hasAllCamemberts = categories.every((cat) =>
-          player.camemberts.includes(cat)
-        );
+// Vérification de la victoire AVANT de toucher à Redux
+const hasAllCamemberts = categories.every((cat) =>
+  newCamemberts.includes(cat)
+);
+
+if (hasAllCamemberts) {
+  setModalMessage(`${player.name} a gagné la partie !`);
+  setTimeout(() => {
+    dispatch(resetGame());
+    router.push("/");
+  }, 2000);
+  return;
+}
+
+// Redux met à jour dans un second temps seulement
+dispatch(addCamembert(currentQuestion?.category || ""));
+
 
         if (hasAllCamemberts) {
           setModalMessage(`${player.name} a gagné la partie !`);
