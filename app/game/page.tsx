@@ -8,6 +8,7 @@ import {
   nextPlayer,
   incrementPoints,
   resetPoints,
+  resetUsedQuestions,
   addCamembert,
   resetGame,
   toggleCamembertRound,
@@ -54,7 +55,8 @@ export default function GamePage() {
           { name: player2, points: 0, camemberts: [] },
         ])
       );
-      setNextQuestion();
+      dispatch(resetUsedQuestions());
+      
     }
   }, [dispatch, router]);
 
