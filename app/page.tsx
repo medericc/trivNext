@@ -20,10 +20,10 @@ export default function HomePage() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-r from-brown-800 to-brown-600 flex flex-col items-center justify-center p-8">
-      <div className="bg-white shadow-lg rounded-lg p-8 w-full max-w-md text-center">
-        <h1 className="text-4xl font-bold text-brown-900 mb-4">
-          Bienvenue sur Trivia Biblique !
+   <div className="min-h-screen bg-gradient-to-r from-stone-800 to-stone-600 flex flex-col items-center justify-center p-8">
+  <div className="bg-white shadow-lg rounded-lg p-8 w-full max-w-md text-center">
+    <h1 className="text-4xl font-bold text-stone-900 mb-4">
+      Bienvenue sur Trivia Biblique !
         </h1>
         <p className="text-gray-600 mb-8">
           Entrez les noms des joueurs pour commencer.
@@ -45,7 +45,7 @@ export default function HomePage() {
           />
           <button
             onClick={handleStartGame}
-            className="px-6 py-3 bg-brown-700 text-gray-100 font-bold rounded-md hover:bg-orange-600 transition"
+            className="px-6 py-3 bg-gradient-to-r from-orange-900 to-yellow-800 text-gray-100 font-bold rounded-md hover:bg-orange-600 transition"
           >
             Commencer le jeu
           </button>
