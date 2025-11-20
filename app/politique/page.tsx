@@ -41,8 +41,8 @@ export default function PolitiqueConfidentialite() {
       <h2 className="text-xl font-semibold mt-6 mb-2">Contact</h2>
       <p>
         Pour toute question, veuillez nous contacter à :{" "}
-        <a href="mailto:ton@email.com" className="text-blue-600 underline">
-          ton@email.com
+        <a href="mailto:bleufarfe@gmail.com" className="text-blue-600 underline">
+          mailto:bleufarfe@gmail.com
         </a>
       </p>
     </div>
