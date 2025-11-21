@@ -6599,12 +6599,7 @@ interface Question {
   correctIndex: 0,
   theme: 'Culture',
 },
-{
-  question: 'Que signifie “amen” à la fin d’une prière ?',
-  options: ['Ainsi soit-il'],
-  correctIndex: 0,
-  theme: 'Culture',
-},
+
 {
   question: 'Comment appelle-t-on un rassemblement mondial de jeunes catholiques ?',
   options: ['Les JMJ'],
@@ -8007,5 +8002,114 @@ interface Question {
   correctIndex: 0,
   theme: 'Propagation',
 },
+{
+  question: 'Quel message central la Vierge a-t-elle donné à Fatima ?',
+  options: ['La prière et la conversion'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quelle fleur est souvent associée aux apparitions mariales ?',
+  options: ['La rose'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Comment s’appelle le lieu exact où la Vierge serait apparue à Guadalupe ?',
+  options: ['Tepeyac'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel signe miraculeux est associé à l’image de Guadalupe ?',
+  options: ['La tilma intacte et inexplicable'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel enfant de Fatima a raconté les secrets reçus lors des apparitions ?',
+  options: ['Sœur Lucie'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+
+
+
+
+{
+  question: 'Quel décret de la Convention nationale ordonne l\'extermination de la Vendée ?',
+  options: ['Celui du 1er août 1793'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel terme la République utilisait pour désigner les vendéens catholiques ?',
+  options: ['La Race Maudite'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Contre quelle région la Convention décrète-t-elle une extermiantion ?',
+  options: ['La Vendée'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+
+{
+  question: 'Quel organe décide de la déportation des basques ?',
+  options: ['La Convention nationale'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel terme la République utilisait pour désigner les basques catholiques ?',
+  options: ['Les Monstres'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'En quoi consistaient les baptêmes républicains ?',
+  options: ['Paysan, paysanne, enfant enfermés dans des barges que l\'on coulait au milieu de la Loire'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'En quoi consistaient les mariages républicains ?',
+  options: ['Prêtres et Religieuses attachés nus puis jetés dans la Loire'],
+  correctIndex: 0,
+  theme: 'Propagation',
+},
+{
+  question: 'Quel était l\'avis de Carrier sur la Loire ?',
+  options: ['La Loire ne nous trahira jamais. Elle est un bon patriote.'],
+  correctIndex: 0,
+  theme: 'Propagation',
+}
+,
+{
+  question: 'Comment étaient présentées les noyades de la Loire ?',
+  options: ['Une manière économique'],
+  correctIndex: 0,
+  theme: 'Propagation',
+}
+
+,
+{
+  question: 'Qu\'est-ce que la Convention nationale voulait que devienne la Vendée ?',
+  options: ['Un cimetière national'],
+  correctIndex: 0,
+  theme: 'Propagation',
+}
+,
+{
+  question: 'Quel ordre de Turreau le Comité de Salut public a-t-il approuvé ?',
+  options: ['Les colonnes infernales'],
+  correctIndex: 0,
+  theme: 'Propagation',
+}
+
+
+
+
   // Ajoute tes autres questions ici...
 ];
